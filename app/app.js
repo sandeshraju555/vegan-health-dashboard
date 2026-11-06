@@ -2137,7 +2137,15 @@
   // skips it quietly — nothing else here depends on it having run.
   if ("serviceWorker" in navigator) {
     try {
-      navigator.serviceWorker.register("sw.js").catch(function () { /* fail quietly */ });
+      // updateViaCache: "none" makes the browser always fetch sw.js itself
+      // fresh over the network when checking for an update, ignoring any
+      // HTTP cache headers on it - GitHub Pages serves sw.js with
+      // Cache-Control: max-age=600 by default, which otherwise means a
+      // visitor's browser can go on believing an old service worker (and
+      // everything it cache-first-serves, including styles.css/app.js) is
+      // current for up to 10 minutes after a real deploy, with no normal
+      // reload able to fix it - this is what that actually looked like.
+      navigator.serviceWorker.register("sw.js", { updateViaCache: "none" }).catch(function () { /* fail quietly */ });
     } catch (err) { /* fail quietly */ }
   }
 
