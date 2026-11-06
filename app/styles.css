@@ -1,0 +1,955 @@
+:root {
+  --leaf: #3f7a3f;
+  --leaf-dark: #2d5a2d;
+  --cream: #fbf6ea;
+  --cream-card: #ffffff;
+  --olive: #2f2a1e;
+  --olive-soft: #5c5440;
+  --turmeric: #d99a1f;
+  --turmeric-ink: #5c3f04;
+  --saffron: #e2672b;
+  --saffron-ink: #5c2504;
+  --border: #e4dcc4;
+  --shadow: 0 2px 10px rgba(47, 42, 30, 0.08);
+  --focus: #1d5fae;
+  --radius: 16px;
+  --green-bg: #e6f2e2;
+  --green-ink: #22511f;
+  --red-ink: #8a1f1f;
+  --banner-bg: #fff3cd;
+  --banner-ink: #5c4404;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --leaf: #6fbf6f;
+    --leaf-dark: #8fd98f;
+    --cream: #1b1a15;
+    --cream-card: #262419;
+    --olive: #f1ecd9;
+    --olive-soft: #cfc6a6;
+    --turmeric: #e8b94a;
+    --turmeric-ink: #3a2700;
+    --saffron: #f08a52;
+    --saffron-ink: #3a1600;
+    --border: #3a3826;
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    --focus: #7fb3ff;
+    --green-bg: #203321;
+    --green-ink: #9fe39f;
+    --red-ink: #ff9b9b;
+    --banner-bg: #3a2f10;
+    --banner-ink: #f0d98a;
+  }
+}
+
+:root[data-theme="dark"] {
+  --leaf: #6fbf6f;
+  --leaf-dark: #8fd98f;
+  --cream: #1b1a15;
+  --cream-card: #262419;
+  --olive: #f1ecd9;
+  --olive-soft: #cfc6a6;
+  --turmeric: #e8b94a;
+  --turmeric-ink: #3a2700;
+  --saffron: #f08a52;
+  --saffron-ink: #3a1600;
+  --border: #3a3826;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  --focus: #7fb3ff;
+  --green-bg: #203321;
+  --green-ink: #9fe39f;
+  --red-ink: #ff9b9b;
+  --banner-bg: #3a2f10;
+  --banner-ink: #f0d98a;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--cream);
+  color: var(--olive);
+}
+
+body {
+  font-family: "Noto Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-bottom: 76px;
+}
+
+h1, h2, h3, h4 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--olive);
+  margin: 0 0 0.4em;
+}
+
+a { color: var(--leaf-dark); }
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--leaf);
+  color: #fff;
+  padding: 8px 14px;
+  z-index: 200;
+}
+.skip-link:focus { left: 8px; top: 8px; }
+
+button {
+  font-size: 16px;
+  font-family: inherit;
+  cursor: pointer;
+}
+/* #compare-view-btn starts disabled (fewer than 2 foods picked) and this
+   pre-existing rule had no exception for it, so it showed pointer like any
+   other button despite not being clickable. */
+button:disabled { cursor: default; }
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.sample-banner {
+  background: var(--banner-bg);
+  color: var(--banner-ink);
+  text-align: center;
+  font-weight: 700;
+  padding: 8px 12px;
+  font-size: 14px;
+  position: sticky;
+  top: 0;
+  z-index: 60;
+}
+
+header.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--cream);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 12px 8px;
+}
+
+.brand-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.brand-row h1 { font-size: 1.15rem; margin: 0; }
+.brand-row .leaf-icon { color: var(--leaf); }
+
+.search-wrap {
+  position: relative;
+}
+
+#search-input {
+  width: 100%;
+  padding: 12px 40px 12px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--cream-card);
+  color: var(--olive);
+  font-size: 16px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.6;
+}
+
+.search-results {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% + 6px);
+  background: var(--cream-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-height: 60vh;
+  overflow-y: auto;
+  z-index: 80;
+  padding: 6px;
+}
+.search-results[hidden] { display: none; }
+
+.search-group-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--olive-soft);
+  padding: 8px 10px 2px;
+}
+
+.search-result-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--olive);
+}
+.search-result-item:hover, .search-result-item:focus-visible { background: var(--green-bg); }
+.search-result-item small { display: block; color: var(--olive-soft); font-size: 0.8rem; }
+
+.no-results {
+  padding: 14px;
+  color: var(--olive-soft);
+}
+
+main {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 14px 12px 40px;
+}
+
+.view[hidden] { display: none; }
+
+.card {
+  background: var(--cream-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px;
+  margin-bottom: 14px;
+  border: 1px solid var(--border);
+}
+
+.card h3 { font-size: 1.05rem; }
+
+/* Cards (nutrient/food/topic/lifestage/herb) that open a detail view are
+   plain <article> elements with a JS click handler (bindCardOpen), not
+   native buttons/links, so they don't get a pointer cursor for free. Scoped
+   to the attribute itself (not .card generally) since some .card uses -
+   e.g. the Sources list and Where-to-buy listings - are not clickable. */
+[data-open-card] { cursor: pointer; }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+.badge::before { content: ""; width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+.badge-food { background: var(--green-bg); color: var(--green-ink); }
+.badge-food::before { background: var(--green-ink); }
+.badge-planning { background: #fbe9c8; color: var(--turmeric-ink); }
+.badge-planning::before { background: var(--turmeric); }
+.badge-supplement { background: #fbdcc9; color: var(--saffron-ink); }
+.badge-supplement::before { background: var(--saffron); }
+
+.evidence-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+}
+.evidence-strong { color: var(--green-ink); }
+.evidence-moderate { color: var(--turmeric-ink); }
+.evidence-limited { color: var(--red-ink); }
+
+/* Per-statement labels (BRIEF.md Source and evidence rules 4 and 15):
+   established fact / official recommendation / illustration / open question,
+   shown beside each sourced point in a card's labelled statement arrays. */
+.entry-label {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  padding: 2px 7px;
+  border-radius: 999px;
+  margin-right: 2px;
+}
+.label-fact, .label-recommendation { background: var(--green-bg); color: var(--green-ink); }
+.label-illustration { background: var(--border); color: var(--olive-soft); }
+.label-open { background: #fbe9c8; color: var(--turmeric-ink); }
+
+/* Top-of-card cue (BRIEF.md rule 15, second half): shown only when a card's
+   "Where the evidence is still mixed" section is non-empty, pointing to it. */
+.mixed-evidence-cue {
+  display: inline-block;
+  background: #fbe9c8;
+  color: var(--turmeric-ink);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+
+/* A conflicting figure or a preparation-forms caveat shown alongside a
+   statement — an aside, not a warning, so it stays visually distinct from
+   .doctor-flag's amber safety banner. */
+.entry-conflict {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--olive-soft);
+  border-left: 3px solid var(--border);
+  padding-left: 8px;
+  margin: 4px 0;
+}
+
+.one-line-action {
+  border-left: 3px solid var(--leaf);
+  padding-left: 8px;
+}
+
+.favour-note { font-size: 0.85rem; color: var(--olive-soft); }
+
+.tier-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+}
+
+.tier-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+@media (min-width: 600px) {
+  .tier-grid, .card-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.icon-btn {
+  background: var(--green-bg);
+  color: var(--green-ink);
+  border: none;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.icon-btn[aria-pressed="true"] { background: var(--leaf); color: #fff; }
+
+.doctor-flag {
+  background: var(--banner-bg);
+  color: var(--banner-ink);
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-top: 10px;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.filters-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px 0;
+  margin-bottom: 8px;
+}
+.chip {
+  border: 1px solid var(--border);
+  background: var(--cream-card);
+  color: var(--olive);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+.chip[aria-pressed="true"] { background: var(--leaf); color: #fff; border-color: var(--leaf); }
+
+.myth-card {
+  perspective: 1000px;
+  height: 180px;
+  margin-bottom: 14px;
+}
+.myth-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+.myth-card.flipped .myth-card-inner { transform: rotateY(180deg); }
+.myth-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  overflow-y: auto;
+}
+.myth-front { background: var(--cream-card); }
+.myth-back {
+  background: var(--green-bg);
+  transform: rotateY(180deg);
+}
+.myth-flip-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: var(--leaf);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+}
+
+.topic-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.disclaimer {
+  font-size: 0.82rem;
+  color: var(--olive-soft);
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+  margin-top: 16px;
+}
+
+footer.app-footer {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 10px 12px 20px;
+  font-size: 0.8rem;
+  color: var(--olive-soft);
+}
+
+nav.tabs {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background: var(--cream-card);
+  border-top: 1px solid var(--border);
+  z-index: 50;
+}
+nav.tabs button {
+  flex: 1;
+  background: none;
+  border: none;
+  color: var(--olive-soft);
+  padding: 10px 2px 8px;
+  font-size: 0.78rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+nav.tabs button[aria-current="true"] { color: var(--leaf-dark); font-weight: 700; }
+
+@media (min-width: 760px) {
+  nav.tabs {
+    position: sticky;
+    top: 0;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    flex-direction: column;
+    width: 170px;
+    float: left;
+    border-top: none;
+    border-right: 1px solid var(--border);
+    height: calc(100vh - 2px);
+  }
+  nav.tabs button { flex-direction: row; justify-content: flex-start; padding: 12px 16px; gap: 8px; }
+  body { padding-bottom: 0; }
+  .layout { display: flex; }
+  main { flex: 1; }
+}
+
+.detail-panel {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 120;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.detail-panel[hidden] { display: none; }
+.detail-panel-content {
+  background: var(--cream-card);
+  width: 100%;
+  max-width: 640px;
+  max-height: 86vh;
+  overflow-y: auto;
+  border-radius: 20px 20px 0 0;
+  padding: 20px;
+}
+@media (min-width: 640px) {
+  .detail-panel { align-items: center; }
+  .detail-panel-content { border-radius: 20px; }
+}
+.detail-close {
+  float: right;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  color: var(--olive-soft);
+}
+
+.print-only { display: none; }
+@media print {
+  body > *:not(#print-area) { display: none !important; }
+  #print-area, #print-area * { display: block !important; }
+  #print-area .card-actions { display: none !important; }
+}
+
+.combine-result-food {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.about-link-list { padding-left: 1.1em; }
+
+.whatsapp-btn {
+  background: #2d8a4a;
+  color: #fff;
+}
+
+/* Where to buy: outbound link to the owner's Bengaluru vegan products guide,
+   styled as the same pill shape/size as the "In Bengaluru"/"Online to
+   Bengaluru" filter .chips just above it on this page, but filled solid in
+   the site's existing saffron accent (same pattern as the already-existing
+   .chip[aria-pressed="true"] solid-fill state) so it reads as an action, not
+   a filter. white-space is reopened to normal since this label is much
+   longer than a filter chip's. */
+.buy-guide-btn {
+  display: inline-block;
+  white-space: normal;
+  background: var(--saffron);
+  color: #fff;
+  border-color: var(--saffron);
+}
+
+/* Collapsible depth */
+details {
+  margin-top: 10px;
+  border-top: 1px solid var(--border);
+  padding-top: 8px;
+}
+details summary {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 4px 0;
+  list-style: none;
+}
+details summary::-webkit-details-marker { display: none; }
+details summary::before {
+  content: "▸";
+  display: inline-block;
+  margin-right: 6px;
+  color: var(--leaf-dark);
+  transition: transform 0.15s;
+}
+details[open] summary::before { transform: rotate(90deg); }
+.details-body { padding: 6px 2px 2px; }
+
+/* Why am I seeing this */
+.why-line {
+  font-size: 0.85rem;
+  color: var(--olive-soft);
+  margin: 2px 0 8px;
+}
+.why-label { font-weight: 700; color: var(--olive); }
+
+/* Evidence badge as a tappable button */
+button.evidence-badge {
+  background: none;
+  font: inherit;
+}
+.evidence-tip, .glossary-tip {
+  display: block;
+  background: var(--green-bg);
+  color: var(--green-ink);
+  border-radius: 8px;
+  padding: 8px 10px;
+  margin: 4px 0 8px;
+  font-size: 0.85rem;
+}
+
+/* Glossary tap */
+.glossary-term {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: var(--leaf-dark);
+  text-decoration: underline dotted;
+  cursor: pointer;
+}
+
+.read-more-link { font-size: 0.85rem; }
+.last-checked { font-size: 0.78rem; color: var(--olive-soft); margin-top: 2px; }
+.source-line { margin-bottom: 2px; }
+
+/* What refers to this */
+.referenced-by {
+  margin-top: 10px;
+  font-size: 0.85rem;
+}
+.referenced-by .chip { margin-top: 6px; margin-right: 4px; }
+.ref-chip { background: var(--green-bg); }
+
+.helps-with-row { margin-bottom: 10px; }
+
+/* Foods toolbar: sort + compare */
+.foods-toolbar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+#food-sort {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--cream-card);
+  color: var(--olive);
+  font-size: 0.85rem;
+}
+/* Solid-filled and bigger than a plain .icon-btn so Compare reads as a real
+   feature next to the plainer Sort dropdown, not another small pill. Reuses
+   the site's leaf accent + the same solid-fill-on-press pattern already
+   used by .chip[aria-pressed="true"]/.theme-btn[aria-pressed="true"], just
+   filled by default instead of only when pressed. */
+#compare-toggle {
+  background: var(--leaf);
+  color: #fff;
+  border-radius: 999px;
+  padding: 12px 20px;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+#compare-toggle[aria-pressed="true"] { background: var(--leaf-dark); }
+
+/* "Compare these N X" nudge, shown above the grid when an active filter
+   narrows results to 2+ foods. A plain inline text button (not a filled
+   button) so it reads as a suggestion, not competing with #compare-toggle
+   for visual weight. */
+.compare-nudge {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 0;
+  margin-bottom: 10px;
+  color: var(--leaf-dark);
+  font-weight: 700;
+  font-size: 0.92rem;
+  cursor: pointer;
+}
+.compare-nudge:hover, .compare-nudge:focus-visible { text-decoration: underline; }
+
+.compare-pick {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.compare-pick .compare-check { cursor: pointer; }
+#foods-grid.compare-mode .compare-pick { display: flex; }
+
+.compare-bar {
+  position: sticky;
+  bottom: 70px;
+  z-index: 40;
+  background: var(--cream-card);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+@media (min-width: 760px) {
+  .compare-bar { bottom: 10px; }
+}
+
+.compare-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.compare-table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 480px;
+}
+.compare-table th, .compare-table td {
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  text-align: left;
+  font-size: 0.88rem;
+  vertical-align: top;
+}
+.compare-table thead th {
+  background: var(--green-bg);
+  color: var(--green-ink);
+  position: sticky;
+  top: 0;
+}
+.compare-table tbody th {
+  background: var(--cream);
+  white-space: nowrap;
+}
+
+/* Toast (replaces alert() for brief messages) */
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 84px;
+  transform: translateX(-50%) translateY(8px);
+  background: var(--olive);
+  color: var(--cream);
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  box-shadow: var(--shadow);
+  z-index: 150;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.2s;
+  max-width: 90vw;
+  text-align: center;
+}
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+@media (min-width: 760px) { .toast { bottom: 20px; } }
+
+/* In-page dialogs (replace confirm()/alert() for decisions) */
+.dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 160;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.dialog-overlay[hidden] { display: none; }
+.dialog-box {
+  background: var(--cream-card);
+  border-radius: var(--radius);
+  padding: 20px;
+  max-width: 420px;
+  width: 100%;
+  max-height: 86vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow);
+}
+.dialog-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 14px;
+}
+.sample-banner-note {
+  font-size: 0.82rem;
+  color: var(--olive-soft);
+  font-style: italic;
+}
+
+.share-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 8px;
+  padding: 8px;
+  background: var(--green-bg);
+  border-radius: 10px;
+  width: 100%;
+}
+.share-menu .icon-btn, .share-menu a.icon-btn { justify-content: flex-start; width: 100%; }
+
+.copy-fact-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: var(--olive-soft);
+  padding: 0 0 0 4px;
+}
+
+/* Recent searches */
+.recent-searches {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  font-size: 0.82rem;
+}
+.recent-searches-label { color: var(--olive-soft); }
+.recent-search-chip { padding: 4px 10px; font-size: 0.8rem; }
+.recent-searches-clear {
+  background: none;
+  border: none;
+  color: var(--olive-soft);
+  text-decoration: underline;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* Back to top */
+.back-to-top {
+  position: fixed;
+  right: 14px;
+  bottom: 84px;
+  z-index: 60;
+  background: var(--leaf);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 14px;
+  box-shadow: var(--shadow);
+  font-size: 0.85rem;
+}
+@media (min-width: 760px) { .back-to-top { bottom: 20px; } }
+
+#did-you-know-card { border-color: var(--leaf); }
+
+/* Trust and status: version/as-of line, bell, integrity notice, what's-covered */
+.status-line {
+  font-size: 0.78rem;
+  color: var(--olive-soft);
+  margin: -4px 0 6px;
+}
+.integrity-notice {
+  font-size: 0.78rem;
+  color: var(--olive-soft);
+  font-style: italic;
+  margin: 0 0 6px;
+}
+.bell-btn {
+  position: relative;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 4px;
+  cursor: pointer;
+}
+.bell-dot {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--saffron);
+  border: 2px solid var(--cream);
+}
+.whats-covered {
+  font-size: 0.85rem;
+  color: var(--olive-soft);
+  margin-bottom: 10px;
+}
+
+.theme-switch {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.theme-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--cream-card);
+  color: var(--olive);
+  font-size: 0.85rem;
+}
+.theme-btn[aria-pressed="true"] { background: var(--leaf); color: #fff; border-color: var(--leaf); }
+
+/* ---------- More tab: menu + sub-pages ---------- */
+.more-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.more-menu-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+  background: var(--cream-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 14px 16px;
+  font-size: 0.95rem;
+  color: var(--olive);
+}
+.more-menu-row:hover, .more-menu-row:focus-visible { background: var(--green-bg); }
+.more-menu-arrow { color: var(--olive-soft); font-size: 1.1rem; }
+
+.more-subpage[hidden] { display: none; }
+.more-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  color: var(--leaf-dark);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 6px 0 14px;
+}

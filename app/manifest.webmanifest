@@ -1,0 +1,15 @@
+{
+  "name": "Vegan Health Dashboard",
+  "short_name": "Vegan Health",
+  "description": "A searchable vegan health hub, Indian foods first.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fbf6ea",
+  "theme_color": "#3f7a3f",
+  "lang": "en-GB",
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}

@@ -1,0 +1,2346 @@
+{
+  "meta": {
+    "status": "SAMPLE - to be replaced",
+    "title": "Vegan Health Dashboard — sample content",
+    "note": "This entire file is placeholder sample content written to test the page while the real document inventory and extraction run separately. Every record and every source below is marked SAMPLE - to be replaced and must not be treated as checked health information.",
+    "asOf": "2026-10-20",
+    "contentVersion": "Content v0.1 sample",
+    "whatsCovered": "A sample of 4 nutrients, 12 foods, 2 health topics, 1 life stage and 3 myths, for testing the page only. The full batch 1 set (about 14 nutrients, 60–80 rich food cards, 7 health topics, 4 life stages) is coming once the real documents are reviewed.",
+    "whatsNew": [
+      {
+        "date": "2026-10-31",
+        "summary": "SAMPLE: added one real nutrient (Vitamin C), two real foods (Moringa leaves, Agar), one real health topic (Skin and hair health) and two real herbs (Neem, Guggul) from this project's actual drafted content, alongside the existing placeholder sample records, to verify app.js's render functions against the current content schema."
+      },
+      {
+        "date": "2026-10-21",
+        "summary": "SAMPLE: added the where-to-buy explorer, compare, glossary taps and offline support to the sample page."
+      },
+      {
+        "date": "2026-10-20",
+        "summary": "SAMPLE: first sample build of the dashboard page, to test it while the document inventory runs."
+      }
+    ],
+    "integrity": {
+      "algorithm": "SHA-256",
+      "fields": [
+        "sources",
+        "nutrients",
+        "foods",
+        "healthTopics",
+        "lifeStages",
+        "myths",
+        "herbs",
+        "healthMap",
+        "whereToBuy",
+        "glossary",
+        "didYouKnow"
+      ],
+      "fingerprint": "e54cb170fb3979848024f875f7c7c9a02cd5a9b49523878fdb4551de495875a8",
+      "recordCounts": {
+        "sources": 39,
+        "nutrients": 5,
+        "foods": 14,
+        "healthTopics": 3,
+        "lifeStages": 1,
+        "myths": 3,
+        "herbs": 2,
+        "healthMap": 13,
+        "whereToBuy": 5,
+        "glossary": 6,
+        "didYouKnow": 5
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "src-nih-b12-sample",
+      "title": "Sample placeholder source — Vitamin B12 fact sheet",
+      "author": "NIH Office of Dietary Supplements (placeholder)",
+      "year": 2024,
+      "type": "Government or health body",
+      "evidenceLevel": "Strong",
+      "link": "https://example.org/sample-sources/src-nih-b12-sample",
+      "asOf": "2026-10-20",
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "src-icmr-iron-sample",
+      "title": "Sample placeholder source — Iron and Indian diets",
+      "author": "ICMR-NIN (placeholder)",
+      "year": 2023,
+      "type": "Government or health body",
+      "evidenceLevel": "Strong",
+      "link": "https://example.org/sample-sources/src-icmr-iron-sample",
+      "asOf": "2026-10-20",
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "src-icmr-calcium-sample",
+      "title": "Sample placeholder source — Calcium and bone health",
+      "author": "ICMR-NIN (placeholder)",
+      "year": 2023,
+      "type": "Government or health body",
+      "evidenceLevel": "Strong",
+      "link": "https://example.org/sample-sources/src-icmr-calcium-sample",
+      "asOf": "2026-10-20",
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "src-nih-omega3-sample",
+      "title": "Sample placeholder source — Omega-3 fatty acids fact sheet",
+      "author": "NIH Office of Dietary Supplements (placeholder)",
+      "year": 2024,
+      "type": "Government or health body",
+      "evidenceLevel": "Strong",
+      "link": "https://example.org/sample-sources/src-nih-omega3-sample",
+      "asOf": "2026-10-20",
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "src-review-anaemia-sample",
+      "title": "Sample placeholder source — Iron-deficiency anaemia on a vegan diet, a review",
+      "author": "Placeholder review authors",
+      "year": 2022,
+      "type": "Study or review",
+      "evidenceLevel": "Strong",
+      "link": "https://example.org/sample-sources/src-review-anaemia-sample",
+      "asOf": "2026-10-20",
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "src-review-bones-sample",
+      "title": "Sample placeholder source — Bone health on a vegan diet, a review",
+      "author": "Placeholder review authors",
+      "year": 2021,
+      "type": "Study or review",
+      "evidenceLevel": "Moderate",
+      "link": "https://example.org/sample-sources/src-review-bones-sample",
+      "asOf": "2026-10-20",
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "src-myth-b12-sample",
+      "title": "Sample placeholder source — Oral B12 supplementation effectiveness",
+      "author": "Placeholder study authors",
+      "year": 2020,
+      "type": "Study or review",
+      "evidenceLevel": "Moderate",
+      "link": "https://example.org/sample-sources/src-myth-b12-sample",
+      "asOf": "2026-10-20",
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "src-myth-protein-sample",
+      "title": "Sample placeholder source — Plant protein and muscle, a review",
+      "author": "Placeholder review authors",
+      "year": 2021,
+      "type": "Study or review",
+      "evidenceLevel": "Moderate",
+      "link": "https://example.org/sample-sources/src-myth-protein-sample",
+      "asOf": "2026-10-20",
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "src-myth-spinach-sample",
+      "title": "Sample placeholder source — Oxalates and iron absorption from leafy greens",
+      "author": "Placeholder study authors",
+      "year": 2019,
+      "type": "Study or review",
+      "evidenceLevel": "Moderate",
+      "link": "https://example.org/sample-sources/src-myth-spinach-sample",
+      "asOf": "2026-10-20",
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "src-icmr-food-sample",
+      "title": "Sample placeholder source — Indian Food Composition Tables entry",
+      "author": "ICMR-NIN (placeholder)",
+      "year": 2017,
+      "type": "Government or health body",
+      "evidenceLevel": "Strong",
+      "link": "https://example.org/sample-sources/src-icmr-food-sample",
+      "asOf": "2026-10-20",
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "nih-vitamin-c",
+      "title": "Vitamin C - Fact Sheet for Consumers",
+      "author": "NIH Office of Dietary Supplements",
+      "year": 2021,
+      "type": "Government or health body",
+      "evidenceLevel": "Strong",
+      "link": "https://ods.od.nih.gov/factsheets/VitaminC-Consumer/",
+      "asOf": "2021-03-22"
+    },
+    {
+      "id": "icmr-rda-2020",
+      "title": "A Brief Note on Nutrient Requirements for Indians, RDA and EAR, 2020",
+      "author": "ICMR - National Institute of Nutrition (NIN)",
+      "year": 2020,
+      "type": "Government or health body",
+      "evidenceLevel": "Strong",
+      "link": "https://www.nin.res.in/rdabook/brief_note.pdf",
+      "asOf": "2020"
+    },
+    {
+      "id": "book-encyclopedia-of-diets",
+      "title": "The Gale Encyclopedia of Diets: A Guide to Health and Nutrition",
+      "author": "unknown (Gale reference encyclopedia)",
+      "year": "unknown",
+      "type": "Book",
+      "evidenceLevel": "Moderate",
+      "link": "your document",
+      "asOf": "unknown",
+      "linkable": false
+    },
+    {
+      "id": "book-mineral-vitamin-supplement",
+      "title": "Minerals and Vitamin Supplementation - Practical Guide",
+      "author": "medicalnotess.com / Instituto Caffeína (\"LOVE SUMMARIES\")",
+      "year": 2023,
+      "type": "Book",
+      "evidenceLevel": "Moderate",
+      "link": "your document",
+      "asOf": "2023",
+      "linkable": false
+    },
+    {
+      "id": "book-foods-that-harm-and-heal",
+      "title": "Foods that Harm and Foods that Heal",
+      "author": "unknown (Reader's Digest-style reference)",
+      "year": "unknown",
+      "type": "Book",
+      "evidenceLevel": "Moderate",
+      "link": "your document",
+      "asOf": "unknown",
+      "linkable": false
+    },
+    {
+      "id": "icmr-dietary-guidelines-2024",
+      "title": "Dietary Guidelines for Indians",
+      "author": "ICMR - National Institute of Nutrition (NIN)",
+      "year": 2024,
+      "type": "Government or health body",
+      "evidenceLevel": "Strong",
+      "link": "https://www.nin.res.in/downloads/DietaryGuidelinesforNINwebsite.pdf",
+      "asOf": "2024"
+    },
+    {
+      "id": "ifct-2017",
+      "title": "Indian Food Composition Tables 2017",
+      "author": "ICMR - National Institute of Nutrition (NIN)",
+      "year": 2017,
+      "type": "Government or health body",
+      "evidenceLevel": "Strong",
+      "link": "https://www.nin.res.in/ebooks/IFCT2017.pdf",
+      "asOf": "2017"
+    },
+    {
+      "id": "nih-iron",
+      "title": "Iron - Fact Sheet for Consumers",
+      "author": "NIH Office of Dietary Supplements",
+      "year": 2023,
+      "type": "Government or health body",
+      "evidenceLevel": "Strong",
+      "link": "https://ods.od.nih.gov/factsheets/Iron-Consumer/",
+      "asOf": "2023-08-17"
+    },
+    {
+      "id": "usda-fdc",
+      "title": "FoodData Central (Foundation Foods and SR Legacy)",
+      "author": "USDA Agricultural Research Service",
+      "year": 2026,
+      "type": "Government or health body",
+      "evidenceLevel": "Strong",
+      "link": "https://fdc.nal.usda.gov/",
+      "asOf": "2026-04-30 (Foundation Foods release); 2018-04 (SR Legacy release)"
+    },
+    {
+      "id": "almohanna-vitamins-minerals-hair-loss-2019",
+      "title": "The Role of Vitamins and Minerals in Hair Loss: A Review",
+      "author": "Almohanna HM, Ahmed AA, Tsatalis JP, Tosti A",
+      "year": 2019,
+      "type": "Study or review",
+      "evidenceLevel": "Strong",
+      "link": "https://doi.org/10.1007/s13555-018-0278-6",
+      "asOf": "2019-03"
+    },
+    {
+      "id": "aad-diet-acne",
+      "title": "Can the right diet get rid of acne?",
+      "author": "American Academy of Dermatology",
+      "year": 2013,
+      "type": "Government or health body",
+      "evidenceLevel": "Strong",
+      "link": "https://www.aad.org/public/diseases/acne/causes/diet",
+      "asOf": "2013 (news release date cited in references; page itself undated on current fetch)"
+    },
+    {
+      "id": "nih-zinc",
+      "title": "Zinc - Fact Sheet for Consumers",
+      "author": "NIH Office of Dietary Supplements",
+      "year": 2022,
+      "type": "Government or health body",
+      "evidenceLevel": "Strong",
+      "link": "https://ods.od.nih.gov/factsheets/Zinc-Consumer/",
+      "asOf": "2022-10-04"
+    },
+    {
+      "id": "nih-d",
+      "title": "Vitamin D - Fact Sheet for Consumers",
+      "author": "NIH Office of Dietary Supplements",
+      "year": 2022,
+      "type": "Government or health body",
+      "evidenceLevel": "Strong",
+      "link": "https://ods.od.nih.gov/factsheets/VitaminD-Consumer/",
+      "asOf": "2022-11-08"
+    },
+    {
+      "id": "vndpg-protein",
+      "title": "Protein in Plant-based Diets (RDN Resources for Consumers)",
+      "author": "Vesanto Melina MS RD and Brenda Davis RD, for the Vegetarian Nutrition Dietetic Practice Group, Academy of Nutrition and Dietetics",
+      "year": 2024,
+      "type": "Government or health body",
+      "evidenceLevel": "Strong",
+      "link": "https://www.vndpg.org/resources",
+      "asOf": "2024 (expires January 2029)"
+    },
+    {
+      "id": "brief-safety-rules",
+      "title": "BRIEF.md - Safety rules (this project's own standing editorial policy)",
+      "author": "Sandesh Raju (project owner)",
+      "year": 2026,
+      "type": "Internal project policy",
+      "evidenceLevel": "N/A - not a health claim, an editorial/safety convention",
+      "link": "BRIEF.md",
+      "asOf": "2026",
+      "linkable": false
+    },
+    {
+      "id": "thappa-dogra-gugulipid-acne-trial-1994",
+      "title": "Nodulocystic acne: oral gugulipid versus tetracycline",
+      "author": "Thappa DM, Dogra J",
+      "year": 1994,
+      "type": "Study or review",
+      "evidenceLevel": "Moderate",
+      "link": "https://pubmed.ncbi.nlm.nih.gov/7798429/",
+      "asOf": "1994-10"
+    },
+    {
+      "id": "rxlist-guggul",
+      "title": "Guggul",
+      "author": "RxList editorial staff",
+      "year": "unknown",
+      "type": "Article or blog",
+      "evidenceLevel": "Moderate",
+      "link": "https://www.rxlist.com/supplements/guggul.htm",
+      "asOf": "current as fetched 31 Oct 2026"
+    },
+    {
+      "id": "mskcc-guggul",
+      "title": "Guggul (About Herbs, Botanicals & Other Products)",
+      "author": "Memorial Sloan Kettering Cancer Center, Integrative Medicine",
+      "year": "unknown",
+      "type": "Government or health body",
+      "evidenceLevel": "Strong",
+      "link": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/guggul",
+      "asOf": "current as fetched 31 Oct 2026, page last updated by MSKCC 5 Jan 2022"
+    },
+    {
+      "id": "gopinath-karthikeyan-neem-dermatology-review-2021",
+      "title": "Neem in Dermatology: Shedding Light on the Traditional Panacea",
+      "author": "Gopinath H, Karthikeyan K",
+      "year": 2021,
+      "type": "Study or review",
+      "evidenceLevel": "Moderate",
+      "link": "https://doi.org/10.4103/ijd.ijd_562_21",
+      "asOf": "2021-11"
+    },
+    {
+      "id": "rxlist-neem",
+      "title": "Neem",
+      "author": "RxList editorial staff",
+      "year": "unknown",
+      "type": "Article or blog",
+      "evidenceLevel": "Moderate",
+      "link": "https://www.rxlist.com/supplements/neem.htm",
+      "asOf": "current as fetched 31 Oct 2026"
+    },
+    {
+      "id": "mskcc-neem",
+      "title": "Neem (About Herbs, Botanicals & Other Products)",
+      "author": "Memorial Sloan Kettering Cancer Center, Integrative Medicine",
+      "year": "unknown",
+      "type": "Government or health body",
+      "evidenceLevel": "Strong",
+      "link": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/neem",
+      "asOf": "current as fetched 31 Oct 2026 (page states last updated 2023-04-11)"
+    },
+    {
+      "id": "book-ayurvedic-science-food-nutrition",
+      "title": "Ayurvedic Science of Food and Nutrition",
+      "author": "Sanjeev Rastogi (editor)",
+      "year": 2014,
+      "type": "Book",
+      "evidenceLevel": "Moderate",
+      "link": "your document",
+      "asOf": "2014",
+      "linkable": false
+    },
+    {
+      "id": "book-complete-home-guide-herbs-natural-healing",
+      "title": "The Complete Home Guide to Herbs, Natural Healing, and Nutrition",
+      "author": "Jill Rosemary Davies",
+      "year": "unknown",
+      "type": "Book",
+      "evidenceLevel": "Limited",
+      "link": "your document",
+      "asOf": "unknown",
+      "linkable": false
+    },
+    {
+      "id": "szapary-guggulipid-rct-2003",
+      "title": "Guggulipid for the Treatment of Hypercholesterolemia: A Randomized Controlled Trial",
+      "author": "Szapary PO, Wolfe ML, Bloedon LT, Cucchiara AJ, DerMarderosian AH, Cirigliano MD, Rader DJ",
+      "year": 2003,
+      "type": "Study or review",
+      "evidenceLevel": "Moderate",
+      "link": "https://pubmed.ncbi.nlm.nih.gov/12915429/",
+      "asOf": "2003-08-13"
+    },
+    {
+      "id": "gyawali-ayurvedic-herbs-cholesterol-meta-analysis-2021",
+      "title": "A Systematic Review and Meta-Analysis of Ayurvedic Herbal Preparations for Hypercholesterolemia",
+      "author": "Gyawali A, et al. (Cochrane Complementary Medicine bursary-funded review)",
+      "year": 2021,
+      "type": "Study or review",
+      "evidenceLevel": "Strong",
+      "link": "https://pubmed.ncbi.nlm.nih.gov/34071454/",
+      "asOf": "2021"
+    },
+    {
+      "id": "ntp-gum-guggul-extract-toxicology-2020",
+      "title": "NTP Technical Report on the Toxicity Studies of a Gum Guggul Extract (Commiphora mukul) Administered by Gavage to Sprague Dawley Rats and B6C3F1/N Mice",
+      "author": "US National Toxicology Program (NIH/NIEHS)",
+      "year": 2020,
+      "type": "Government or health body",
+      "evidenceLevel": "Strong",
+      "link": "https://ntp.niehs.nih.gov/go/tox099",
+      "asOf": "2020-06"
+    },
+    {
+      "id": "book-encyclopedia-nutrition-good-health",
+      "title": "The Encyclopedia of Nutrition and Good Health, Second Edition",
+      "author": "Robert Ronzio, with Kennedy Associates",
+      "year": 2003,
+      "type": "Book",
+      "evidenceLevel": "Moderate",
+      "link": "your document",
+      "asOf": "2003",
+      "linkable": false
+    },
+    {
+      "id": "book-krauses-nutrition-care-process",
+      "title": "Krause's Food & the Nutrition Care Process",
+      "author": "L. Kathleen Mahan and Janice L. Raymond (eds.)",
+      "year": 2012,
+      "type": "Book",
+      "evidenceLevel": "Moderate",
+      "link": "your document",
+      "asOf": "2012",
+      "linkable": false
+    },
+    {
+      "id": "planetayurveda-yograj-guggulu",
+      "title": "Yograj Guggulu (ingredient and preparation listing)",
+      "author": "Planet Ayurveda (commercial Ayurvedic manufacturer/educational library page)",
+      "year": "unknown",
+      "type": "Article or blog",
+      "evidenceLevel": "Limited",
+      "link": "https://www.planetayurveda.com/library/yograj-guggulu",
+      "asOf": "current as fetched 31 Oct 2026"
+    }
+  ],
+  "nutrients": [
+    {
+      "id": "b12",
+      "name": "Vitamin B12",
+      "aliases": [
+        "b12",
+        "vitamin b-12",
+        "cobalamin"
+      ],
+      "tier": "supplement",
+      "badgeColour": "saffron",
+      "whatItDoes": "SAMPLE: keeps nerves and red blood cells working and is involved in making DNA.",
+      "dailyRange": {
+        "adult": "Sample placeholder range, to be replaced with a checked figure.",
+        "pregnancy": "Sample placeholder range, slightly higher than the adult range."
+      },
+      "indianSources": [],
+      "globalAlternatives": [
+        "Fortified foods and a vegan B12 supplement (sample placeholder)."
+      ],
+      "absorptionTips": "SAMPLE: smaller, more frequent doses are absorbed better than one large dose.",
+      "cautions": "SAMPLE: plant foods do not reliably supply B12; do not rely on unfortified plant foods alone.",
+      "whenToTest": "SAMPLE: a blood test for B12 or active B12; ask your doctor how often for you.",
+      "action": "SAMPLE placeholder action: take a vegan B12 supplement regularly.",
+      "sourceIds": [
+        "src-nih-b12-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "iron",
+      "name": "Iron",
+      "aliases": [
+        "iron",
+        "haemoglobin builder"
+      ],
+      "tier": "planning",
+      "badgeColour": "turmeric",
+      "whatItDoes": "SAMPLE: helps red blood cells carry oxygen around the body.",
+      "dailyRange": {
+        "adult": "Sample placeholder range, to be replaced with a checked figure.",
+        "pregnancy": "Sample placeholder range, higher than the adult range."
+      },
+      "indianSources": [
+        "rajma",
+        "chana",
+        "ragi",
+        "moringa",
+        "til",
+        "tofu"
+      ],
+      "globalAlternatives": [
+        "Lentils, tofu, pumpkin seeds (sample placeholder)."
+      ],
+      "absorptionTips": "SAMPLE: have a vitamin-C-rich food such as amla or a squeeze of lemon with iron-rich meals; keep tea and coffee away from meals.",
+      "cautions": "SAMPLE: non-haem iron from plants is absorbed less easily than iron from animal sources, so pairing matters.",
+      "whenToTest": "SAMPLE: a ferritin and haemoglobin blood test; ask your doctor how often for you.",
+      "action": "SAMPLE placeholder action: pair an iron-rich food with a vitamin-C-rich food at most meals.",
+      "sourceIds": [
+        "src-icmr-iron-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "calcium",
+      "name": "Calcium",
+      "aliases": [
+        "calcium",
+        "bone mineral"
+      ],
+      "tier": "planning",
+      "badgeColour": "turmeric",
+      "whatItDoes": "SAMPLE: builds and maintains bones and teeth, and supports muscle and nerve function.",
+      "dailyRange": {
+        "adult": "Sample placeholder range, to be replaced with a checked figure."
+      },
+      "indianSources": [
+        "til",
+        "ragi",
+        "moringa",
+        "tofu",
+        "soy-milk"
+      ],
+      "globalAlternatives": [
+        "Fortified plant milks, tofu set with calcium, leafy greens (sample placeholder)."
+      ],
+      "absorptionTips": "SAMPLE: spread calcium-rich foods across the day rather than one large serving.",
+      "cautions": "SAMPLE: very high-oxalate greens reduce how much calcium the body absorbs from that same meal.",
+      "whenToTest": "SAMPLE: calcium is rarely tested directly; a bone density scan is used where there is concern.",
+      "action": "SAMPLE placeholder action: include a calcium-rich food at most meals.",
+      "sourceIds": [
+        "src-icmr-calcium-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "omega3",
+      "name": "Omega-3 (ALA, EPA and DHA)",
+      "aliases": [
+        "omega-3",
+        "omega 3",
+        "ala",
+        "dha",
+        "epa",
+        "algal omega-3"
+      ],
+      "tier": "supplement",
+      "badgeColour": "saffron",
+      "whatItDoes": "SAMPLE: supports heart and brain health; ALA from plants converts only partly to EPA and DHA.",
+      "dailyRange": {
+        "adult": "Sample placeholder range, to be replaced with a checked figure."
+      },
+      "indianSources": [
+        "flaxseed"
+      ],
+      "globalAlternatives": [
+        "Algal (algae-based) omega-3 supplement for direct EPA and DHA (sample placeholder)."
+      ],
+      "absorptionTips": "SAMPLE: ground flaxseed is absorbed better than whole flaxseed.",
+      "cautions": "SAMPLE: flaxseed alone may not give enough EPA and DHA; an algal supplement is the most direct vegan source.",
+      "whenToTest": "SAMPLE: not routinely tested; discuss with your doctor if you have heart disease risk factors.",
+      "action": "SAMPLE placeholder action: have ground flaxseed daily and consider an algal omega-3 supplement.",
+      "sourceIds": [
+        "src-nih-omega3-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "vitamin-c",
+      "name": "Vitamin C",
+      "aliases": [
+        "ascorbic acid"
+      ],
+      "tier": "food",
+      "badgeColour": "green",
+      "whatItDoes": [
+        {
+          "text": "A water-soluble antioxidant that helps protect cells from free-radical damage. Needed to make collagen, a protein required for wound healing. Improves absorption of iron from plant-based foods, and helps the immune system work properly.",
+          "label": "established fact",
+          "sourceIds": [
+            "nih-vitamin-c"
+          ]
+        },
+        {
+          "text": "Vitamin C and the common cold: a Cochrane systematic review (Hemila & Chalker, 2013) found regular vitamin C supplementation did not reduce the risk of catching a cold in the general population, but did modestly shorten how long a cold lasted (about 8% shorter in adults, 18% shorter in children) once someone was already sick. Separately, people under heavy physical stress (elite athletes, soldiers training in Arctic conditions) who took vitamin C supplements had around 50% fewer colds than those who did not - a specific finding for people under extreme physical stress, not a general population effect. This is a modest, honest picture - vitamin C is not a reliable way to avoid catching a cold for most people.",
+          "label": "open question",
+          "sourceIds": [
+            "book-encyclopedia-of-diets",
+            "book-mineral-vitamin-supplement"
+          ]
+        },
+        {
+          "text": "Vitamin C and cataracts: a 7-year follow-up study found vitamin C supplements gave no benefit in preventing cataracts, despite earlier hopes based on its antioxidant properties. Worth knowing so this card does not overstate what vitamin C can do for eye health.",
+          "label": "open question",
+          "sourceIds": [
+            "book-encyclopedia-of-diets"
+          ]
+        }
+      ],
+      "dailyRangeByGroup": [
+        {
+          "group": "Adults (men)",
+          "amount": "90 mg/day (NIH); 80 mg/day RDA 2020, 65 mg/day EAR 2020 (ICMR-NIN)",
+          "label": "official recommendation",
+          "sourceIds": [
+            "nih-vitamin-c",
+            "icmr-rda-2020"
+          ],
+          "conflict": "NIH's US adult-male figure (90 mg/day) is notably higher than ICMR-NIN's 2020 RDA for Indian men (80 mg/day). Both shown rather than merged into one number."
+        },
+        {
+          "group": "Adults (women)",
+          "amount": "75 mg/day (NIH); 65 mg/day RDA 2020, 55 mg/day EAR 2020 (ICMR-NIN)",
+          "label": "official recommendation",
+          "sourceIds": [
+            "nih-vitamin-c",
+            "icmr-rda-2020"
+          ],
+          "conflict": "Same pattern as for men - NIH's figure is notably higher than ICMR-NIN's 2020 RDA for Indian women."
+        },
+        {
+          "group": "Teens 14-18y (boys)",
+          "amount": "75 mg/day",
+          "label": "official recommendation",
+          "sourceIds": [
+            "nih-vitamin-c"
+          ]
+        },
+        {
+          "group": "Teens 14-18y (girls)",
+          "amount": "65 mg/day",
+          "label": "official recommendation",
+          "sourceIds": [
+            "nih-vitamin-c"
+          ]
+        },
+        {
+          "group": "Children 9-13y",
+          "amount": "45 mg/day",
+          "label": "official recommendation",
+          "sourceIds": [
+            "nih-vitamin-c"
+          ]
+        },
+        {
+          "group": "Children 4-8y",
+          "amount": "25 mg/day",
+          "label": "official recommendation",
+          "sourceIds": [
+            "nih-vitamin-c"
+          ]
+        },
+        {
+          "group": "Children 1-3y",
+          "amount": "15 mg/day",
+          "label": "official recommendation",
+          "sourceIds": [
+            "nih-vitamin-c"
+          ]
+        },
+        {
+          "group": "Pregnancy (adults)",
+          "amount": "85 mg/day",
+          "label": "official recommendation",
+          "sourceIds": [
+            "nih-vitamin-c"
+          ]
+        },
+        {
+          "group": "Pregnancy (teens)",
+          "amount": "80 mg/day",
+          "label": "official recommendation",
+          "sourceIds": [
+            "nih-vitamin-c"
+          ]
+        },
+        {
+          "group": "Breastfeeding (adults)",
+          "amount": "120 mg/day",
+          "label": "official recommendation",
+          "sourceIds": [
+            "nih-vitamin-c"
+          ]
+        },
+        {
+          "group": "Breastfeeding (teens)",
+          "amount": "115 mg/day",
+          "label": "official recommendation",
+          "sourceIds": [
+            "nih-vitamin-c"
+          ]
+        },
+        {
+          "group": "People who smoke",
+          "amount": "add 35 mg/day to the figure for their age/group above",
+          "label": "official recommendation",
+          "sourceIds": [
+            "nih-vitamin-c"
+          ]
+        }
+      ],
+      "veganContext": [
+        {
+          "text": "Vitamin C is not a nutrient vegans are specifically short on - unlike most of this project's other nutrient cards, this one exists for its cross-reference value (it meaningfully boosts iron absorption and supports immune function - see this project's iron and immune-function cards) rather than because vegans are at particular risk of falling short on it. NIH's own food-source list is almost entirely fruits and vegetables (citrus fruits and juices, red and green pepper, kiwifruit, broccoli, strawberries, cantaloupe, baked potatoes, tomatoes) - foods that feature heavily in an ordinary varied vegan diet, likely more so than in a typical diet with less fruit and vegetable intake. This card should not read as 'another nutrient vegans need to watch' - it isn't one.",
+          "label": "established fact",
+          "sourceIds": [
+            "nih-vitamin-c"
+          ]
+        },
+        {
+          "text": "Approximate vitamin C content of some everyday foods: orange, 1 medium, about 70 mg; orange juice, 3/4 cup, about 75 mg; grapefruit, half, about 44 mg; grapefruit juice, 3/4 cup, about 60 mg; strawberries, 1 cup, about 82 mg; papaya, 1, about 94 mg; tomato, 1 medium, about 23 mg; red bell pepper, half cup raw, about 141 mg; broccoli, steamed, half cup, about 62 mg; cauliflower, boiled, half cup, about 27 mg; potato, 1 medium baked, about 26 mg.",
+          "label": "established fact",
+          "sourceIds": [
+            "book-encyclopedia-of-diets"
+          ]
+        },
+        {
+          "text": "The American Cancer Society recommends meeting vitamin C needs by increasing healthy foods in the diet rather than relying on a dietary supplement - studies on vitamin C supplements and cancer risk specifically have given mixed results. Separately, the American Heart Association recommends increasing vitamin C (and other vitamins and minerals) through more fresh vegetables rather than through supplementation for cardiovascular health, and notes vitamin C does not reduce blood cholesterol levels. Both reinforce this card's existing food-first framing.",
+          "label": "official recommendation",
+          "sourceIds": [
+            "book-encyclopedia-of-diets"
+          ]
+        },
+        {
+          "text": "Vitamin C is considered safe for women to take during pregnancy and while breastfeeding, and passes into breast milk.",
+          "label": "established fact",
+          "sourceIds": [
+            "book-encyclopedia-of-diets"
+          ]
+        },
+        {
+          "text": "A separate general food-health reference independently gives the same RDA figures already in this card (90 mg men, 75 mg women) and names a similar vegan-compatible food list (citrus fruits and juices, melons, berries, peppers, broccoli, potatoes and many other fruits and vegetables) - a second, independent confirmation of this card's existing figures and food sources.",
+          "label": "established fact",
+          "sourceIds": [
+            "book-foods-that-harm-and-heal"
+          ]
+        }
+      ],
+      "absorptionTips": [
+        {
+          "text": "This is this card's main practical job: vitamin C meaningfully improves how much nonheme (plant) iron the body absorbs when eaten in the same meal - NIH states this directly as one of vitamin C's functions. This is the anchor source for this project's existing iron-card advice to pair iron-rich plant foods (lentils, beans, spinach) with a vitamin C food (citrus, peppers, tomatoes, broccoli) at the same meal - see the iron nutrient card for the food-pairing detail itself, not repeated here.",
+          "label": "established fact",
+          "sourceIds": [
+            "nih-vitamin-c"
+          ]
+        },
+        {
+          "text": "Vitamin C content is reduced by prolonged storage and by cooking - steaming or microwaving loses less than boiling. Many of the best vitamin C sources (fruit, salad vegetables) are usually eaten raw anyway, which avoids the issue.",
+          "label": "established fact",
+          "sourceIds": [
+            "nih-vitamin-c"
+          ]
+        }
+      ],
+      "cautions": [
+        {
+          "text": "Ordinary high intake (well above the official upper limit of 2,000 mg/day for adults, usually from supplements rather than food) can cause diarrhoea, nausea and stomach cramps.",
+          "label": "established fact",
+          "sourceIds": [
+            "nih-vitamin-c",
+            "book-mineral-vitamin-supplement"
+          ]
+        },
+        {
+          "text": "People with haemochromatosis (a condition that causes the body to store too much iron) are a specific exception to vitamin C's general food-tier/green status: because vitamin C increases iron absorption, high-dose vitamin C could worsen their existing iron overload and damage body tissues. This is a real, named caution for that specific condition, not a general population risk - NIH separately notes that in healthy people, vitamin C's iron-absorption-boosting effect is only a theoretical concern, not an actual one. Vitamin C supplementation is also specifically flagged as something to avoid in a few other blood disorders - thalassemia, G6PD deficiency and sickle cell disease - because of similar iron-handling or oxidative-stress concerns; anyone with one of these conditions should check with their doctor before taking a vitamin C supplement.",
+          "label": "established fact",
+          "sourceIds": [
+            "nih-vitamin-c",
+            "book-mineral-vitamin-supplement"
+          ]
+        },
+        {
+          "text": "High vitamin C intake can raise urinary oxalate and uric acid, which could contribute to kidney stone formation, especially in people with an existing kidney/renal disorder - NIH's own health-professional guidance is careful here: studies on this have had conflicting results, it is not generally considered a risk in healthy people, and the best evidence for an actual contribution is specifically in people who already have hyperoxaluria (an existing high-oxalate condition). Worth knowing rather than worth fearing for most readers - see this project's kidney-health card for oxalate detail generally.",
+          "label": "official recommendation",
+          "sourceIds": [
+            "nih-vitamin-c"
+          ]
+        },
+        {
+          "text": "Large daily doses of vitamin C may interfere with the body's absorption of vitamin B12 - worth knowing for vegans specifically, since a reliable B12 source (supplement or fortified food) is already essential on a vegan diet; taking a large vitamin C dose at the same time as a B12 source is not an ideal pairing.",
+          "label": "established fact",
+          "sourceIds": [
+            "book-encyclopedia-of-diets"
+          ]
+        },
+        {
+          "text": "Generally, parents should have few concerns about children getting too much or too little vitamin C from food. Children under age one should not be given a vitamin C dietary supplement specifically - their needs should be met through the foods they eat.",
+          "label": "established fact",
+          "sourceIds": [
+            "book-encyclopedia-of-diets"
+          ]
+        }
+      ],
+      "whenToTest": [
+        {
+          "text": "A blood test for vitamin C status usually reports plasma ascorbic acid; a level below roughly 23 micromol/L (0.4 mg/dL) indicates hypovitaminosis C. This is mainly a research/clinical tool - true clinically visible vitamin C deficiency is rarely seen outside hospital patients with high inflammation or oxidative stress (such as major surgery, burns or sepsis), not something a person would typically have tested as part of routine care.",
+          "label": "established fact",
+          "sourceIds": [
+            "book-mineral-vitamin-supplement"
+          ]
+        }
+      ],
+      "oneLineAction": "Eat citrus fruit, peppers, tomatoes or other vitamin-C-rich produce alongside your iron-rich meals (dal, beans, spinach) - that pairing is this nutrient's single most useful everyday job for a vegan diet.",
+      "gaps": [
+        "No source found for a vitamin-C-specific blood test reference range tied to a specific symptom threshold beyond the general hypovitaminosis cutoff above - vitamin C status is not typically checked with a routine standalone blood test the way iron or B12 are.",
+        "The food-content figures sourced from book-encyclopedia-of-diets (a pre-2015 reference encyclopedia, author unstated) have not been independently cross-checked against USDA FoodData Central - flagged for a recheck before being treated as precise rather than approximate."
+      ],
+      "candidateAdditions": [],
+      "sourceIds": [
+        "nih-vitamin-c",
+        "icmr-rda-2020",
+        "book-encyclopedia-of-diets",
+        "book-mineral-vitamin-supplement",
+        "book-foods-that-harm-and-heal"
+      ]
+    }
+  ],
+  "foods": [
+    {
+      "id": "ragi",
+      "name": "Ragi (finger millet)",
+      "localName": "",
+      "foodGroup": "Cereals and millets",
+      "indianOrGlobal": "Indian",
+      "portion": "1 katori cooked ragi mudde or 2 ragi rotis (sample placeholder)",
+      "keyNutrients": [
+        {
+          "nutrientId": "calcium",
+          "note": "SAMPLE: one of the better plant sources of calcium among grains."
+        },
+        {
+          "nutrientId": "iron",
+          "note": "SAMPLE: a modest iron contributor."
+        }
+      ],
+      "alsoRichIn": [
+        "fibre (sample placeholder)"
+      ],
+      "pairingTips": "SAMPLE: traditionally eaten with a vegetable curry; pair with a vitamin-C side for better iron uptake.",
+      "sourceIds": [
+        "src-icmr-food-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "rajma",
+      "name": "Rajma (kidney beans)",
+      "localName": "",
+      "foodGroup": "Pulses and legumes",
+      "indianOrGlobal": "Indian",
+      "portion": "1 katori cooked rajma (sample placeholder)",
+      "keyNutrients": [
+        {
+          "nutrientId": "iron",
+          "note": "SAMPLE: a good plant source of iron."
+        }
+      ],
+      "alsoRichIn": [
+        "protein (sample placeholder)"
+      ],
+      "pairingTips": "SAMPLE: rajma-chawal (with rice) is a traditional protein pairing; add lemon for iron absorption.",
+      "sourceIds": [
+        "src-icmr-food-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "chana",
+      "name": "Chana (chickpeas)",
+      "localName": "",
+      "foodGroup": "Pulses and legumes",
+      "indianOrGlobal": "Indian",
+      "portion": "1 katori cooked chana (sample placeholder)",
+      "keyNutrients": [
+        {
+          "nutrientId": "iron",
+          "note": "SAMPLE: a reliable everyday iron source."
+        }
+      ],
+      "alsoRichIn": [
+        "protein (sample placeholder)",
+        "fibre (sample placeholder)"
+      ],
+      "pairingTips": "SAMPLE: chana chaat with lemon and tomato adds vitamin C for better absorption.",
+      "sourceIds": [
+        "src-icmr-food-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "moringa",
+      "name": "Moringa (drumstick leaves)",
+      "localName": "nugge soppu",
+      "foodGroup": "Green leafy vegetables",
+      "indianOrGlobal": "Indian",
+      "portion": "1/2 katori cooked leaves (sample placeholder)",
+      "keyNutrients": [
+        {
+          "nutrientId": "iron",
+          "note": "SAMPLE: a strong leafy-green iron source."
+        },
+        {
+          "nutrientId": "calcium",
+          "note": "SAMPLE: a useful calcium contributor."
+        }
+      ],
+      "alsoRichIn": [
+        "vitamin A (sample placeholder)"
+      ],
+      "pairingTips": "SAMPLE: moringa dal is a traditional way to cook it; the dal's lemon finish aids iron uptake.",
+      "sourceIds": [
+        "src-icmr-food-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "amla",
+      "name": "Amla (Indian gooseberry)",
+      "localName": "nellikai",
+      "foodGroup": "Fruits",
+      "indianOrGlobal": "Indian",
+      "portion": "2 to 3 small amla or 1 tbsp amla murabba (sample placeholder)",
+      "keyNutrients": [
+        {
+          "nutrientId": "iron",
+          "note": "SAMPLE: not itself a notable iron source, but its vitamin C helps the body absorb iron from the same meal."
+        }
+      ],
+      "alsoRichIn": [
+        "vitamin C (sample placeholder) — supports iron absorption from the same meal"
+      ],
+      "pairingTips": "SAMPLE: have alongside an iron-rich meal such as rajma or ragi to help absorption.",
+      "sourceIds": [
+        "src-icmr-food-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "til",
+      "name": "Til (sesame seeds)",
+      "localName": "yellu",
+      "foodGroup": "Nuts and oilseeds",
+      "indianOrGlobal": "Indian",
+      "portion": "1 tbsp (sample placeholder)",
+      "keyNutrients": [
+        {
+          "nutrientId": "calcium",
+          "note": "SAMPLE: one of the richest plant calcium sources by weight."
+        },
+        {
+          "nutrientId": "iron",
+          "note": "SAMPLE: a useful secondary iron source."
+        }
+      ],
+      "alsoRichIn": [],
+      "pairingTips": "SAMPLE: til-jaggery chikki is a traditional combination; a small daily spoon adds up over a week.",
+      "sourceIds": [
+        "src-icmr-food-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "spinach",
+      "name": "Spinach (palak)",
+      "localName": "",
+      "foodGroup": "Green leafy vegetables",
+      "indianOrGlobal": "Indian",
+      "portion": "1 katori cooked palak (sample placeholder)",
+      "keyNutrients": [
+        {
+          "nutrientId": "iron",
+          "note": "SAMPLE: contains iron, but oxalates in spinach block much of it from being absorbed."
+        }
+      ],
+      "alsoRichIn": [
+        "vitamin A (sample placeholder)"
+      ],
+      "pairingTips": "SAMPLE: light cooking and pairing with lemon reduces the oxalate effect a little; do not rely on spinach alone for iron.",
+      "sourceIds": [
+        "src-icmr-food-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "soy-milk",
+      "name": "Soy milk (fortified)",
+      "localName": "",
+      "foodGroup": "Plant milks, curds and cheeses",
+      "indianOrGlobal": "Global",
+      "portion": "1 glass, about 200 ml (sample placeholder)",
+      "keyNutrients": [
+        {
+          "nutrientId": "calcium",
+          "note": "SAMPLE: fortified soy milk is a reliable calcium source, check the label for the amount per serving."
+        },
+        {
+          "nutrientId": "b12",
+          "note": "SAMPLE: some brands are fortified with B12, check the label."
+        }
+      ],
+      "alsoRichIn": [
+        "protein (sample placeholder)"
+      ],
+      "pairingTips": "SAMPLE: shake well before pouring, as added calcium can settle.",
+      "sourceIds": [
+        "src-icmr-food-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "tofu",
+      "name": "Tofu",
+      "localName": "",
+      "foodGroup": "Soy foods",
+      "indianOrGlobal": "Global",
+      "portion": "100 g, about the size of a small katori (sample placeholder)",
+      "keyNutrients": [
+        {
+          "nutrientId": "calcium",
+          "note": "SAMPLE: calcium-set tofu is a strong calcium source, check the label for 'calcium sulfate' or 'nigari'."
+        },
+        {
+          "nutrientId": "iron",
+          "note": "SAMPLE: a useful secondary iron source."
+        }
+      ],
+      "alsoRichIn": [
+        "protein (sample placeholder)"
+      ],
+      "pairingTips": "SAMPLE: tofu takes on the flavour of whatever spices it is cooked in, so it works well marinated and pan-fried, or crumbled into curries for extra protein.",
+      "sourceIds": [
+        "src-icmr-food-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "flaxseed",
+      "name": "Flaxseed (alsi)",
+      "localName": "alsi",
+      "foodGroup": "Nuts and oilseeds",
+      "indianOrGlobal": "Indian",
+      "portion": "1 tbsp ground (sample placeholder)",
+      "keyNutrients": [
+        {
+          "nutrientId": "omega3",
+          "note": "SAMPLE: the richest everyday Indian plant source of ALA omega-3."
+        }
+      ],
+      "alsoRichIn": [
+        "fibre (sample placeholder)"
+      ],
+      "pairingTips": "SAMPLE: grind fresh and sprinkle over dal or roti dough; whole seeds pass through mostly undigested.",
+      "sourceIds": [
+        "src-icmr-food-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "peanuts",
+      "name": "Peanuts",
+      "localName": "",
+      "foodGroup": "Nuts and oilseeds",
+      "indianOrGlobal": "Indian",
+      "portion": "1 small handful (sample placeholder)",
+      "keyNutrients": [
+        {
+          "nutrientId": "iron",
+          "note": "SAMPLE: a modest iron contributor as part of a varied diet."
+        }
+      ],
+      "alsoRichIn": [
+        "protein (sample placeholder)",
+        "fibre (sample placeholder)"
+      ],
+      "pairingTips": "SAMPLE: peanut chutney is a traditional, budget-friendly protein side.",
+      "sourceIds": [
+        "src-icmr-food-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "jaggery",
+      "name": "Jaggery",
+      "localName": "",
+      "foodGroup": "Natural sweeteners",
+      "indianOrGlobal": "Indian",
+      "portion": "1 small piece, about 1 tsp (sample placeholder)",
+      "keyNutrients": [
+        {
+          "nutrientId": "iron",
+          "note": "SAMPLE: a small amount of iron, but it is a sweetener, not an iron strategy on its own."
+        }
+      ],
+      "alsoRichIn": [],
+      "pairingTips": "SAMPLE: a traditional sweetener used in small amounts, including in til-jaggery chikki.",
+      "sourceIds": [
+        "src-icmr-food-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "drumstick-moringa-leaves",
+      "name": "Moringa (drumstick) leaves",
+      "foodGroup": "Green leafy vegetables",
+      "indianOrGlobal": "Indian",
+      "depth": "rich",
+      "everydayPortion": "1 katori cooked (from about 100 g fresh leaves)",
+      "keyNutrientsPerPortion": [
+        {
+          "nutrientId": "protein",
+          "amountPerPortion": 6.41,
+          "unit": "g",
+          "approxPctAdultRDA": 12.8
+        },
+        {
+          "nutrientId": "iron",
+          "amountPerPortion": 4.56,
+          "unit": "mg",
+          "approxPctAdultRDA": 24
+        },
+        {
+          "nutrientId": "calcium",
+          "amountPerPortion": 314,
+          "unit": "mg",
+          "approxPctAdultRDA": 31.4
+        },
+        {
+          "nutrientId": "fibre",
+          "amountPerPortion": 8.21,
+          "unit": "g",
+          "approxPctAdultRDA": 32.8
+        },
+        {
+          "nutrientId": "folate",
+          "amountPerPortion": 42.89,
+          "unit": "ug",
+          "approxPctAdultRDA": 10.7
+        },
+        {
+          "nutrientId": "omega-3",
+          "amountPerPortion": 0.446,
+          "unit": "g",
+          "approxPctAdultRDA": 27.9
+        },
+        {
+          "nutrientId": "selenium",
+          "amountPerPortion": 5.95,
+          "unit": "ug",
+          "approxPctAdultRDA": 10.8
+        }
+      ],
+      "pairingTips": [
+        {
+          "text": "Moringa leaves are rich in non-haem iron; a vitamin C food in the same meal (lemon, tomato, amla) helps the body absorb it.",
+          "label": "established fact",
+          "sourceIds": [
+            "nih-iron"
+          ]
+        },
+        {
+          "text": "Moringa leaves combine iron, calcium and folate in one everyday green, making them a useful addition for anyone limiting dairy.",
+          "label": "established fact",
+          "sourceIds": [
+            "ifct-2017"
+          ]
+        }
+      ],
+      "preparationNotes": [
+        {
+          "text": "Light, quick cooking (a short saute rather than prolonged boiling) keeps more of the folate and vitamin C in leafy greens.",
+          "label": "established fact",
+          "sourceIds": [
+            "icmr-dietary-guidelines-2024"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "icmr-dietary-guidelines-2024",
+        "ifct-2017",
+        "nih-iron"
+      ],
+      "oneLineAction": "Add moringa leaves to dal, sambar or a simple stir-fry a couple of times a week.",
+      "localNames": {
+        "kn": "nugge soppu"
+      },
+      "localNameStatus": "Approved by owner, 21 Oct 2026. Language tagging: best-effort by Claude, confirmed accurate except jowar's Telugu tag ('jonna') which is flagged uncertain - Kannada's own word may be 'jola' instead."
+    },
+    {
+      "id": "agar",
+      "name": "Agar (agar-agar)",
+      "foodGroup": "Sea vegetables",
+      "indianOrGlobal": "Global",
+      "depth": "basic",
+      "everydayPortion": "",
+      "keyNutrientsPer100g": [
+        {
+          "nutrientId": "protein",
+          "amountPer100g": 0.54,
+          "unit": "g"
+        },
+        {
+          "nutrientId": "iron",
+          "amountPer100g": 1.86,
+          "unit": "mg"
+        },
+        {
+          "nutrientId": "calcium",
+          "amountPer100g": 54,
+          "unit": "mg"
+        },
+        {
+          "nutrientId": "zinc",
+          "amountPer100g": 0.58,
+          "unit": "mg"
+        },
+        {
+          "nutrientId": "fibre",
+          "amountPer100g": 0.5,
+          "unit": "g"
+        },
+        {
+          "nutrientId": "folate",
+          "amountPer100g": 85,
+          "unit": "ug"
+        },
+        {
+          "nutrientId": "selenium",
+          "amountPer100g": 0.7,
+          "unit": "ug"
+        }
+      ],
+      "pairingTips": [],
+      "sourceIds": [
+        "usda-fdc"
+      ],
+      "notes": "Basic entry. Figures are real USDA FoodData Central (SR Legacy) values for raw agar (fdc_id 169280, per 100 g), not estimated. Agar-agar is used in India mainly as a vegan gelatin substitute for desserts (China grass), bought dried in small amounts rather than eaten as a vegetable; included here for food-group completeness per BRIEF.md's Completeness rules, not as a nutrient-dense staple - a typical serving used in cooking is a small fraction of 100 g. Vitamin A and vitamin K are present in USDA's record but deliberately left off: the vitamin K value is phylloquinone (vitamin K1), not the vitamin K2 (menaquinone) this project tracks separately, and vitamin A, RAE is 0 for this food. USDA's record carries a tiny EPA value (0.008 g) but no ALA (the plant omega-3 this project tracks) and no iodine value (checked directly - both fields are empty for ALA/iodine), so omega-3 and iodine are left off rather than estimated.",
+      "localNames": {},
+      "localNameStatus": "No local name proposed yet - though sold in India as 'China grass', that is a product/brand-style name, not a vernacular translation, so no candidate is proposed here without the owner's confirmation."
+    }
+  ],
+  "healthTopics": [
+    {
+      "id": "anaemia",
+      "name": "Anaemia",
+      "whyItMatters": "SAMPLE: anaemia from low iron is a common concern on any diet, including vegan diets, especially for women.",
+      "whatToFocusOn": "SAMPLE: enough iron-rich plant foods, eaten with vitamin C, and tea or coffee kept away from meals.",
+      "foodsToFavour": [
+        "rajma",
+        "chana",
+        "ragi",
+        "moringa",
+        "til",
+        "tofu"
+      ],
+      "foodsToWatch": [
+        "spinach"
+      ],
+      "pairings": "SAMPLE: vitamin C foods such as amla, lemon or tomato alongside iron-rich foods; tea and coffee at least an hour away from meals.",
+      "preparation": "SAMPLE: soaking and sprouting legumes reduces phytates that block iron absorption.",
+      "samplePlate": "SAMPLE: rajma-chawal with a side of lemon and tomato salad.",
+      "redFlags": "SAMPLE: see a doctor if you feel constantly tired, breathless, dizzy or notice pale skin or nails — do not self-treat anaemia.",
+      "whatFoodCannotDo": "SAMPLE: food alone cannot fix anaemia caused by heavy bleeding or an absorption problem; that needs medical attention.",
+      "nutrientIds": [
+        "iron"
+      ],
+      "lifestyleLinks": "SAMPLE: placeholder — regular meals and good sleep support overall recovery.",
+      "sourceIds": [
+        "src-review-anaemia-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "bones",
+      "name": "Bones",
+      "whyItMatters": "SAMPLE: bone strength depends on calcium, vitamin D and weight-bearing activity, not calcium alone.",
+      "whatToFocusOn": "SAMPLE: a steady calcium intake across the day, sensible sunlight, and regular activity.",
+      "foodsToFavour": [
+        "til",
+        "tofu",
+        "ragi",
+        "moringa",
+        "soy-milk",
+        "chana"
+      ],
+      "foodsToWatch": [],
+      "pairings": "SAMPLE: calcium is absorbed better when spread across meals rather than in one large dose.",
+      "preparation": "SAMPLE: lightly cooking very high-oxalate greens can help the body use more of their calcium.",
+      "samplePlate": "SAMPLE: ragi mudde with a til-based chutney and a glass of fortified soy milk.",
+      "redFlags": "SAMPLE: see a doctor if you have a fracture from a minor fall, or a family history of early osteoporosis.",
+      "whatFoodCannotDo": "SAMPLE: food cannot replace sunlight for vitamin D or replace weight-bearing exercise for bone strength.",
+      "nutrientIds": [
+        "calcium"
+      ],
+      "lifestyleLinks": "SAMPLE: placeholder — sensible sunlight exposure and regular weight-bearing activity.",
+      "sourceIds": [
+        "src-review-bones-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "skin-hair-health",
+      "name": "Skin and hair health",
+      "whyItMattersForVegans": [
+        {
+          "text": "A well-planned vegan diet that covers zinc, iron, omega-3, protein and vitamin D well supports normal, healthy skin and hair - this is about supporting that normal function through nutrient adequacy, not about a vegan diet making hair or skin better than anyone else's. See this project's own zinc, iron, omega-3, protein and vitamin D nutrient cards for daily targets and food sources; this card exists to connect them to the skin/hair reason they matter, not to repeat them.",
+          "label": "established fact",
+          "sourceIds": [
+            "almohanna-vitamins-minerals-hair-loss-2019",
+            "nih-zinc"
+          ]
+        },
+        {
+          "text": "A poorly planned or crash vegan diet - not veganism itself - is the real driver of hair thinning and dull skin. The same honesty pattern this project uses for mood and immune function applies here: a sudden, large calorie cut, cutting out whole food groups without replacing them, or simply not planning what used to come from animal foods (protein, zinc, iron) is what causes trouble, not the decision to eat plant-based. This card should never read as 'going vegan causes hair loss' - that is not what the evidence behind it says.",
+          "label": "illustration",
+          "sourceIds": [
+            "almohanna-vitamins-minerals-hair-loss-2019"
+          ]
+        },
+        {
+          "text": "One genuine, dermatology-sourced incidental benefit worth naming calmly, not oversold: the American Academy of Dermatology's own review of the evidence links cow's milk specifically - not dairy broadly - to higher rates of acne in several large cohort studies (for example, women drinking 2 or more glasses of skim milk a day were 44% more likely to have acne in one 47,355-woman study). The AAD states plainly that no such link has been found for yogurt or cheese, so this is a milk-specific finding, not a reason to think 'dairy-free' alone clears skin - a vegan diet simply avoids milk by default, which happens to line up with this specific piece of evidence. The mechanism is still unclear (a theory involves hormones in milk triggering inflammation), and the AAD itself is careful not to claim settled causation.",
+          "label": "established fact",
+          "sourceIds": [
+            "aad-diet-acne"
+          ]
+        },
+        {
+          "text": "Guggul, a traditional Ayurvedic gum-resin herb some readers may take separately as a supplement, has a real but genuinely disputed research link to acne. A small 1994 Indian trial found oral gugulipid reduced inflammatory acne lesions about as well as the antibiotic tetracycline, especially in people with oily skin - but a US consumer reference rates this \"Possibly Effective\" largely on that one small trial, while a cancer-centre clinical database states plainly that evidence is lacking for guggul alone on acne. This card treats it as an open question, not a confirmed acne treatment. See this project's own Guggul herb card for full detail, including its thyroid and bleeding-risk cautions.",
+          "label": "open question",
+          "sourceIds": [
+            "thappa-dogra-gugulipid-acne-trial-1994",
+            "rxlist-guggul",
+            "mskcc-guggul"
+          ]
+        }
+      ],
+      "whatToFocusOn": [
+        {
+          "text": "Covering zinc, iron, omega-3, protein and vitamin D well is the main lever - see this project's own nutrient cards for daily targets, vegan food sources and absorption tips for each.",
+          "label": "established fact",
+          "sourceIds": [
+            "nih-zinc",
+            "nih-iron",
+            "nih-d"
+          ]
+        },
+        {
+          "text": "A real gap worth naming honestly: biotin also comes up often in hair/skin conversations, but this project does not yet have a dedicated biotin nutrient card, so it cannot be given the same daily-target/food-source treatment zinc, iron, omega-3, protein and vitamin D get here. This is less urgent than it might sound - a dermatology review of the evidence states that average dietary biotin intake is adequate in a normal diet, biotin deficiency is rare, and 'severe biotin deficiency in healthy individuals eating a normal diet has never been reported.' The same review and a companion dermatology-journal review both conclude that biotin supplementation for hair/skin/nails is not well supported by large-scale evidence outside an actual deficiency state - so this gap is a documentation one, not a sign that vegans specifically need to worry about biotin.",
+          "label": "established fact",
+          "sourceIds": [
+            "almohanna-vitamins-minerals-hair-loss-2019"
+          ]
+        },
+        {
+          "text": "Zinc specifically: alopecia (hair loss) is a well-known sign of an established zinc deficiency, with hair regrowth occurring once the deficiency is corrected - this is the clearest, most defensible zinc-hair link, and it is about avoiding deficiency, not about more zinc meaning more hair for someone already getting enough. The same review notes that evidence linking zinc levels to the more common, everyday forms of hair thinning (in people who are not zinc-deficient) is inconsistent across studies - so this card does not claim extra zinc will thicken hair in someone whose zinc status is already adequate.",
+          "label": "established fact",
+          "sourceIds": [
+            "almohanna-vitamins-minerals-hair-loss-2019"
+          ]
+        }
+      ],
+      "foodsToFavour": [
+        {
+          "foodId": "chickpeas-chana-whole-bengal-gram",
+          "note": "Covers zinc, iron and protein together - already in this project's zinc, iron and protein cards."
+        },
+        {
+          "foodId": "tofu",
+          "note": "A zinc and protein source, already named in this project's zinc card."
+        },
+        {
+          "foodId": "tempeh",
+          "note": "Fermented soy - zinc and protein together, already named in this project's zinc card."
+        },
+        {
+          "foodId": "lentil-masoor",
+          "note": "A quick-cooking dal with solid iron and protein per katori, already in this project's iron card."
+        },
+        {
+          "foodId": "black-gram-whole-urad",
+          "note": "High in both iron and zinc per 100 g, already named in this project's zinc and iron cards."
+        },
+        {
+          "foodId": "flaxseed-linseed",
+          "note": "An ALA omega-3 source already named in this project's omega-3 card; best ground rather than left whole for absorption."
+        },
+        {
+          "foodId": "walnut",
+          "note": "Another ALA omega-3 source already named in this project's omega-3 card."
+        },
+        {
+          "foodId": "sunflower-seeds",
+          "note": "A named zinc source in this project's zinc card."
+        },
+        {
+          "foodId": "soy-milk",
+          "note": "A protein source; check the label for vitamin D and calcium fortification, as already noted in this project's vitamin D card."
+        }
+      ],
+      "foodsOrHabitsToWatch": [
+        {
+          "text": "Crash or heavily restrictive vegan transitions - suddenly cutting calories, dropping whole food groups, or not deliberately replacing the protein, zinc and iron that used to come from animal foods - are the real, documented risk factor for hair thinning and dull skin, not veganism as such. A gradual, planned transition that keeps calories and these nutrients adequate does not carry the same risk.",
+          "label": "illustration",
+          "sourceIds": [
+            "almohanna-vitamins-minerals-hair-loss-2019"
+          ]
+        },
+        {
+          "text": "Phytates in beans and grains reduce how much zinc the body absorbs from them - this project's zinc card already covers this and the soaking/sprouting/fermenting tip that helps.",
+          "label": "established fact",
+          "sourceIds": [
+            "nih-zinc"
+          ]
+        },
+        {
+          "text": "Do not expect biotin or zinc supplements, taken on top of an already-adequate diet, to meaningfully improve hair or skin - the dermatology evidence for supplementing beyond normal dietary adequacy is weak, and more is not simply better here.",
+          "label": "illustration",
+          "sourceIds": [
+            "almohanna-vitamins-minerals-hair-loss-2019"
+          ]
+        }
+      ],
+      "preparation": [
+        {
+          "text": "Soaking, sprouting or fermenting beans and grains before cooking lowers their phytate content and can improve zinc absorption.",
+          "label": "established fact",
+          "sourceIds": [
+            "icmr-dietary-guidelines-2024"
+          ]
+        },
+        {
+          "text": "Ground flaxseed absorbs better for its omega-3 content than whole flaxseed, as already noted in this project's omega-3 card.",
+          "label": "established fact",
+          "sourceIds": [
+            "icmr-dietary-guidelines-2024"
+          ]
+        }
+      ],
+      "allergensAndSensitivities": [
+        {
+          "text": "Soy (tofu, tempeh, soy milk) and tree nuts (walnuts), both named above, are recognised allergens; chickpeas, lentils, black gram, flaxseed or sunflower seeds are reasonable substitutes for zinc/iron/protein/omega-3 if either affects you.",
+          "label": "established fact",
+          "sourceIds": [
+            "vndpg-protein"
+          ]
+        }
+      ],
+      "samplePlate": {
+        "text": "A thali with masoor dal or chana curry, a side of tofu or tempeh, rice or roti with a spoon of ground flaxseed stirred in, and a fortified soy milk alongside - covering zinc, iron, protein and omega-3 together, with fortified soy milk as one route to vitamin D if the label confirms it.",
+        "sourceIds": [
+          "nih-zinc",
+          "nih-iron",
+          "nih-d"
+        ]
+      },
+      "redFlags": [
+        {
+          "text": "This card is about diet supporting normal skin and hair through nutrient adequacy - it cannot diagnose or treat a dermatological condition. See a doctor or dermatologist for sudden or patchy hair loss, a scalp that is painful, itchy, flaking or inflamed, or a skin condition that is worsening or not responding to ordinary skin care.",
+          "label": "official recommendation",
+          "sourceIds": [
+            "brief-safety-rules"
+          ]
+        },
+        {
+          "text": "Hair thinning and skin changes can also come from causes unrelated to diet - thyroid conditions, hormonal changes, certain medicines, stress, or skin conditions like alopecia areata, eczema or psoriasis. If diet changes alone don't explain what you're seeing, or nutrient levels have already been checked and look fine, see a doctor rather than assuming it's a dietary gap.",
+          "label": "official recommendation",
+          "sourceIds": [
+            "brief-safety-rules"
+          ]
+        }
+      ],
+      "whatFoodCannotDo": {
+        "text": "Food choices can support the normal nutrient adequacy healthy skin and hair depend on - but no food, diet or supplement guarantees faster or thicker hair growth beyond that normal baseline, treats an underlying dermatological or medical condition, or substitutes for a dermatologist's diagnosis and care.",
+        "sourceIds": [
+          "brief-safety-rules"
+        ]
+      },
+      "candidateAdditions": [],
+      "nutrientIds": [
+        "zinc",
+        "iron",
+        "omega-3",
+        "protein",
+        "vitamin-d"
+      ],
+      "herbIds": [
+        "neem",
+        "guggul"
+      ],
+      "sourceIds": [
+        "almohanna-vitamins-minerals-hair-loss-2019",
+        "aad-diet-acne",
+        "nih-zinc",
+        "nih-iron",
+        "nih-d",
+        "icmr-dietary-guidelines-2024",
+        "vndpg-protein",
+        "brief-safety-rules",
+        "thappa-dogra-gugulipid-acne-trial-1994",
+        "rxlist-guggul",
+        "mskcc-guggul"
+      ]
+    }
+  ],
+  "lifeStages": [
+    {
+      "id": "pregnancy-breastfeeding",
+      "group": "Pregnancy and breastfeeding",
+      "whatChanges": "SAMPLE: needs for iron, calcium, B12 and omega-3 all rise during pregnancy and breastfeeding.",
+      "extraNeeds": "SAMPLE: placeholder — slightly higher iron, calcium, B12 and omega-3 than the usual adult range; ask a doctor for personal targets.",
+      "redFlags": "SAMPLE: see a doctor if you are pregnant or breastfeeding and have not discussed a vegan diet with your obstetrician or a dietitian.",
+      "nutrientIds": [
+        "iron",
+        "calcium",
+        "b12",
+        "omega3"
+      ],
+      "sourceIds": [
+        "src-review-anaemia-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    }
+  ],
+  "myths": [
+    {
+      "id": "myth-b12-injections",
+      "claim": "Vegans always need B12 injections, tablets are not enough.",
+      "verdict": "False",
+      "evidence": "SAMPLE: for most people, a regular oral vegan B12 supplement raises blood B12 levels effectively; injections are usually only needed for a diagnosed absorption problem.",
+      "nutrientIds": [
+        "b12"
+      ],
+      "foodIds": [],
+      "sourceIds": [
+        "src-myth-b12-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "myth-protein-meat",
+      "claim": "You cannot build or keep muscle without eating meat.",
+      "verdict": "False",
+      "evidence": "SAMPLE: a varied vegan diet with enough total protein from legumes, soy foods, grains and nuts supports muscle building and maintenance just as well, given enough total intake.",
+      "nutrientIds": [],
+      "foodIds": [
+        "rajma",
+        "chana",
+        "tofu",
+        "peanuts"
+      ],
+      "sourceIds": [
+        "src-myth-protein-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "myth-spinach-iron",
+      "claim": "Spinach is one of the best vegan sources of iron.",
+      "verdict": "It depends",
+      "evidence": "SAMPLE: spinach does contain iron, but its oxalates block much of it from being absorbed, so legumes, ragi and til are more reliable everyday iron sources.",
+      "nutrientIds": [
+        "iron"
+      ],
+      "foodIds": [
+        "spinach",
+        "rajma",
+        "ragi"
+      ],
+      "sourceIds": [
+        "src-myth-spinach-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    }
+  ],
+  "healthMap": [
+    {
+      "foodId": "rajma",
+      "topicId": "anaemia",
+      "relation": "supports",
+      "reason": "SAMPLE: a good everyday plant iron source, especially paired with vitamin C.",
+      "evidenceGrade": "Strong",
+      "sourceId": "src-review-anaemia-sample"
+    },
+    {
+      "foodId": "chana",
+      "topicId": "anaemia",
+      "relation": "supports",
+      "reason": "SAMPLE: a reliable, budget-friendly iron source.",
+      "evidenceGrade": "Strong",
+      "sourceId": "src-review-anaemia-sample"
+    },
+    {
+      "foodId": "ragi",
+      "topicId": "anaemia",
+      "relation": "supports",
+      "reason": "SAMPLE: contributes iron as part of a mixed plate.",
+      "evidenceGrade": "Moderate",
+      "sourceId": "src-review-anaemia-sample"
+    },
+    {
+      "foodId": "moringa",
+      "topicId": "anaemia",
+      "relation": "supports",
+      "reason": "SAMPLE: a strong leafy-green iron source.",
+      "evidenceGrade": "Moderate",
+      "sourceId": "src-review-anaemia-sample"
+    },
+    {
+      "foodId": "til",
+      "topicId": "anaemia",
+      "relation": "supports",
+      "reason": "SAMPLE: a useful secondary iron source in small daily amounts.",
+      "evidenceGrade": "Moderate",
+      "sourceId": "src-review-anaemia-sample"
+    },
+    {
+      "foodId": "tofu",
+      "topicId": "anaemia",
+      "relation": "supports",
+      "reason": "SAMPLE: a useful secondary iron source, especially for those avoiding legumes.",
+      "evidenceGrade": "Moderate",
+      "sourceId": "src-review-anaemia-sample"
+    },
+    {
+      "foodId": "spinach",
+      "topicId": "anaemia",
+      "relation": "watch",
+      "reason": "SAMPLE: iron present but oxalates limit how much is actually absorbed; do not rely on it alone.",
+      "evidenceGrade": "Moderate",
+      "sourceId": "src-myth-spinach-sample"
+    },
+    {
+      "foodId": "til",
+      "topicId": "bones",
+      "relation": "supports",
+      "reason": "SAMPLE: one of the richest plant calcium sources by weight.",
+      "evidenceGrade": "Strong",
+      "sourceId": "src-review-bones-sample"
+    },
+    {
+      "foodId": "tofu",
+      "topicId": "bones",
+      "relation": "supports",
+      "reason": "SAMPLE: calcium-set tofu is a strong calcium source.",
+      "evidenceGrade": "Strong",
+      "sourceId": "src-review-bones-sample"
+    },
+    {
+      "foodId": "ragi",
+      "topicId": "bones",
+      "relation": "supports",
+      "reason": "SAMPLE: one of the better plant calcium sources among grains.",
+      "evidenceGrade": "Moderate",
+      "sourceId": "src-review-bones-sample"
+    },
+    {
+      "foodId": "moringa",
+      "topicId": "bones",
+      "relation": "supports",
+      "reason": "SAMPLE: a useful calcium contributor among leafy greens.",
+      "evidenceGrade": "Moderate",
+      "sourceId": "src-review-bones-sample"
+    },
+    {
+      "foodId": "soy-milk",
+      "topicId": "bones",
+      "relation": "supports",
+      "reason": "SAMPLE: fortified soy milk is a strong calcium source, check the label for the amount per serving.",
+      "evidenceGrade": "Strong",
+      "sourceId": "src-review-bones-sample"
+    },
+    {
+      "foodId": "chana",
+      "topicId": "bones",
+      "relation": "supports",
+      "reason": "SAMPLE: a modest calcium contributor as part of a varied diet.",
+      "evidenceGrade": "Limited",
+      "sourceId": "src-review-bones-sample"
+    }
+  ],
+  "whereToBuy": [
+    {
+      "id": "sample-plant-dairy-co",
+      "name": "SAMPLE Plant Milks Co. (placeholder)",
+      "category": "Plant milks and curds",
+      "location": "In Bengaluru",
+      "itemsCarried": "SAMPLE: soy and oat milk, soy curd, in a few Bengaluru stores (placeholder listing).",
+      "link": "https://example.org/sample-where-to-buy/plant-dairy-co",
+      "asOf": "2026-10-20",
+      "sourceIds": [
+        "src-icmr-food-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "sample-tofu-tempeh-co",
+      "name": "SAMPLE Tofu & Tempeh Co. (placeholder)",
+      "category": "Tofu, tempeh and soy foods",
+      "location": "Online to Bengaluru",
+      "itemsCarried": "SAMPLE: plain and marinated tofu, tempeh, ships to Bengaluru (placeholder listing).",
+      "link": "https://example.org/sample-where-to-buy/tofu-tempeh-co",
+      "asOf": "2026-10-20",
+      "sourceIds": [
+        "src-icmr-food-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "sample-frozen-treats",
+      "name": "SAMPLE Frozen Treats (placeholder)",
+      "category": "Plant ice-creams and sweets",
+      "location": "In Bengaluru",
+      "itemsCarried": "SAMPLE: a small plant ice-cream and sweets range at a few Bengaluru outlets (placeholder listing).",
+      "link": "https://example.org/sample-where-to-buy/frozen-treats",
+      "asOf": "2026-10-20",
+      "sourceIds": [
+        "src-icmr-food-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "sample-cheese-butter-co",
+      "name": "SAMPLE Vegan Cheese and Butter Co. (placeholder)",
+      "category": "Vegan cheese and butter",
+      "location": "Online to Bengaluru",
+      "itemsCarried": "SAMPLE: cashew cheese and vegan butter, ships to Bengaluru (placeholder listing).",
+      "link": "https://example.org/sample-where-to-buy/cheese-butter-co",
+      "asOf": "2026-10-20",
+      "sourceIds": [
+        "src-icmr-food-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "sample-plant-meats-co",
+      "name": "SAMPLE Plant-Based Meats Co. (placeholder)",
+      "category": "Plant-based meats",
+      "location": "In Bengaluru",
+      "itemsCarried": "SAMPLE: soy and jackfruit-based mince and nuggets, at a few Bengaluru stores (placeholder listing).",
+      "link": "https://example.org/sample-where-to-buy/plant-meats-co",
+      "asOf": "2026-10-20",
+      "sourceIds": [
+        "src-icmr-food-sample"
+      ],
+      "status": "SAMPLE - to be replaced"
+    }
+  ],
+  "glossary": [
+    {
+      "id": "phytate",
+      "term": "Phytate",
+      "definition": "SAMPLE: a compound in grains, beans and seeds that can reduce how much iron and zinc the body absorbs. Soaking, sprouting and fermenting lower it.",
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "oxalate",
+      "term": "Oxalate",
+      "definition": "SAMPLE: a compound in foods such as spinach that binds calcium and iron, reducing how much the body absorbs from that meal.",
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "ferritin",
+      "term": "Ferritin",
+      "definition": "SAMPLE: a blood test that shows how much iron your body has stored; used alongside haemoglobin to check for anaemia.",
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "haemoglobin",
+      "term": "Haemoglobin",
+      "definition": "SAMPLE: the protein in red blood cells that carries oxygen; a low level is one sign of anaemia.",
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "non-haem-iron",
+      "term": "Non-haem iron",
+      "definition": "SAMPLE: the form of iron found in plant foods; the body absorbs it less easily than haem iron, which comes from animal sources, which is why pairing with vitamin C helps.",
+      "status": "SAMPLE - to be replaced"
+    },
+    {
+      "id": "fortified",
+      "term": "Fortified",
+      "definition": "SAMPLE: a food that has had a nutrient (such as B12 or calcium) added during processing; check the label for the amount.",
+      "status": "SAMPLE - to be replaced"
+    }
+  ],
+  "didYouKnow": [
+    {
+      "id": "dyk-flaxseed-omega3",
+      "fact": "SAMPLE: ground flaxseed is the richest everyday Indian plant source of ALA omega-3.",
+      "evidenceGrade": "Moderate",
+      "relatedType": "nutrient",
+      "relatedId": "omega3",
+      "status": "SAMPLE - to be replaced",
+      "sourceIds": [
+        "src-nih-omega3-sample"
+      ]
+    },
+    {
+      "id": "dyk-vitaminc-iron",
+      "fact": "SAMPLE: a vitamin-C-rich food like amla or a squeeze of lemon helps the body absorb iron from the same meal.",
+      "evidenceGrade": "Strong",
+      "relatedType": "nutrient",
+      "relatedId": "iron",
+      "status": "SAMPLE - to be replaced",
+      "sourceIds": [
+        "src-icmr-iron-sample"
+      ]
+    },
+    {
+      "id": "dyk-tofu-calcium",
+      "fact": "SAMPLE: calcium-set tofu — check the label for 'calcium sulfate' or 'nigari' — is one of the richest plant calcium sources available.",
+      "evidenceGrade": "Strong",
+      "relatedType": "food",
+      "relatedId": "tofu",
+      "status": "SAMPLE - to be replaced",
+      "sourceIds": [
+        "src-review-bones-sample"
+      ]
+    },
+    {
+      "id": "dyk-soaking-phytate",
+      "fact": "SAMPLE: soaking and sprouting legumes lowers their phytate content, helping the body absorb more of their iron.",
+      "evidenceGrade": "Moderate",
+      "relatedType": "topic",
+      "relatedId": "anaemia",
+      "status": "SAMPLE - to be replaced",
+      "sourceIds": [
+        "src-review-anaemia-sample"
+      ]
+    },
+    {
+      "id": "dyk-b12-oral",
+      "fact": "SAMPLE: a regular oral vegan B12 supplement is usually enough for most people — injections are typically only needed for a diagnosed absorption problem.",
+      "evidenceGrade": "Moderate",
+      "relatedType": "nutrient",
+      "relatedId": "b12",
+      "status": "SAMPLE - to be replaced",
+      "sourceIds": [
+        "src-myth-b12-sample"
+      ]
+    }
+  ],
+  "herbs": [
+    {
+      "id": "neem",
+      "name": "Neem",
+      "aliases": [
+        "Azadirachta indica",
+        "Margosa",
+        "Indian lilac"
+      ],
+      "traditionalUse": [
+        {
+          "text": "Called 'the wonder tree' and 'nature's drugstore' in Ayurvedic tradition - every part of the tree (leaves, bark, seed oil) has a long history of therapeutic, dental and household use across the Indian subcontinent, among the most widely used plants in traditional Indian medicine.",
+          "label": "established fact",
+          "sourceIds": [
+            "book-ayurvedic-science-food-nutrition"
+          ]
+        },
+        {
+          "text": "Folk/home-remedy use leans heavily topical and external: neem leaf powder dusted on skin, mixed into a paste, or used in a bath, traditionally for various skin complaints. This is traditional practice, not independently verified clinical evidence.",
+          "label": "illustration",
+          "sourceIds": [
+            "book-complete-home-guide-herbs-natural-healing"
+          ]
+        }
+      ],
+      "whatEvidenceShows": [
+        {
+          "text": "An honest, Indian-dermatology-specific peer-reviewed review states plainly: 'Although there is no evidence of efficacy, neem is extensively used for medicinal purposes in India,' and that 'the scarcity of human trials has obscured its role in modern medicine.' For most skin conditions neem is traditionally used for - acne, eczema, pruritus, scaly scalp, dermatophytosis, scabies, psoriasis among them - the same review finds only traditional use or preclinical (lab/animal) data, not real clinical trials.",
+          "label": "open question",
+          "sourceIds": [
+            "gopinath-karthikeyan-neem-dermatology-review-2021"
+          ]
+        },
+        {
+          "text": "The few real human trials that do exist are small, old and not treated as settled even by the review that reports them: a single 50-patient 1994 trial (oral neem alongside topical tar and salicylic acid) for psoriasis; a small randomised proof-of-principle study for tungiasis (a skin parasite, using neem and coconut oil); and a 1992 pilot study for scabies (neem and turmeric). None of these are large or recent enough to be treated as confirming neem's effectiveness for these conditions.",
+          "label": "open question",
+          "sourceIds": [
+            "gopinath-karthikeyan-neem-dermatology-review-2021"
+          ]
+        },
+        {
+          "text": "Laboratory and animal studies suggest antimicrobial, antifungal and anticancer activity (including against drug-resistant bacteria and several cancer cell lines), and a small study of HIV-positive volunteers found an extract increased CD4+ cell counts. These are early-stage or preclinical findings only - a major US cancer centre's own page states plainly there are no human studies showing neem to be an effective cancer treatment, and this card does not treat any of these as an established human benefit.",
+          "label": "open question",
+          "sourceIds": [
+            "book-ayurvedic-science-food-nutrition",
+            "mskcc-neem",
+            "gopinath-karthikeyan-neem-dermatology-review-2021"
+          ]
+        },
+        {
+          "text": "For oral hygiene, early research is mixed: a neem leaf gel applied to teeth and gums was linked to reduced plaque in one study, but a separate 2-week neem mouth-rinse trial did not reduce plaque or gingivitis.",
+          "label": "open question",
+          "sourceIds": [
+            "rxlist-neem"
+          ]
+        }
+      ],
+      "howToUseVegan": [
+        {
+          "text": "Neem leaf, bark and seed oil are all plant parts - naturally vegan, with nothing to check there. Given this card's cautions below, topical (on-skin or dental) use has the better evidence and the lower-severity risk profile compared with swallowing neem oil or seed, which carries the most serious documented risks.",
+          "label": "illustration",
+          "sourceIds": [
+            "gopinath-karthikeyan-neem-dermatology-review-2021"
+          ]
+        },
+        {
+          "text": "Capsules and standardised leaf-powder products are available. As with any capsule supplement, check the capsule shell isn't gelatin - most modern capsules use a vegetarian cellulose or HPMC shell, but gelatin ones still exist.",
+          "label": "illustration",
+          "sourceIds": [
+            "rxlist-neem"
+          ]
+        }
+      ],
+      "cautions": [
+        {
+          "text": "Taking neem oil or neem seed by mouth is rated 'Likely Unsafe' for children - this is this card's single most important caution. Serious side effects in infants and small children can happen within hours of swallowing neem oil, including vomiting, diarrhoea, drowsiness, blood disorders, seizures, coma and brain disorders. This is independently corroborated by two further sources, including a peer-reviewed dermatology review that states oral neem is contraindicated in children under 12 and reports documented child deaths from neem oil ingestion.",
+          "label": "established fact",
+          "sourceIds": [
+            "rxlist-neem",
+            "mskcc-neem",
+            "gopinath-karthikeyan-neem-dermatology-review-2021"
+          ]
+        },
+        {
+          "text": "Avoid in pregnancy and while breastfeeding: neem oil and bark taken by mouth are rated 'Likely Unsafe' in pregnancy and can cause miscarriage. A peer-reviewed dermatology review independently states oral neem is contraindicated in both pregnancy and lactation.",
+          "label": "established fact",
+          "sourceIds": [
+            "rxlist-neem",
+            "gopinath-karthikeyan-neem-dermatology-review-2021"
+          ]
+        },
+        {
+          "text": "May harm sperm - avoid when trying to conceive. This caution is sourced to one clinical-reference site here, not independently cross-confirmed by this card's other sources.",
+          "label": "established fact",
+          "sourceIds": [
+            "rxlist-neem"
+          ]
+        },
+        {
+          "text": "May activate the immune system - a caution for autoimmune conditions (such as multiple sclerosis, lupus or rheumatoid arthritis), where it could worsen symptoms, and for organ-transplant recipients, where it could reduce the effectiveness of anti-rejection (immunosuppressant) medicines (cyclosporine, tacrolimus, mycophenolate and corticosteroids named). Both cautions are sourced to one clinical-reference site here; a second source separately found neem extract inhibits several liver enzymes (CYP3A4/5, 2C8, 2C9) that many medicines rely on, in laboratory testing, though its own clinical relevance 'is not known.'",
+          "label": "established fact",
+          "sourceIds": [
+            "rxlist-neem",
+            "mskcc-neem"
+          ]
+        },
+        {
+          "text": "May lower blood sugar - combined with diabetes medicines (insulin, glimepiride, glipizide and pioglitazone named) this could cause dangerously low blood sugar. Anyone with diabetes should talk to their doctor before trying neem and monitor blood sugar closely if they do. The blood-sugar-lowering direction itself is corroborated by a second source's own separate finding of improved glycaemic control in one small metabolic-syndrome study; the specific diabetes-drug interaction caution is sourced to one clinical-reference site.",
+          "label": "established fact",
+          "sourceIds": [
+            "rxlist-neem",
+            "mskcc-neem"
+          ]
+        },
+        {
+          "text": "May reduce lithium clearance (acting somewhat like a diuretic), which could raise lithium to harmful levels in anyone taking it for a mood disorder - a dose adjustment may be needed. This caution is sourced to one clinical-reference site here.",
+          "label": "established fact",
+          "sourceIds": [
+            "rxlist-neem"
+          ]
+        },
+        {
+          "text": "Large doses or long-term oral use are rated 'Possibly Unsafe' and might harm the kidneys and liver - this is a different, broader caution from the acute child-poisoning risk above, and applies to adults too.",
+          "label": "established fact",
+          "sourceIds": [
+            "rxlist-neem"
+          ]
+        },
+        {
+          "text": "Topical use is not automatically risk-free either, worth knowing specifically for a skin-and-hair-focused herb: allergic contact dermatitis to neem oil has been reported (including on the scalp and face when used for hair loss), chewing neem twigs has caused lip leukoderma (a patchy loss of skin pigment) in a case series, and one case report describes neem oil applied to blisters triggering a flare of an existing autoimmune blistering skin condition (bullous pemphigoid). A peer-reviewed review states plainly that 'the exact compounds and the mechanisms of cutaneous adverse effects remain unclear.'",
+          "label": "established fact",
+          "sourceIds": [
+            "mskcc-neem",
+            "gopinath-karthikeyan-neem-dermatology-review-2021"
+          ]
+        },
+        {
+          "text": "Freshness and sourcing matter: neem twigs (sometimes chewed as a traditional toothbrush) are often contaminated with fungi within about 2 weeks of harvest, and home-remedy preparations more broadly can carry a fungal/aflatoxin contamination risk - a reason to avoid chewing twigs and to buy packaged products from a reputable brand rather than assuming any neem preparation is automatically safe.",
+          "label": "established fact",
+          "sourceIds": [
+            "rxlist-neem",
+            "gopinath-karthikeyan-neem-dermatology-review-2021"
+          ]
+        },
+        {
+          "text": "May interfere with blood sugar control; stop at least 2 weeks before a scheduled surgery and tell the surgical team. This specific surgery caution is sourced to one clinical-reference site here, not independently confirmed by every other source checked for this card.",
+          "label": "established fact",
+          "sourceIds": [
+            "rxlist-neem"
+          ]
+        }
+      ],
+      "redFlags": [
+        {
+          "text": "Never give neem oil or neem seed by mouth to a child, in any amount - this is the clearest, highest-stakes rule in this entire card. Serious poisoning in infants and small children can happen within hours, and child deaths from neem oil ingestion are documented.",
+          "label": "official recommendation",
+          "sourceIds": [
+            "rxlist-neem",
+            "gopinath-karthikeyan-neem-dermatology-review-2021"
+          ]
+        },
+        {
+          "text": "Seek emergency medical care immediately if a child or adult swallows neem oil or seed and develops vomiting, drowsiness, seizures, or any altered consciousness - do not wait to see if it passes.",
+          "label": "official recommendation",
+          "sourceIds": [
+            "mskcc-neem"
+          ]
+        },
+        {
+          "text": "Stop using neem on the skin and see a doctor if you notice a rash, blistering, significant redness or a worsening skin reaction after topical use.",
+          "label": "official recommendation",
+          "sourceIds": [
+            "mskcc-neem"
+          ]
+        },
+        {
+          "text": "This card is general information, not a substitute for medical advice - talk to a doctor before using neem (oral or topical) if you are pregnant, breastfeeding or trying to conceive, have an autoimmune condition, take lithium, have diabetes, take immunosuppressant medicine or have had an organ transplant, or have surgery scheduled.",
+          "label": "official recommendation",
+          "sourceIds": [
+            "rxlist-neem"
+          ]
+        }
+      ],
+      "linkedHealthTopics": [
+        "skin-hair-health"
+      ],
+      "crossCautionLinks": [
+        "diabetes",
+        "kidney-health"
+      ],
+      "preparationFormsCaveat": "These forms are genuinely not equivalent in risk for this herb specifically, more so than for most others in this project: topical/dental use has the evidence and safety profile described above, while swallowing neem oil or seed carries this card's most serious documented risk (see cautions and redFlags) - the form matters here as much as the dose.",
+      "preparationForms": [
+        {
+          "form": "Topical (skin)",
+          "note": "Applied to skin, e.g. for traditional skin complaints - not risk-free either (see this card's own cautions on contact dermatitis), but a lower-severity route than swallowing neem oil or seed.",
+          "sourceIds": [
+            "book-complete-home-guide-herbs-natural-healing"
+          ]
+        },
+        {
+          "form": "Leaf powder / Capsule",
+          "note": "Standardised leaf-powder products and capsules are available; check the capsule shell isn't gelatin.",
+          "sourceIds": [
+            "rxlist-neem"
+          ]
+        },
+        {
+          "form": "Oil or seed, by mouth",
+          "note": "The form carrying this card's most serious documented risk - never given to children, and this card does not describe a safe way to use this form at home.",
+          "sourceIds": [
+            "rxlist-neem",
+            "mskcc-neem"
+          ]
+        }
+      ],
+      "candidateAdditions": [],
+      "sourceIds": [
+        "gopinath-karthikeyan-neem-dermatology-review-2021",
+        "rxlist-neem",
+        "mskcc-neem",
+        "book-ayurvedic-science-food-nutrition",
+        "book-complete-home-guide-herbs-natural-healing"
+      ]
+    },
+    {
+      "id": "guggul",
+      "name": "Guggul",
+      "aliases": [
+        "Commiphora mukul",
+        "Commiphora wightii",
+        "Guggulu",
+        "Gum guggul",
+        "Guggulipid",
+        "Indian Bdellium",
+        "Mukul myrrh tree"
+      ],
+      "traditionalUse": [
+        {
+          "text": "A yellowish gum resin (oleo-gum-resin) tapped from the bark of a small, thorny tree native to India, Pakistan and Bangladesh. Ayurvedic medicine has used it for centuries to treat arthritis, obesity, skin disorders and high cholesterol, and a standardised extract is approved for marketing in India as a cholesterol-lowering medicine.",
+          "label": "established fact",
+          "sourceIds": [
+            "rxlist-guggul",
+            "book-encyclopedia-nutrition-good-health"
+          ]
+        },
+        {
+          "text": "Unlike some other herbs this project has checked, this is not a mix-up between two different plants: the scientific literature genuinely uses two botanical names for this same tree - Commiphora mukul and Commiphora wightii (and, in older texts, Balsamodendrum mukul and Balsamodendrum wightii) - reflecting a taxonomic naming change over time, not two different herbs being confused with each other.",
+          "label": "established fact",
+          "sourceIds": [
+            "rxlist-guggul"
+          ]
+        },
+        {
+          "text": "The purified resin on its own (sometimes called Shuddha Guggulu) is one traditional form, but guggul is also very often combined with many other herbs in classical Ayurvedic tablet formulations, such as Yograj Guggulu - a detail that matters for the vegan check below.",
+          "label": "established fact",
+          "sourceIds": [
+            "planetayurveda-yograj-guggulu"
+          ]
+        }
+      ],
+      "whatEvidenceShows": [
+        {
+          "text": "Cholesterol is this herb's best-known researched use, and the evidence is genuinely split rather than one-sided - this card shows both sides rather than picking one. A 2021 systematic review and meta-analysis pooled 7 randomised trials (380 participants, mostly standardised guggul/guggulipid extracts, about 12 weeks average) and found an average fall in total cholesterol of about 16.8 mg/dL and in LDL (\"bad\") cholesterol of about 18.8 mg/dL, with a small rise in HDL (\"good\") cholesterol and only minor side effects reported overall.",
+          "label": "established fact",
+          "sourceIds": [
+            "gyawali-ayurvedic-herbs-cholesterol-meta-analysis-2021"
+          ]
+        },
+        {
+          "text": "Worth knowing when reading that same review: its own data is shakier than its summary conclusion suggests. The 7 pooled trials showed high variability (statistically, I-squared of 75%, right at the review's own cut-off for trusting a pooled result), and the authors state one single older trial \"strongly influenced\" the overall effect - with most of the trials run in Western populations, by the review's own count, apart from two exceptions. The review still concludes guggul is \"moderately effective,\" which reads more confident than this underlying unevenness fully supports - a pattern this project has flagged before in other sources' summaries.",
+          "label": "open question",
+          "sourceIds": [
+            "gyawali-ayurvedic-herbs-cholesterol-meta-analysis-2021"
+          ]
+        },
+        {
+          "text": "Set directly against that pooled finding: a rigorous 2003 US trial (103 adults with high cholesterol, eating their usual Western diet, double-blind, placebo-controlled, 8 weeks) found guggulipid did NOT lower LDL cholesterol - LDL actually rose by 4 to 5% in the guggulipid groups, against a 5% fall on placebo - with no significant change in total cholesterol, HDL or triglycerides either. Six of the guggulipid-treated participants also developed a hypersensitivity skin rash, versus none on placebo. The authors concluded guggulipid \"did not appear to improve\" cholesterol over the short term in this population and might even raise LDL.",
+          "label": "open question",
+          "sourceIds": [
+            "szapary-guggulipid-rct-2003"
+          ]
+        },
+        {
+          "text": "Clinical-reference sources reflect this same unresolved split rather than settling it: a US consumer medical reference rates the cholesterol evidence \"insufficient... inconsistent,\" noting guggul may lower cholesterol for people eating an Indian-style diet but not for people eating a Western diet, while an older nutrition encyclopedia describes early Indian studies as promising but \"limited in scope,\" making their results \"unreliable.\" This card does not present guggul as a settled or reliable way to lower cholesterol.",
+          "label": "open question",
+          "sourceIds": [
+            "rxlist-guggul",
+            "book-encyclopedia-nutrition-good-health"
+          ]
+        },
+        {
+          "text": "Acne is the other traditionally and clinically explored use. A small 1994 Indian trial (20 patients with nodulocystic acne, 3 months) found oral gugulipid reduced inflammatory lesions about as well as the antibiotic tetracycline (68% versus 65% reduction, not a statistically significant difference), with people who had oily skin responding particularly well.",
+          "label": "established fact",
+          "sourceIds": [
+            "thappa-dogra-gugulipid-acne-trial-1994"
+          ]
+        },
+        {
+          "text": "But sources disagree on how much weight that single small, old trial should carry: a US consumer reference rates acne \"Possibly Effective\" largely on the strength of it, while a cancer-centre clinical database's own review states plainly that \"evidence is lacking to support this claim for guggul alone.\" This card treats acne as a genuinely open question, not a confirmed benefit.",
+          "label": "open question",
+          "sourceIds": [
+            "rxlist-guggul",
+            "mskcc-guggul"
+          ]
+        },
+        {
+          "text": "For weight loss, most research suggests guggul does not meaningfully reduce body weight in people who are overweight or obese - rated \"Possibly Ineffective\" by a US consumer medical reference. Early, small studies hint at possible pain improvement in osteoarthritis and rheumatoid arthritis, but the evidence here is rated insufficient to draw a conclusion either way.",
+          "label": "open question",
+          "sourceIds": [
+            "rxlist-guggul"
+          ]
+        }
+      ],
+      "howToUseVegan": [
+        {
+          "text": "The gum resin itself, and the purified resin (Shuddha Guggulu), are plant material - naturally vegan, with nothing to check there.",
+          "label": "established fact",
+          "sourceIds": [
+            "rxlist-guggul"
+          ]
+        },
+        {
+          "text": "Standardised extract (guggulipid) capsules, dosed by guggulsterone content (commonly 2.5 to 3.5%), are the form used in most of the human trials cited above. As with any capsule supplement, check the capsule shell isn't gelatin.",
+          "label": "illustration",
+          "sourceIds": [
+            "szapary-guggulipid-rct-2003",
+            "rxlist-guggul"
+          ]
+        },
+        {
+          "text": "A genuine vegan-specific check worth making, the same way this project flags gelatin capsules: classical multi-herb Ayurvedic tablet formulations that include guggul, such as Yograj Guggulu, are not vegan as traditionally made - ghee is a direct ingredient in that recipe, and honey or buttermilk is the traditional way the tablets are taken. Choosing a plain guggul or guggulipid extract product, and checking the full ingredient label on any combination \"guggulu\" product, is the safer route for staying vegan.",
+          "label": "established fact",
+          "sourceIds": [
+            "planetayurveda-yograj-guggulu"
+          ]
+        }
+      ],
+      "cautions": [
+        {
+          "text": "Likely unsafe in pregnancy - it may stimulate the uterus and menstrual flow, so a US consumer medical reference rates it \"Likely Unsafe\" in pregnancy, and an older nutrition encyclopedia independently makes the same point (\"probably unsafe for pregnant women\"). Not enough is known about breastfeeding safety either, so the same sources advise avoiding it.",
+          "label": "established fact",
+          "sourceIds": [
+            "rxlist-guggul",
+            "book-encyclopedia-nutrition-good-health"
+          ]
+        },
+        {
+          "text": "May raise thyroid hormone activity. A cancer-centre clinical database lists guggul as able to elevate TSH, T3 and T4 on lab tests, an academic nutrition textbook describes Commiphora mukul as showing \"strong thyroid stimulatory action\" in animal research, and a consumer medical reference advises using guggul only under a doctor's supervision if you have a thyroid condition or take thyroid medicine. See this project's own Thyroid health topic for the related caution.",
+          "label": "established fact",
+          "sourceIds": [
+            "mskcc-guggul",
+            "book-krauses-nutrition-care-process",
+            "rxlist-guggul"
+          ]
+        },
+        {
+          "text": "May act like oestrogen in the body - avoid with breast, uterine or ovarian cancer, endometriosis or uterine fibroids, and avoid combining it with oestrogen-containing medicines or birth control pills.",
+          "label": "established fact",
+          "sourceIds": [
+            "rxlist-guggul"
+          ]
+        },
+        {
+          "text": "May slow blood clotting - use caution with a bleeding disorder, and avoid combining with blood-thinning medicines (aspirin, warfarin, clopidogrel, heparin and NSAIDs such as ibuprofen are named) without medical advice. Stop taking guggul at least 2 weeks before a scheduled surgery.",
+          "label": "established fact",
+          "sourceIds": [
+            "rxlist-guggul"
+          ]
+        },
+        {
+          "text": "May change how the liver breaks down several medicines (it can affect the CYP3A4 liver enzyme), which may make some medicines less effective. Examples named across sources include some statins (lovastatin, atorvastatin), some antifungal and allergy medicines, and tamoxifen - one source states plainly not to combine guggul with tamoxifen. Anyone on regular prescription medicine should check with a doctor or pharmacist first.",
+          "label": "established fact",
+          "sourceIds": [
+            "rxlist-guggul",
+            "mskcc-guggul"
+          ]
+        },
+        {
+          "text": "Skin hypersensitivity (an allergic-type rash or itching) is a real, documented reaction - seen in a formal clinical trial (6 of 67 people taking guggulipid, versus none on placebo) and in contact-dermatitis case reports linked to topical slimming or anti-cellulite creams containing guggul.",
+          "label": "established fact",
+          "sourceIds": [
+            "szapary-guggulipid-rct-2003",
+            "mskcc-guggul"
+          ]
+        },
+        {
+          "text": "A small number of case reports describe raised liver enzymes or liver injury linked to guggul-containing products, but this project treats the signal as real but unproven, not a confirmed guggul-specific risk - weaker and more confounded than the liver-injury finding this project has documented for Giloy. The reported cases involved combination products (one alongside red yeast rice, one alongside usnic acid and green tea), and the reviewing source itself says it is unclear how much guggul, versus the other ingredients, was responsible. Separately, a 2020 US government toxicology study found no dose-related organ damage in a 3-month animal study, though this is animal data, not proof of human safety.",
+          "label": "open question",
+          "sourceIds": [
+            "mskcc-guggul",
+            "ntp-gum-guggul-extract-toxicology-2020"
+          ]
+        },
+        {
+          "text": "Milder, more common side effects include stomach upset, headache, nausea, vomiting, loose stools or diarrhoea, belching and hiccups - more likely at higher doses (around 6000 mg/day in the sources reviewed).",
+          "label": "established fact",
+          "sourceIds": [
+            "rxlist-guggul"
+          ]
+        }
+      ],
+      "redFlags": [
+        {
+          "text": "If you have a thyroid condition or take thyroid medicine, talk to your doctor before trying guggul, and ask about monitoring thyroid function with blood tests if you do combine them.",
+          "label": "official recommendation",
+          "sourceIds": [
+            "mskcc-guggul",
+            "rxlist-guggul"
+          ]
+        },
+        {
+          "text": "If you take blood-thinning medicine, have a bleeding disorder, have surgery scheduled, take tamoxifen or another hormone-sensitive-cancer medicine, or take any regular prescription medicine, talk to a doctor or pharmacist before using guggul.",
+          "label": "official recommendation",
+          "sourceIds": [
+            "rxlist-guggul",
+            "mskcc-guggul"
+          ]
+        },
+        {
+          "text": "Stop taking guggul and see a doctor if you notice a widespread rash or itching, yellowing of the skin or eyes, unusually dark urine, or persistent nausea - these need medical attention, not waiting to see if they pass.",
+          "label": "official recommendation",
+          "sourceIds": [
+            "szapary-guggulipid-rct-2003",
+            "mskcc-guggul"
+          ]
+        },
+        {
+          "text": "This card is general information, not a substitute for medical advice - avoid guggul if you are pregnant or breastfeeding, and check with a doctor if you are trying to conceive or have a hormone-sensitive condition.",
+          "label": "official recommendation",
+          "sourceIds": [
+            "rxlist-guggul"
+          ]
+        }
+      ],
+      "linkedHealthTopics": [
+        "heart-and-cholesterol",
+        "skin-hair-health"
+      ],
+      "crossCautionLinks": [
+        "thyroid"
+      ],
+      "preparationFormsCaveat": "These forms are not equivalent in strength - the human trials behind this card's cholesterol and acne findings used a standardised guggulipid extract dosed by guggulsterone content, not raw resin or a multi-herb tablet. Classical combination tablets such as Yograj Guggulu also raise a separate, vegan-specific issue: ghee is a direct ingredient in that recipe, so check labels rather than assuming any product called \"guggul\" or \"guggulu\" is plant-only.",
+      "preparationForms": [
+        {
+          "form": "Gum resin / Purified resin (Shuddha Guggulu)",
+          "note": "Raw or purified resin, a traditional Ayurvedic form - naturally vegan, but not the form used in the clinical trials cited above.",
+          "sourceIds": [
+            "rxlist-guggul"
+          ]
+        },
+        {
+          "form": "Capsule / Supplement (guggulipid extract)",
+          "note": "Standardised extract dosed by guggulsterone content (commonly 2.5-3.5%). The Western cholesterol trial used 1000-2000 mg guggulipid three times daily; the acne trial used a dose giving 25 mg guggulsterone twice daily. Check the capsule shell isn't gelatin.",
+          "sourceIds": [
+            "szapary-guggulipid-rct-2003",
+            "thappa-dogra-gugulipid-acne-trial-1994",
+            "rxlist-guggul"
+          ]
+        },
+        {
+          "form": "Tablet (classical multi-herb formulation, e.g. Yograj Guggulu)",
+          "note": "Combines guggul resin with many other herbs; ghee is a direct ingredient in this classical recipe, and honey or buttermilk is the traditional way to take it - not vegan as traditionally made. Choose a plain guggul/guggulipid product instead to stay vegan, and check the full label.",
+          "sourceIds": [
+            "planetayurveda-yograj-guggulu"
+          ]
+        }
+      ],
+      "candidateAdditions": [],
+      "sourceIds": [
+        "rxlist-guggul",
+        "mskcc-guggul",
+        "szapary-guggulipid-rct-2003",
+        "gyawali-ayurvedic-herbs-cholesterol-meta-analysis-2021",
+        "thappa-dogra-gugulipid-acne-trial-1994",
+        "ntp-gum-guggul-extract-toxicology-2020",
+        "book-encyclopedia-nutrition-good-health",
+        "book-krauses-nutrition-care-process",
+        "planetayurveda-yograj-guggulu"
+      ]
+    }
+  ]
+}

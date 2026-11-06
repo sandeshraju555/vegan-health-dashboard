@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Vegan Health Dashboard</title>
+<meta name="description" content="A searchable vegan health hub for nutrients, foods and health topics, Indian foods first.">
+<meta name="theme-color" content="#3f7a3f">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon.svg">
+<link rel="stylesheet" href="styles.css">
+<script>
+  // Applied before first paint (not deferred) so there's no flash of the
+  // wrong theme; app.js's theme switch reads/writes the same key.
+  try {
+    var t = JSON.parse(localStorage.getItem("vhd_theme_v1") || "\"system\"");
+    if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+  } catch (e) {}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/7.0.0/fuse.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="sample-banner" id="sample-banner" role="note" hidden>Sample content — not reviewed. This is placeholder text for testing the page, not checked health information.</div>
+
+<header class="app-header">
+  <div class="brand-row">
+    <h1><span class="leaf-icon" aria-hidden="true">🌿</span> Vegan Health Dashboard</h1>
+    <button type="button" id="whats-new-bell" class="bell-btn" aria-label="What's new">🔔<span class="bell-dot" id="whats-new-dot" hidden></span></button>
+  </div>
+  <p class="status-line" id="status-line"></p>
+  <p class="integrity-notice" id="integrity-notice" hidden></p>
+  <div class="search-wrap">
+    <label for="search-input" class="visually-hidden">Search nutrients, foods, health topics and myths</label>
+    <input id="search-input" type="search" placeholder="Search — try 'B12', 'nachni' or 'anaemia'" autocomplete="off">
+    <span class="search-icon" aria-hidden="true">🔎</span>
+    <div id="search-results" class="search-results" hidden role="listbox" aria-label="Search results"></div>
+  </div>
+  <div id="recent-searches" class="recent-searches" hidden></div>
+</header>
+
+<div class="layout">
+<nav class="tabs" aria-label="Main sections">
+  <button data-tab="home" aria-current="true">🏠<span>Home</span></button>
+  <button data-tab="nutrients">🥣<span>Nutrients</span></button>
+  <button data-tab="foods">🥗<span>Foods</span></button>
+  <button data-tab="health">❤️<span>Health</span></button>
+  <button data-tab="more">⋯<span>More</span></button>
+</nav>
+
+<main id="main-content">
+
+  <section id="view-home" class="view" data-view="home">
+    <h2>Three ways vegans meet their needs</h2>
+    <div id="tier-food" class="tier-section">
+      <h2><span class="badge badge-food">Easy from food</span></h2>
+      <div class="tier-grid card-grid" data-tier-grid="food"></div>
+    </div>
+    <div id="tier-planning" class="tier-section">
+      <h2><span class="badge badge-planning">Needs planning</span></h2>
+      <div class="tier-grid card-grid" data-tier-grid="planning"></div>
+    </div>
+    <div id="tier-supplement" class="tier-section">
+      <h2><span class="badge badge-supplement">Best from supplements</span></h2>
+      <div class="tier-grid card-grid" data-tier-grid="supplement"></div>
+    </div>
+    <p class="disclaimer">General information, not medical advice. See the About page for the full note.</p>
+  </section>
+
+  <section id="view-nutrients" class="view" data-view="nutrients" hidden>
+    <h2>Nutrients</h2>
+    <div class="card-grid" id="nutrients-grid"></div>
+    <p class="disclaimer">General information, not medical advice.</p>
+  </section>
+
+  <section id="view-foods" class="view" data-view="foods" hidden>
+    <h2>Foods</h2>
+    <div class="foods-toolbar">
+      <label for="food-sort" class="visually-hidden">Sort foods</label>
+      <select id="food-sort">
+        <option value="az">Sort: A–Z</option>
+        <option value="indian-first">Sort: Indian first</option>
+      </select>
+      <button type="button" id="compare-toggle" class="icon-btn" aria-pressed="false">⚖ Compare</button>
+    </div>
+    <div class="filters-bar" id="food-filters" role="group" aria-label="Filter foods"></div>
+    <button type="button" id="compare-nudge" class="compare-nudge" hidden></button>
+    <div class="card-grid" id="foods-grid"></div>
+    <p class="disclaimer">General information, not medical advice.</p>
+    <div id="compare-bar" class="compare-bar" hidden>
+      <span id="compare-count">0 selected</span>
+      <button type="button" id="compare-view-btn" class="icon-btn" disabled>See comparison</button>
+      <button type="button" id="compare-clear-btn" class="icon-btn">Clear</button>
+    </div>
+  </section>
+
+  <section id="view-health" class="view" data-view="health" hidden>
+    <h2>Health map</h2>
+    <p>Pick one topic to see its foods, or pick up to three to see what helps all of them together.</p>
+    <div class="topic-picker" id="topic-picker" role="group" aria-label="Choose health topics, up to three"></div>
+    <div id="health-single" class="card-grid"></div>
+    <div id="health-combine" hidden></div>
+    <h3 style="margin-top:22px;">Life stages</h3>
+    <div class="card-grid" id="lifestages-grid"></div>
+    <p class="disclaimer">General information, not medical advice.</p>
+  </section>
+
+  <section id="view-more" class="view" data-view="more" hidden>
+
+    <div id="more-menu">
+      <h2>More</h2>
+      <h3>Appearance</h3>
+      <div class="theme-switch" role="group" aria-label="Theme">
+        <button type="button" class="theme-btn" data-theme-choice="light" aria-pressed="false">☀ Light</button>
+        <button type="button" class="theme-btn" data-theme-choice="dark" aria-pressed="false">🌙 Dark</button>
+        <button type="button" class="theme-btn" data-theme-choice="system" aria-pressed="true">📱 Follow phone</button>
+      </div>
+      <nav class="more-menu-list" aria-label="More menu">
+        <button type="button" class="more-menu-row" data-more-section="help">Help — how to use this page <span class="more-menu-arrow" aria-hidden="true">›</span></button>
+        <button type="button" class="more-menu-row" data-more-section="myths">Myths deck <span class="more-menu-arrow" aria-hidden="true">›</span></button>
+        <button type="button" class="more-menu-row" data-more-section="herbs">Herbs <span class="more-menu-arrow" aria-hidden="true">›</span></button>
+        <button type="button" class="more-menu-row" data-more-section="lifestages">Life stages <span class="more-menu-arrow" aria-hidden="true">›</span></button>
+        <button type="button" class="more-menu-row" data-more-section="buy">Where to buy <span class="more-menu-arrow" aria-hidden="true">›</span></button>
+        <button type="button" class="more-menu-row" data-more-section="sources">Sources <span class="more-menu-arrow" aria-hidden="true">›</span></button>
+        <button type="button" class="more-menu-row" data-more-section="about">About and disclaimer <span class="more-menu-arrow" aria-hidden="true">›</span></button>
+      </nav>
+      <h3>Suggest a topic</h3>
+      <p><a id="whatsapp-suggest" class="icon-btn whatsapp-btn" href="#" target="_blank" rel="noopener">💬 Suggest a topic on WhatsApp</a></p>
+    </div>
+
+    <div id="more-sub-help" class="more-subpage" hidden>
+      <button type="button" class="more-back-btn" data-more-back>‹ Back to More</button>
+      <h2>Help — how to use this page</h2>
+      <div class="card">
+        <ul>
+          <li><strong>Search:</strong> the bar at the top finds nutrients, foods, health topics and myths as you type, forgives typos, and understands local names like "nachni". Press <kbd>/</kbd> on a laptop to jump to it.</li>
+          <li><strong>Health map:</strong> on the Health tab, pick one topic to see its foods, or up to three to see what helps all of them together (and any conflicts).</li>
+          <li><strong>Compare:</strong> on the Foods tab, turn on Compare, tick 2 to 4 foods, then "See comparison" for a side-by-side table.</li>
+          <li><strong>Save:</strong> tap ☆ on any card to add it to "My saved" on Home — nothing leaves your browser.</li>
+          <li><strong>Share:</strong> tap 🔗 Share on any card for a link to that exact card, on WhatsApp or copied.</li>
+        </ul>
+        <div class="card-actions"><button type="button" class="icon-btn" id="replay-welcome-btn-2">🌿 Show the welcome message again</button></div>
+      </div>
+    </div>
+
+    <div id="more-sub-myths" class="more-subpage" hidden>
+      <button type="button" class="more-back-btn" data-more-back>‹ Back to More</button>
+      <h2>Myths deck</h2>
+      <div id="myths-grid"></div>
+    </div>
+
+    <div id="more-sub-herbs" class="more-subpage" hidden>
+      <button type="button" class="more-back-btn" data-more-back>‹ Back to More</button>
+      <h2>Herbs</h2>
+      <div class="card-grid" id="herbs-grid"></div>
+    </div>
+
+    <div id="more-sub-lifestages" class="more-subpage" hidden>
+      <button type="button" class="more-back-btn" data-more-back>‹ Back to More</button>
+      <h2>Life stages</h2>
+      <div class="card-grid" id="more-lifestages-grid"></div>
+    </div>
+
+    <div id="more-sub-buy" class="more-subpage" hidden>
+      <button type="button" class="more-back-btn" data-more-back>‹ Back to More</button>
+      <h2>Where to buy</h2>
+      <p>Specialty vegan foods only, each listing dated — not everyday vegetables, cosmetics or accessories.</p>
+      <div class="filters-bar" id="where-to-buy-filters" role="group" aria-label="Filter where to buy"></div>
+      <div class="card-grid" id="where-to-buy-grid"></div>
+      <p><a class="chip buy-guide-btn" href="https://sandeshraju555.github.io/Sandeshvegandb/" target="_blank" rel="noopener">Discover vegan products near you in Bengaluru — order online across India ↗</a></p>
+    </div>
+
+    <div id="more-sub-sources" class="more-subpage" hidden>
+      <button type="button" class="more-back-btn" data-more-back>‹ Back to More</button>
+      <h2>Sources</h2>
+      <div id="sources-list"></div>
+    </div>
+
+    <div id="more-sub-about" class="more-subpage" hidden>
+      <button type="button" class="more-back-btn" data-more-back>‹ Back to More</button>
+      <h2>About and disclaimer</h2>
+      <div class="card">
+        <p><strong>General information, not medical advice.</strong> This dashboard is a personal project for a small circle of friends. It summarises published sources in plain English; it is not a substitute for advice from a qualified clinician. Always see a doctor for diagnosis, medicines, pregnancy, children's health or any urgent symptom.</p>
+        <p>No tracker, accounts or analytics. Bookmarks are saved only in your own browser and are never sent anywhere.</p>
+        <p id="about-sample-note"></p>
+        <div class="card-actions"><button type="button" class="icon-btn" id="replay-welcome-btn">🌿 Show the welcome message again</button></div>
+      </div>
+    </div>
+
+    <p class="disclaimer">General information, not medical advice.</p>
+  </section>
+
+</main>
+</div>
+
+<div class="detail-panel" id="detail-panel" hidden role="dialog" aria-modal="true" aria-labelledby="detail-title">
+  <div class="detail-panel-content">
+    <button class="detail-close" id="detail-close" aria-label="Close">✕</button>
+    <div id="detail-body"></div>
+  </div>
+</div>
+
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+<div class="dialog-overlay" id="confirm-overlay" hidden>
+  <div class="dialog-box" role="alertdialog" aria-modal="true" aria-labelledby="confirm-message">
+    <p id="confirm-message"></p>
+    <div class="dialog-actions">
+      <button type="button" id="confirm-yes" class="icon-btn"></button>
+      <button type="button" id="confirm-no" class="icon-btn"></button>
+    </div>
+  </div>
+</div>
+
+<div class="dialog-overlay" id="welcome-overlay" hidden>
+  <div class="dialog-box" role="dialog" aria-modal="true" aria-labelledby="welcome-title">
+    <h2 id="welcome-title">🌿 Welcome to the Vegan Health Dashboard</h2>
+    <p>A searchable health hub for vegan friends, Indian foods first. <strong>General information, not medical advice.</strong></p>
+    <ul>
+      <li>Search the bar at the top for anything — nutrients, foods, health topics, even a local name.</li>
+      <li>On the Health tab, pick up to three topics to see what helps all of them together.</li>
+      <li>Tap ☆ Save on any card to keep it in "My saved" on Home — nothing is sent anywhere, it all stays in your browser.</li>
+    </ul>
+    <p class="sample-banner-note" id="welcome-sample-note" hidden>This copy is running on sample content — not yet reviewed.</p>
+    <div class="dialog-actions">
+      <button type="button" id="welcome-gotit" class="icon-btn">Got it</button>
+    </div>
+  </div>
+</div>
+
+<button type="button" id="back-to-top-btn" class="back-to-top" hidden aria-label="Back to top">↑ Top</button>
+
+<footer class="app-footer">
+  <p>General information, not medical advice. Vegan Health Dashboard — a personal project, shared by link only.</p>
+</footer>
+
+<script src="integrity.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>
