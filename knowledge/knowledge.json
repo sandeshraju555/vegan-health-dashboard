@@ -9,6 +9,10 @@
     "whatsNew": [
       {
         "date": "2026-11-06",
+        "summary": "Content hygiene fix: removed internal review notes that had been showing in a few cards' Notes/caveat text (reader-facing content only now)."
+      },
+      {
+        "date": "2026-11-06",
         "summary": "First real-content deploy: compiled from drafts/ (not sample content) for a private, unlisted preview."
       }
     ],
@@ -27,7 +31,7 @@
         "glossary",
         "didYouKnow"
       ],
-      "fingerprint": "ce9f35d1fc8cab7464358e39e23e120deeead7288e61b48bbfb1879e2701344d",
+      "fingerprint": "5abeea22d5599ab7dd812c4d4b5b1d9b94a25a1aa8c898335c276b543a0f8e40",
       "recordCounts": {
         "sources": 248,
         "nutrients": 17,
@@ -1207,8 +1211,8 @@
     },
     {
       "id": "brief-safety-rules",
-      "title": "BRIEF.md - Safety rules (this project's own standing editorial policy)",
-      "author": "Sandesh Raju (project owner)",
+      "title": "This project's own editorial and safety policy",
+      "author": "Vegan Health Dashboard - editorial policy",
       "year": 2026,
       "asOf": "2026",
       "type": "Internal project policy",
@@ -2841,7 +2845,7 @@
       "title": "You are what your mother eats: evidence for maternal preconception diet influencing foetal sex in humans",
       "author": "Mathews F, Johnson PJ, Neil A",
       "year": 2008,
-      "asOf": "published 2008-04-22 (Proc Biol Sci 275(1643):1661-1668) - FLAGGED PRE-2015 per BRIEF.md rule 5",
+      "asOf": "published 2008-04-22 (Proc Biol Sci 275(1643):1661-1668) - flagged as pre-2015 for recheck against a more current source if one becomes available",
       "type": "Study or review",
       "evidenceLevel": "Limited",
       "link": "https://doi.org/10.1098/rspb.2008.0105",
@@ -3394,7 +3398,7 @@
       "gaps": [
         "No Indian RDA figure for choline found in the ICMR-NIN 2020 brief note's summary tables - only NIH figures shown here.",
         "No source found quantifying exactly how much lower typical vegan choline intake runs compared with the recommended amount - flagged rather than estimated.",
-        "The 750 mg/day pregnancy-choline figure (Derbyshire & Obeid 2020) remains HELD (not used anywhere in this card) pending a direct read of that systematic review - see candidateAdditions, and also flagged for the Life stages module."
+        "A 750 mg/day pregnancy-choline figure (Derbyshire & Obeid 2020) appears in the research literature but is not used in this card pending a direct read of that systematic review."
       ],
       "candidateAdditions": [
         {
@@ -3586,7 +3590,7 @@
         "No dedicated NIH ODS consumer fact sheet exists for fibre (confirmed during Step 4 caching) and no ICMR-NIN RDA/EAR figure for fibre was found in the brief-note summary tables used for this batch - the general adult target above comes from Nutrition Guide for Physicians (2010), a pre-2015 core-reference book, so it is flagged for recheck against a current Strong source if one becomes available.",
         "No separate Indian adult fibre target (outside the pregnancy-specific 25 g/1,000 kcal figure) was found in the ICMR Dietary Guidelines for Indians - flagged rather than assumed to equal the pregnancy figure.",
         "The food-content gram figures sourced from book-encyclopedia-of-diets (a pre-2015 reference encyclopedia, author unstated) have not been independently cross-checked against USDA FoodData Central - flagged for a recheck before being treated as precise rather than approximate.",
-        "The GI-specific paediatric 'age in years plus 5 g/day' fibre rule remains pending (not used anywhere in this card) - see candidateAdditions; it needs a direct check of the primary source (Williams et al.) before use, especially since it is high-stakes children's content."
+        "A GI-specific paediatric 'age in years plus 5 g/day' fibre rule appears in some sources but is not used in this card - it needs a direct check against its primary source (Williams et al.) before being presented as settled, especially since it concerns children specifically."
       ],
       "candidateAdditions": [
         {
@@ -3634,7 +3638,7 @@
             "nih-folate",
             "icmr-rda-2020"
           ],
-          "conflict": "NIH's adult figure (400 mcg DFE) is notably higher than ICMR-NIN's 2020 RDA for Indian adults (300 mcg men / 220 mcg women). Both shown rather than merged into one number - worth asking the owner which to lead with."
+          "conflict": "NIH's adult figure (400 mcg DFE) is notably higher than ICMR-NIN's 2020 RDA for Indian adults (300 mcg men / 220 mcg women). Both are shown here rather than merged into one number, since the two bodies set different targets."
         },
         {
           "group": "Pregnancy",
@@ -3779,7 +3783,7 @@
       "gaps": [
         "A real randomized controlled trial (folic acid plus zinc supplementation in men undergoing infertility treatment) found no meaningful effect on semen quality or live birth rate, cited to Schisterman EF, et al., JAMA, 2020 - worth keeping in mind if a claim about folic acid and male fertility ever needs checking, though this single trial does not settle the question on its own.",
         "The food-content gram/mcg figures sourced from book-encyclopedia-of-diets (a pre-2015 reference encyclopedia, author unstated) have not been independently cross-checked against USDA FoodData Central - flagged for a recheck before being treated as precise rather than approximate.",
-        "The 4 mg/day higher-dose folic acid figure for women with a previous neural-tube-defect-affected pregnancy remains HELD (not used anywhere in this card) pending a primary clinical-guideline source (NICE, ACOG or ICMR-NIN directly) - see candidateAdditions."
+        "A 4 mg/day higher-dose folic acid figure for women with a previous neural-tube-defect-affected pregnancy appears in some sources, but is not used in this card pending a primary clinical-guideline source (such as NICE, ACOG or ICMR-NIN directly)."
       ],
       "candidateAdditions": [
         {
@@ -4003,7 +4007,7 @@
           "sourceIds": [
             "icmr-rda-2020"
           ],
-          "note": "Owner's decision, 21 Oct 2026: use ICMR-NIN's figure as-is, not NIH's general-population 8 mg/day doubled again for vegetarians - ICMR-NIN's RDA is already derived from a largely plant-based Indian diet, so re-doubling it would likely overstate the target."
+          "note": "This card uses ICMR-NIN's figure as-is, rather than NIH's general-population 8 mg/day doubled again for vegetarians - ICMR-NIN's RDA is already derived from a largely plant-based Indian diet, so re-doubling it would likely overstate the target."
         },
         {
           "group": "Adult women 19-50y",
@@ -4012,7 +4016,7 @@
           "sourceIds": [
             "icmr-rda-2020"
           ],
-          "note": "Same owner's decision as for men: ICMR-NIN's Indian-diet-adjusted figure used as-is."
+          "note": "Same reasoning as for men: ICMR-NIN's Indian-diet-adjusted figure is used as-is."
         },
         {
           "group": "Adults 51y+",
@@ -4107,7 +4111,7 @@
       ],
       "oneLineAction": "Pair lentils, beans or fortified cereal with a vitamin C food at the same meal, and keep tea away from mealtimes.",
       "gaps": [
-        "NIH's separate general-population figures (8 mg/day men, 18 mg/day women) are not shown above, since the owner decided (21 Oct 2026) to use ICMR-NIN's Indian-diet-adjusted RDA as-is rather than re-apply NIH's vegetarian doubling on top of it."
+        "NIH's separate general-population figures (8 mg/day men, 18 mg/day women) are not shown above - this card uses ICMR-NIN's Indian-diet-adjusted RDA as-is rather than re-applying NIH's vegetarian doubling on top of it."
       ],
       "candidateAdditions": [
         {
@@ -4373,7 +4377,7 @@
           ]
         },
         {
-          "text": "For people who form calcium-oxalate kidney stones specifically: magnesium forms a soluble complex with oxalate and may help reduce oxalate absorption, giving it a possible protective role - this mechanism is corroborated by two independent sources. A specific supplement dose (magnesium oxide, 400 mg/day) has been suggested for this purpose in one source, but that figure is not independently verified and is deliberately not repeated here - see the Kidney health topic's own candidateAdditions, where it remains held pending a direct check against NIH or another Strong source. Anyone considering a magnesium supplement for kidney stone prevention should do so under a doctor's guidance, not by self-dosing from this mechanism alone.",
+          "text": "For people who form calcium-oxalate kidney stones specifically: magnesium forms a soluble complex with oxalate and may help reduce oxalate absorption, giving it a possible protective role - this mechanism is corroborated by two independent sources. A specific supplement dose (magnesium oxide, 400 mg/day) has been suggested for this purpose in one source, but this project has not been able to verify that figure against a Strong source, so it is not repeated here. Anyone considering a magnesium supplement for kidney stone prevention should do so under a doctor's guidance, not by self-dosing from this mechanism alone.",
           "label": "illustration",
           "sourceIds": [
             "book-kidney-stone-diet",
@@ -4393,7 +4397,7 @@
       "oneLineAction": "Include legumes, nuts, seeds, whole grains and leafy greens regularly - an ordinary varied vegan diet usually covers magnesium well.",
       "gaps": [
         "NIH does not name vegetarians or vegans as a magnesium risk group anywhere in its consumer fact sheet - this card exists because magnesium is a genuinely common general-population shortfall and a real cross-reference for kidney-stone content, not because vegans specifically fall short.",
-        "The magnesium-oxide 400 mg/day kidney-stone dose remains unverified and intentionally not used in this card - see the Kidney health topic's candidateAdditions for its Gate 2 status."
+        "The magnesium-oxide 400 mg/day kidney-stone dose remains unverified and is intentionally not used in this card."
       ],
       "candidateAdditions": [],
       "sourceIds": [
@@ -4536,7 +4540,7 @@
       "gaps": [
         "No official RDA exists for EPA/DHA specifically (only ALA has a set daily range) - NIH is explicit about this, so no EPA/DHA gram target is stated here rather than estimated.",
         "No source found for an older-adult-specific ALA daily range beyond the general adult figure.",
-        "Green soybean and tofu ALA figures from book-eat-to-live diverged substantially (roughly 4-5x) from USDA FoodData Central's own data and are deliberately not used anywhere in this card - see candidateAdditions history for the comparison."
+        "Green soybean and tofu ALA figures from book-eat-to-live diverged substantially (roughly 4-5x) from USDA FoodData Central's own data and are deliberately not used anywhere in this card."
       ],
       "candidateAdditions": [
         {
@@ -5320,7 +5324,7 @@
             "nih-b12",
             "icmr-rda-2020"
           ],
-          "conflict": "NIH and ICMR-NIN figures are close but not identical (2.4 vs 2.2 mcg/day). Both shown; ask the owner which to lead with on the card."
+          "conflict": "NIH and ICMR-NIN figures are close but not identical (2.4 vs 2.2 mcg/day). Both are shown here rather than picking one."
         },
         {
           "group": "Pregnancy",
@@ -6076,7 +6080,7 @@
           ]
         },
         {
-          "text": "A Cochrane meta-analysis (cited but not independently read by us - a secondhand citation, flagged per BRIEF.md rule 10) found that zinc taken within 24 hours of cold symptoms starting roughly halved the chance of still having symptoms at the 7-day mark, and that regular zinc use over several months reduced the risk of catching a cold at all. This is about zinc and common colds generally, not a vegan-specific point, but worth knowing as a reason some readers may already be taking zinc supplements separately from any vegan-diet consideration.",
+          "text": "A Cochrane meta-analysis (a secondhand citation, not read directly) found that zinc taken within 24 hours of cold symptoms starting roughly halved the chance of still having symptoms at the 7-day mark, and that regular zinc use over several months reduced the risk of catching a cold at all. This is about zinc and common colds generally, not a vegan-specific point, but worth knowing as a reason some readers may already be taking zinc supplements separately from any vegan-diet consideration.",
           "label": "open question",
           "sourceIds": [
             "book-super-immunity"
@@ -6274,7 +6278,7 @@
       "sourceIds": [
         "usda-fdc"
       ],
-      "notes": "Basic entry. Figures are real USDA FoodData Central (SR Legacy) values for raw agar (fdc_id 169280, per 100 g), not estimated. Agar-agar is used in India mainly as a vegan gelatin substitute for desserts (China grass), bought dried in small amounts rather than eaten as a vegetable; included here for food-group completeness per BRIEF.md's Completeness rules, not as a nutrient-dense staple - a typical serving used in cooking is a small fraction of 100 g. Vitamin A and vitamin K are present in USDA's record but deliberately left off: the vitamin K value is phylloquinone (vitamin K1), not the vitamin K2 (menaquinone) this project tracks separately, and vitamin A, RAE is 0 for this food. USDA's record carries a tiny EPA value (0.008 g) but no ALA (the plant omega-3 this project tracks) and no iodine value (checked directly - both fields are empty for ALA/iodine), so omega-3 and iodine are left off rather than estimated.",
+      "notes": "Basic entry. Figures are real USDA FoodData Central (SR Legacy) values for raw agar (fdc_id 169280, per 100 g), not estimated. Agar-agar is used in India mainly as a vegan gelatin substitute for desserts (China grass), bought dried in small amounts rather than eaten as a vegetable; included here for food-group completeness, not as a nutrient-dense staple - a typical serving used in cooking is a small fraction of 100 g. Vitamin A and vitamin K are present in USDA's record but deliberately left off: the vitamin K value is phylloquinone (vitamin K1), not the vitamin K2 (menaquinone) this project tracks separately, and vitamin A, RAE is 0 for this food. USDA's record carries a tiny EPA value (0.008 g) but no ALA (the plant omega-3 this project tracks) and no iodine value (checked directly - both fields are empty for ALA/iodine), so omega-3 and iodine are left off rather than estimated.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - though sold in India as 'China grass', that is a product/brand-style name, not a vernacular translation, so no candidate is proposed here without the owner's confirmation."
     },
@@ -7130,7 +7134,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code BFP573, restated from the dataset, not copied as a table and not invented. Vegan status determined by dish-name review (no meat/fish/egg/dairy/ghee terms, traditionally-dairy dish types like kheer/kadhi/halwa excluded) during this candidate-selection pass, not independently verified against INDB's own ingredient breakdown - flag to the owner at Gate 1 if this assumption needs a closer check for this specific dish.",
+      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code BFP573, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -7264,7 +7268,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC161, restated from the dataset, not copied as a table and not invented. Vegan status determined by dish-name review (no meat/fish/egg/dairy/ghee terms, traditionally-dairy dish types like kheer/kadhi/halwa excluded) during this candidate-selection pass, not independently verified against INDB's own ingredient breakdown - flag to the owner at Gate 1 if this assumption needs a closer check for this specific dish.",
+      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC161, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -7454,7 +7458,7 @@
       "keyNutrientsStatus": "NOT BUILT - no gram-level nutrient source found anywhere for this specific prepared food. Checked: USDA FoodData Central (SR Legacy and Foundation Foods - only soy-based tofu entries exist, nothing chickpea- or split-pea-flour-based), IFCT 2017's own composition table (no tofu entry of any kind), and this project's own Anuvaad INDB composite-dish extraction (no match). This is a regional homemade preparation with no composite-dish nutrient entry on file anywhere checked - do not invent a figure. If a gram-level source becomes available later, this table can be built then.",
       "pairingTips": [],
       "sourceIds": [],
-      "notes": "Gate 1 search found no formal nutrition source for this dish (see keyNutrientsStatus), so this entry is qualitative-only, graded Limited (general knowledge about a named traditional dish, cross-checked across several independent public descriptions - Wikipedia's 'Burmese tofu' article and a dedicated vegan recipe explainer - for consistency, not drawn from this project's Gate 1 document pool or any of its approved reference bodies). No formal sourceIds are attached to any individual claim below because none of them come from an approved source - flagged here plainly rather than citing an unapproved source type (Wikipedia/recipe blogs) as though it had been Gate-1-cleared. What it is: a soy-free, naturally vegan 'tofu' made by cooking legume flour with water (and usually a little salt and turmeric for colour) into a thick, glossy paste that sets like a firm custard once poured into a tray and cooled - no soy, no coagulant (like the calcium sulfate or nigari used for soy tofu) and no pressing needed. There are two related but distinct versions, often both loosely called 'Burmese tofu': the Shan-State original (won ta hpo), made from yellow split-pea flour, and the chickpea-flour version (to hpu, besan-based) that is now the common version across mainland Myanmar and the one most vegan recipe sites outside Myanmar actually mean by 'Burmese tofu' or 'Shan tofu' - whether chickpea tofu itself originated in Shan State or in southern China (it closely resembles a Yunnanese chickpea-flour dish) is openly unresolved, not something to state as settled. Texture is softer, creamier and less firm than soy tofu - more like a cross between custard and silken tofu - but it still holds together well enough to be sliced and pan-fried or deep-fried into firmer pieces, grated into a warm salad (tohu thoke), or simmered into a curry where it softens further and thickens the sauce. Why it is a useful entry for this project: it is a real, naturally-vegan, genuinely soy-free source of plant protein from a pulse (chickpea or split-pea) flour base, worth naming specifically for any reader who avoids soy (allergy, sensitivity, or simply wanting variety) but still wants a tofu-like ingredient - a gap regular soy tofu and tempeh cards don't cover. One serving caution worth naming plainly: some traditional Burmese preparations of the curry version are made with fish sauce - this card does not describe or recommend that preparation; stick to a vegan curry, dip or dressing (soy sauce, rice vinegar, chilli, garlic, peanuts, coriander, as used in the classic salad version) when making this at home.",
+      "notes": "No formal nutrition source was found for this dish (see keyNutrientsStatus), so this entry is qualitative only and graded Limited (general background on a named traditional dish, cross-checked across a few independent public descriptions - Wikipedia's 'Burmese tofu' article and a dedicated vegan recipe explainer - for consistency, rather than drawn from this project's usual approved reference sources). No source ids are attached to the individual points below, since none of them come from an approved source type. What it is: a soy-free, naturally vegan 'tofu' made by cooking legume flour with water (and usually a little salt and turmeric for colour) into a thick, glossy paste that sets like a firm custard once poured into a tray and cooled - no soy, no coagulant (like the calcium sulfate or nigari used for soy tofu) and no pressing needed. There are two related but distinct versions, often both loosely called 'Burmese tofu': the Shan-State original (won ta hpo), made from yellow split-pea flour, and the chickpea-flour version (to hpu, besan-based) that is now the common version across mainland Myanmar and the one most vegan recipe sites outside Myanmar actually mean by 'Burmese tofu' or 'Shan tofu' - whether chickpea tofu itself originated in Shan State or in southern China (it closely resembles a Yunnanese chickpea-flour dish) is openly unresolved, not something to state as settled. Texture is softer, creamier and less firm than soy tofu - more like a cross between custard and silken tofu - but it still holds together well enough to be sliced and pan-fried or deep-fried into firmer pieces, grated into a warm salad (tohu thoke), or simmered into a curry where it softens further and thickens the sauce. Why it is a useful entry for this project: it is a real, naturally-vegan, genuinely soy-free source of plant protein from a pulse (chickpea or split-pea) flour base, worth naming specifically for any reader who avoids soy (allergy, sensitivity, or simply wanting variety) but still wants a tofu-like ingredient - a gap regular soy tofu and tempeh cards don't cover. One serving caution worth naming plainly: some traditional Burmese preparations of the curry version are made with fish sauce - this card does not describe or recommend that preparation; stick to a vegan curry, dip or dressing (soy sauce, rice vinegar, chilli, garlic, peanuts, coriander, as used in the classic salad version) when making this at home.",
       "localNames": {},
       "localNameStatus": "No local name - not an Indian food"
     },
@@ -7766,7 +7770,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC162, restated from the dataset, not copied as a table and not invented. Vegan status determined by dish-name review (no meat/fish/egg/dairy/ghee terms, traditionally-dairy dish types like kheer/kadhi/halwa excluded) during this candidate-selection pass, not independently verified against INDB's own ingredient breakdown - flag to the owner at Gate 1 if this assumption needs a closer check for this specific dish.",
+      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC162, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -8666,7 +8670,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC474, restated from the dataset, not copied as a table and not invented. Vegan status determined by dish-name review (no meat/fish/egg/dairy/ghee terms, traditionally-dairy dish types like kheer/kadhi/halwa excluded) during this candidate-selection pass, not independently verified against INDB's own ingredient breakdown - flag to the owner at Gate 1 if this assumption needs a closer check for this specific dish.",
+      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC474, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -9706,7 +9710,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC144, restated from the dataset, not copied as a table and not invented. Vegan status determined by dish-name review (no meat/fish/egg/dairy/ghee terms, traditionally-dairy dish types like kheer/kadhi/halwa excluded) during this candidate-selection pass, not independently verified against INDB's own ingredient breakdown - flag to the owner at Gate 1 if this assumption needs a closer check for this specific dish.",
+      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC144, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -9753,7 +9757,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code BFP147, restated from the dataset, not copied as a table and not invented. Vegan status determined by dish-name review (no meat/fish/egg/dairy/ghee terms, traditionally-dairy dish types like kheer/kadhi/halwa excluded) during this candidate-selection pass, not independently verified against INDB's own ingredient breakdown - flag to the owner at Gate 1 if this assumption needs a closer check for this specific dish.",
+      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code BFP147, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -9805,7 +9809,7 @@
       "sourceIds": [
         "usda-fdc"
       ],
-      "notes": "Basic entry. Figures are real USDA FoodData Central (SR Legacy) values for raw Irish moss (fdc_id 168456, per 100 g), not estimated. Irish moss is not used in Indian kitchens at all; included here only for food-group completeness per BRIEF.md's Completeness rules, not as any kind of recommendation. Vitamin A and vitamin K are present in USDA's record but deliberately left off: the vitamin K value is phylloquinone (vitamin K1), not the vitamin K2 (menaquinone) this project tracks separately, so including it under vitamin-k2 would misrepresent the vitamer. USDA's record carries a small EPA value (0.046 g) but no ALA (the plant omega-3 this project tracks) and no iodine value (checked directly - both fields are empty for ALA/iodine), so omega-3 and iodine are left off rather than estimated.",
+      "notes": "Basic entry. Figures are real USDA FoodData Central (SR Legacy) values for raw Irish moss (fdc_id 168456, per 100 g), not estimated. Irish moss is not used in Indian kitchens at all; included here only for food-group completeness, not as any kind of recommendation. Vitamin A and vitamin K are present in USDA's record but deliberately left off: the vitamin K value is phylloquinone (vitamin K1), not the vitamin K2 (menaquinone) this project tracks separately, so including it under vitamin-k2 would misrepresent the vitamer. USDA's record carries a small EPA value (0.046 g) but no ALA (the plant omega-3 this project tracks) and no iodine value (checked directly - both fields are empty for ALA/iodine), so omega-3 and iodine are left off rather than estimated.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - Irish moss is not an Indian food and has no local name candidate to propose."
     },
@@ -9979,7 +9983,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code OSR151, restated from the dataset, not copied as a table and not invented. Vegan status determined by dish-name review (no meat/fish/egg/dairy/ghee terms, traditionally-dairy dish types like kheer/kadhi/halwa excluded) during this candidate-selection pass, not independently verified against INDB's own ingredient breakdown - flag to the owner at Gate 1 if this assumption needs a closer check for this specific dish.",
+      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code OSR151, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -10113,7 +10117,7 @@
       "sourceIds": [
         "usda-fdc"
       ],
-      "notes": "Basic entry. Figures are real USDA FoodData Central (SR Legacy) values for raw kelp (fdc_id 168457, per 100 g), not estimated. Kelp is uncommon and mostly imported in Indian kitchens; it is included here for food-group completeness per BRIEF.md's Completeness rules (sea vegetables was the one food group with zero coverage after Step 5 batch 2), not as a staple recommendation for an Indian vegan diet. Iodine is widely reported as very high and variable in kelp, but USDA's SR Legacy dataset carries no iodine value for this food (checked directly against the raw per-nutrient data - the field is simply empty), so iodine is deliberately left off this entry rather than estimated; iodised salt remains the sourced iodine recommendation used elsewhere in this project (see thyroid.json). Omega-3 (ALA) also has no value in this USDA record, so it is left out for the same reason, not assumed to be zero.",
+      "notes": "Basic entry. Figures are real USDA FoodData Central (SR Legacy) values for raw kelp (fdc_id 168457, per 100 g), not estimated. Kelp is uncommon and mostly imported in Indian kitchens; it is included here for food-group completeness (sea vegetables were otherwise missing from this project's food coverage), not as a staple recommendation for an Indian vegan diet. Iodine is widely reported as very high and variable in kelp, but USDA's SR Legacy dataset carries no iodine value for this food (checked directly against the raw per-nutrient data - the field is simply empty), so iodine is deliberately left off this entry rather than estimated; iodised salt remains the sourced iodine recommendation used elsewhere in this project (see thyroid.json). Omega-3 (ALA) also has no value in this USDA record, so it is left out for the same reason, not assumed to be zero.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - kelp is not an Indian food and has no local name candidate to propose."
     },
@@ -10160,7 +10164,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code BFP554, restated from the dataset, not copied as a table and not invented. Vegan status determined by dish-name review (no meat/fish/egg/dairy/ghee terms, traditionally-dairy dish types like kheer/kadhi/halwa excluded) during this candidate-selection pass, not independently verified against INDB's own ingredient breakdown - flag to the owner at Gate 1 if this assumption needs a closer check for this specific dish. UPDATE 21 Oct 2026: the ghee note was raised as a reasonable culinary caution (general knowledge, not independently sourced or verified for this specific dish) - graded Limited evidence, corrected 21 Oct 2026 from an earlier mislabel as owner-sourced knowledge; see veganPreparation field for the two-tier disclosure (traditional-preparation note added, vegan-adapted estimate NOT built - no gram-level ingredient data exists in INDB to calculate it, per the new 'Traditional dishes with a non-vegan default ingredient' rule's requirement not to invent the gram amount).",
+      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code BFP554, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch.",
       "veganPreparation": {
@@ -10172,7 +10176,7 @@
         },
         "veganAdaptedEstimate": {
           "label": "Vegan-adapted (estimated)",
-          "status": "NOT BUILT - no ingredient-level gram breakdown exists in INDB (or any downloaded source) for this dish, so the gram amount of ghee cannot be determined and must not be invented, per BRIEF.md's rule. If ingredient-level data becomes available later, this tier can be built then."
+          "status": "Not built: no ingredient-level breakdown of the ghee content exists in INDB or any other source for this dish, so the amount cannot be calculated. Rather than invent a figure, this tier is left blank; it can be added if that data becomes available."
         }
       }
     },
@@ -10361,7 +10365,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC080, restated from the dataset, not copied as a table and not invented. Vegan status determined by dish-name review (no meat/fish/egg/dairy/ghee terms, traditionally-dairy dish types like kheer/kadhi/halwa excluded) during this candidate-selection pass, not independently verified against INDB's own ingredient breakdown - flag to the owner at Gate 1 if this assumption needs a closer check for this specific dish.",
+      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC080, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -10614,7 +10618,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC146, restated from the dataset, not copied as a table and not invented. Vegan status determined by dish-name review (no meat/fish/egg/dairy/ghee terms, traditionally-dairy dish types like kheer/kadhi/halwa excluded) during this candidate-selection pass, not independently verified against INDB's own ingredient breakdown - flag to the owner at Gate 1 if this assumption needs a closer check for this specific dish. UPDATE 21 Oct 2026: the ghee note was raised as a reasonable culinary caution (general knowledge, not independently sourced or verified for this specific dish) - graded Limited evidence, corrected 21 Oct 2026 from an earlier mislabel as owner-sourced knowledge; see veganPreparation field for the two-tier disclosure (traditional-preparation note added, vegan-adapted estimate NOT built - no gram-level ingredient data exists in INDB to calculate it, per the new 'Traditional dishes with a non-vegan default ingredient' rule's requirement not to invent the gram amount).",
+      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC146, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch.",
       "veganPreparation": {
@@ -10626,7 +10630,7 @@
         },
         "veganAdaptedEstimate": {
           "label": "Vegan-adapted (estimated)",
-          "status": "NOT BUILT - no ingredient-level gram breakdown exists in INDB (or any downloaded source) for this dish, so the gram amount of ghee cannot be determined and must not be invented, per BRIEF.md's rule. If ingredient-level data becomes available later, this tier can be built then."
+          "status": "Not built: no ingredient-level breakdown of the ghee content exists in INDB or any other source for this dish, so the amount cannot be calculated. Rather than invent a figure, this tier is left blank; it can be added if that data becomes available."
         }
       }
     },
@@ -10745,7 +10749,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC258, restated from the dataset, not copied as a table and not invented. Vegan status determined by dish-name review (no meat/fish/egg/dairy/ghee terms, traditionally-dairy dish types like kheer/kadhi/halwa excluded) during this candidate-selection pass, not independently verified against INDB's own ingredient breakdown - flag to the owner at Gate 1 if this assumption needs a closer check for this specific dish.",
+      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC258, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -11110,7 +11114,7 @@
       "sourceIds": [
         "usda-fdc"
       ],
-      "notes": "Basic entry. Figures are real USDA FoodData Central (SR Legacy) values, per 100 g (fdc_id 168458). USDA's dataset has no entry named 'nori' specifically - the closest real match is 'Seaweed, laver, raw', laver being the type of red seaweed that dried nori sheets are made from. These figures are for the raw, undried seaweed, not the dried, pressed sheets sold as nori, which are far more concentrated per 100 g because almost all the water is removed; we did not scale or estimate a dried-sheet figure, since USDA has no dried-nori row to check that scaling against, and BRIEF.md rule 11 says never fill a gap from memory. Nori is uncommon and mostly imported in Indian kitchens; it is included here for food-group completeness per BRIEF.md's Completeness rules, not as a staple recommendation. Iodine is often cited as high in nori, but USDA's record here carries no iodine value at all (checked directly - the field is empty), so iodine is deliberately left off rather than estimated. Omega-3 (ALA) also has no value in this record, so it is left out for the same reason.",
+      "notes": "Basic entry. Figures are real USDA FoodData Central (SR Legacy) values, per 100 g (fdc_id 168458). USDA's dataset has no entry named 'nori' specifically - the closest real match is 'Seaweed, laver, raw', laver being the type of red seaweed that dried nori sheets are made from. These figures are for the raw, undried seaweed, not the dried, pressed sheets sold as nori, which are far more concentrated per 100 g because almost all the water is removed; we did not scale or estimate a dried-sheet figure, since USDA has no dried-nori row to check that scaling against, and this project does not fill nutrient gaps from memory. Nori is uncommon and mostly imported in Indian kitchens; it is included here for food-group completeness, not as a staple recommendation. Iodine is often cited as high in nori, but USDA's record here carries no iodine value at all (checked directly - the field is empty), so iodine is deliberately left off rather than estimated. Omega-3 (ALA) also has no value in this record, so it is left out for the same reason.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - nori is not an Indian food and has no local name candidate to propose."
     },
@@ -11674,7 +11678,7 @@
       ],
       "pairingTips": [
         {
-          "text": "Black pepper is used in such small amounts that it contributes almost nothing to daily nutrient totals by itself; some sources say piperine (the compound behind its sharpness) may help the body use turmeric's curcumin when the two are cooked together, though this project has not independently verified that claim against a Strong source.",
+          "text": "Black pepper is used in such small amounts that it contributes almost nothing to daily nutrient totals by itself; some sources say piperine (the compound behind its sharpness) may help the body use turmeric's curcumin when the two are cooked together, though this is not yet backed by a Strong source.",
           "label": "open question",
           "sourceIds": [
             "ifct-2017"
@@ -11743,7 +11747,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code OSR103, restated from the dataset, not copied as a table and not invented. Vegan status determined by dish-name review (no meat/fish/egg/dairy/ghee terms, traditionally-dairy dish types like kheer/kadhi/halwa excluded) during this candidate-selection pass, not independently verified against INDB's own ingredient breakdown - flag to the owner at Gate 1 if this assumption needs a closer check for this specific dish.",
+      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code OSR103, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -11974,7 +11978,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code BFP148, restated from the dataset, not copied as a table and not invented. Vegan status determined by dish-name review (no meat/fish/egg/dairy/ghee terms, traditionally-dairy dish types like kheer/kadhi/halwa excluded) during this candidate-selection pass, not independently verified against INDB's own ingredient breakdown - flag to the owner at Gate 1 if this assumption needs a closer check for this specific dish.",
+      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code BFP148, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -12343,7 +12347,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC467, restated from the dataset, not copied as a table and not invented. Vegan status determined by dish-name review during this candidate-selection pass, not independently verified against INDB's own ingredient breakdown - flag to the owner at Gate 1 if this assumption needs a closer check for this specific dish. UPDATE 21 Oct 2026: the ghee note was raised as a reasonable culinary caution (general knowledge, not independently sourced or verified for this specific dish) - graded Limited evidence, corrected 21 Oct 2026 from an earlier mislabel as owner-sourced knowledge; see veganPreparation field for the two-tier disclosure (traditional-preparation note added, vegan-adapted estimate NOT built - no gram-level ingredient data exists in INDB to calculate it, per the new 'Traditional dishes with a non-vegan default ingredient' rule's requirement not to invent the gram amount).",
+      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC467, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description, rather than a full ingredient-level breakdown from INDB.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch.",
       "veganPreparation": {
@@ -12355,7 +12359,7 @@
         },
         "veganAdaptedEstimate": {
           "label": "Vegan-adapted (estimated)",
-          "status": "NOT BUILT - no ingredient-level gram breakdown exists in INDB (or any downloaded source) for this dish, so the gram amount of ghee cannot be determined and must not be invented, per BRIEF.md's rule. If ingredient-level data becomes available later, this tier can be built then."
+          "status": "Not built: no ingredient-level breakdown of the ghee content exists in INDB or any other source for this dish, so the amount cannot be calculated. Rather than invent a figure, this tier is left blank; it can be added if that data becomes available."
         }
       }
     },
@@ -12637,7 +12641,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC165, restated from the dataset, not copied as a table and not invented. Vegan status determined by dish-name review (no meat/fish/egg/dairy/ghee terms, traditionally-dairy dish types like kheer/kadhi/halwa excluded) during this candidate-selection pass, not independently verified against INDB's own ingredient breakdown - flag to the owner at Gate 1 if this assumption needs a closer check for this specific dish.",
+      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC165, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -13063,7 +13067,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC167, restated from the dataset, not copied as a table and not invented. Vegan status determined by dish-name review (no meat/fish/egg/dairy/ghee terms, traditionally-dairy dish types like kheer/kadhi/halwa excluded) during this candidate-selection pass, not independently verified against INDB's own ingredient breakdown - flag to the owner at Gate 1 if this assumption needs a closer check for this specific dish.",
+      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC167, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -13197,7 +13201,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code BFP579, restated from the dataset, not copied as a table and not invented. Vegan status determined by dish-name review (no meat/fish/egg/dairy/ghee terms, traditionally-dairy dish types like kheer/kadhi/halwa excluded) during this candidate-selection pass, not independently verified against INDB's own ingredient breakdown - flag to the owner at Gate 1 if this assumption needs a closer check for this specific dish.",
+      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code BFP579, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -13408,7 +13412,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code BFP575, restated from the dataset, not copied as a table and not invented. Vegan status determined by dish-name review (no meat/fish/egg/dairy/ghee terms, traditionally-dairy dish types like kheer/kadhi/halwa excluded) during this candidate-selection pass, not independently verified against INDB's own ingredient breakdown - flag to the owner at Gate 1 if this assumption needs a closer check for this specific dish.",
+      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code BFP575, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -13455,7 +13459,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC164, restated from the dataset, not copied as a table and not invented. Vegan status determined by dish-name review (no meat/fish/egg/dairy/ghee terms, traditionally-dairy dish types like kheer/kadhi/halwa excluded) during this candidate-selection pass, not independently verified against INDB's own ingredient breakdown - flag to the owner at Gate 1 if this assumption needs a closer check for this specific dish.",
+      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC164, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -13632,7 +13636,7 @@
       "sourceIds": [
         "usda-fdc"
       ],
-      "notes": "Basic entry. Figures are real USDA FoodData Central (SR Legacy) values for raw spirulina (fdc_id 170091, per 100 g), not estimated. Spirulina is uncommon in Indian kitchens (sold mainly as a supplement powder, not a kitchen ingredient) and is included here for food-group completeness per BRIEF.md's Completeness rules, not as a staple recommendation. Vitamin A and vitamin K are present in USDA's record but deliberately left off this entry: the vitamin K value is phylloquinone (vitamin K1), not the vitamin K2 (menaquinone) this project tracks as a separate nutrient, so including it under vitamin-k2 would misrepresent the vitamer. USDA's record has no iodine value and no omega-3 ALA value for spirulina (checked directly - both fields are empty), so neither is included or estimated; iodised salt remains the sourced iodine recommendation used elsewhere in this project (see thyroid.json).",
+      "notes": "Basic entry. Figures are real USDA FoodData Central (SR Legacy) values for raw spirulina (fdc_id 170091, per 100 g), not estimated. Spirulina is uncommon in Indian kitchens (sold mainly as a supplement powder, not a kitchen ingredient) and is included here for food-group completeness, not as a staple recommendation. Vitamin A and vitamin K are present in USDA's record but deliberately left off this entry: the vitamin K value is phylloquinone (vitamin K1), not the vitamin K2 (menaquinone) this project tracks as a separate nutrient, so including it under vitamin-k2 would misrepresent the vitamer. USDA's record has no iodine value and no omega-3 ALA value for spirulina (checked directly - both fields are empty), so neither is included or estimated; iodised salt remains the sourced iodine recommendation used elsewhere in this project (see thyroid.json).",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - spirulina is not an Indian food and has no local name candidate to propose."
     },
@@ -13679,7 +13683,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code BFP578, restated from the dataset, not copied as a table and not invented. Vegan status determined by dish-name review during this candidate-selection pass, not independently verified against INDB's own ingredient breakdown - flag to the owner at Gate 1 if this assumption needs a closer check for this specific dish. UPDATE 21 Oct 2026: the ghee note was raised as a reasonable culinary caution (general knowledge, not independently sourced or verified for this specific dish) - graded Limited evidence, corrected 21 Oct 2026 from an earlier mislabel as owner-sourced knowledge; see veganPreparation field for the two-tier disclosure (traditional-preparation note added, vegan-adapted estimate NOT built - no gram-level ingredient data exists in INDB to calculate it, per the new 'Traditional dishes with a non-vegan default ingredient' rule's requirement not to invent the gram amount).",
+      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code BFP578, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description, rather than a full ingredient-level breakdown from INDB.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch.",
       "veganPreparation": {
@@ -13691,7 +13695,7 @@
         },
         "veganAdaptedEstimate": {
           "label": "Vegan-adapted (estimated)",
-          "status": "NOT BUILT - no ingredient-level gram breakdown exists in INDB (or any downloaded source) for this dish, so the gram amount of ghee cannot be determined and must not be invented, per BRIEF.md's rule. If ingredient-level data becomes available later, this tier can be built then."
+          "status": "Not built: no ingredient-level breakdown of the ghee content exists in INDB or any other source for this dish, so the amount cannot be calculated. Rather than invent a figure, this tier is left blank; it can be added if that data becomes available."
         }
       }
     },
@@ -14219,7 +14223,7 @@
       ],
       "preparationNotes": [
         {
-          "text": "Turmeric is almost always cooked into a dish rather than eaten alone; a pinch of black pepper and some oil in the same dish are commonly said to help the body use turmeric's curcumin, though this project has not independently verified that claim against a Strong source.",
+          "text": "Turmeric is almost always cooked into a dish rather than eaten alone; a pinch of black pepper and some oil in the same dish are commonly said to help the body use turmeric's curcumin, though this is not yet backed by a Strong source.",
           "label": "open question",
           "sourceIds": [
             "ifct-2017"
@@ -14443,7 +14447,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC123, restated from the dataset, not copied as a table and not invented. Vegan status determined by dish-name review (no meat/fish/egg/dairy/ghee terms, traditionally-dairy dish types like kheer/kadhi/halwa excluded) during this candidate-selection pass, not independently verified against INDB's own ingredient breakdown - flag to the owner at Gate 1 if this assumption needs a closer check for this specific dish. UPDATE 21 Oct 2026: the ghee note was raised as a reasonable culinary caution (general knowledge, not independently sourced or verified for this specific dish) - graded Limited evidence, corrected 21 Oct 2026 from an earlier mislabel as owner-sourced knowledge; see veganPreparation field for the two-tier disclosure (traditional-preparation note added, vegan-adapted estimate NOT built - no gram-level ingredient data exists in INDB to calculate it, per the new 'Traditional dishes with a non-vegan default ingredient' rule's requirement not to invent the gram amount).",
+      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC123, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch.",
       "veganPreparation": {
@@ -14455,7 +14459,7 @@
         },
         "veganAdaptedEstimate": {
           "label": "Vegan-adapted (estimated)",
-          "status": "NOT BUILT - no ingredient-level gram breakdown exists in INDB (or any downloaded source) for this dish, so the gram amount of ghee cannot be determined and must not be invented, per BRIEF.md's rule. If ingredient-level data becomes available later, this tier can be built then."
+          "status": "Not built: no ingredient-level breakdown of the ghee content exists in INDB or any other source for this dish, so the amount cannot be calculated. Rather than invent a figure, this tier is left blank; it can be added if that data becomes available."
         }
       }
     },
@@ -14507,7 +14511,7 @@
       "sourceIds": [
         "usda-fdc"
       ],
-      "notes": "Basic entry. Figures are real USDA FoodData Central (SR Legacy) values for raw wakame (fdc_id 170496, per 100 g), not estimated. Wakame is uncommon and imported in Indian kitchens (used in miso soup and some salads) and is included here for food-group completeness per BRIEF.md's Completeness rules, not as a staple recommendation. Vitamin A and vitamin K are present in USDA's record but deliberately left off: the vitamin K value is phylloquinone (vitamin K1), not the vitamin K2 (menaquinone) this project tracks separately, so including it under vitamin-k2 would misrepresent the vitamer. USDA's record carries a small EPA value (0.186 g) but no ALA (the plant omega-3 this project tracks) and no iodine value (checked directly - both fields are empty for ALA/iodine), so omega-3 and iodine are left off rather than estimated; iodised salt remains the sourced iodine recommendation used elsewhere in this project (see thyroid.json).",
+      "notes": "Basic entry. Figures are real USDA FoodData Central (SR Legacy) values for raw wakame (fdc_id 170496, per 100 g), not estimated. Wakame is uncommon and imported in Indian kitchens (used in miso soup and some salads) and is included here for food-group completeness, not as a staple recommendation. Vitamin A and vitamin K are present in USDA's record but deliberately left off: the vitamin K value is phylloquinone (vitamin K1), not the vitamin K2 (menaquinone) this project tracks separately, so including it under vitamin-k2 would misrepresent the vitamer. USDA's record carries a small EPA value (0.186 g) but no ALA (the plant omega-3 this project tracks) and no iodine value (checked directly - both fields are empty for ALA/iodine), so omega-3 and iodine are left off rather than estimated; iodised salt remains the sourced iodine recommendation used elsewhere in this project (see thyroid.json).",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - wakame is not an Indian food and has no local name candidate to propose."
     },
@@ -16899,7 +16903,7 @@
         },
         {
           "foodId": "walnut",
-          "note": "An ALA omega-3 source PCRM links to better mood in people eating vegetarian than fish-sourced omega-3 in one small study (see candidateAdditions) - also covered in our omega-3 nutrient card."
+          "note": "An ALA omega-3 source PCRM links to better mood in people eating vegetarian than fish-sourced omega-3 in one small study - also covered in our omega-3 nutrient card."
         },
         {
           "foodId": "flaxseed-linseed",
@@ -19716,7 +19720,7 @@
           ]
         },
         {
-          "text": "This food-combining claim sits inside the same broader Ayurvedic 'dosha' and food-energetics framework as the existing TCM yin/yang myth candidate already on file: foods and bodily states are classified by qualities (hot/cold, heavy/light, dry/moist) that are treated as causing specific symptoms - for example, the book states 'too many vata qualities might cause' gas, constipation, cold hands and feet, and anxiety, and 'too many pitta qualities might cause' acid indigestion/reflux, dysmenorrhea, and acne/rosacea - independent of a food's measurable nutrient content. As with the TCM claim, this is a traditional explanatory system rather than one built on the mainstream physiology this project otherwise requires for a health claim (BRIEF.md rule 10).",
+          "text": "This food-combining claim sits inside the same broader Ayurvedic 'dosha' and food-energetics framework as the TCM yin/yang myth covered elsewhere in this deck: foods and bodily states are classified by qualities (hot/cold, heavy/light, dry/moist) that are treated as causing specific symptoms - for example, the book states 'too many vata qualities might cause' gas, constipation, cold hands and feet, and anxiety, and 'too many pitta qualities might cause' acid indigestion/reflux, dysmenorrhea, and acne/rosacea - independent of a food's measurable nutrient content. As with the TCM claim, this is a traditional explanatory system rather than one built on the kind of mainstream physiology a health claim usually needs.",
           "label": "illustration",
           "sourceIds": [
             "book-everyday-ayurveda-cookbook"
@@ -19730,7 +19734,7 @@
           ]
         },
         {
-          "text": "Notably, the book's own text already softens the claim considerably, in a way worth keeping prominent for an anxious reader: 'remember that an overzealous approach can create stress. One is likely to eat incompatible combinations sometimes, and unless you notice they make you feel bad or you have chronic digestive disorders, relax.' This is the same internal-inconsistency pattern already noted in the TCM myth candidate (its own 'For vegetarians' clinical note) - even within the book's own framing, occasional 'incompatible' combinations are described as harmless for most people, not as an urgent health risk.",
+          "text": "Notably, the book's own text already softens the claim considerably, in a way worth keeping prominent for an anxious reader: 'remember that an overzealous approach can create stress. One is likely to eat incompatible combinations sometimes, and unless you notice they make you feel bad or you have chronic digestive disorders, relax.' This is the same internal-inconsistency pattern already noted in the TCM yin/yang myth (its own 'For vegetarians' clinical note) - even within the book's own framing, occasional 'incompatible' combinations are described as harmless for most people, not as an urgent health risk.",
           "label": "illustration",
           "sourceIds": [
             "book-everyday-ayurveda-cookbook"
@@ -19760,7 +19764,7 @@
           ]
         },
         {
-          "text": "The book supports this with individual patient anecdotes (a person feeling worse on a vegetarian diet, recovering after adding meat; a vegetarian with digestive problems improving on a high-protein animal-food diet) rather than controlled studies - anecdote is a weak form of evidence per BRIEF.md rule 10, and a single person's experience on a diet change does not establish a blood-type-specific cause.",
+          "text": "The book supports this with individual patient anecdotes (a person feeling worse on a vegetarian diet, recovering after adding meat; a vegetarian with digestive problems improving on a high-protein animal-food diet) rather than controlled studies - anecdote is a weak form of evidence, and a single person's experience on a diet change does not establish a blood-type-specific cause.",
           "label": "illustration",
           "sourceIds": [
             "book-eat-right-for-your-type"
@@ -20056,7 +20060,7 @@
           ]
         },
         {
-          "text": "Separately from the anatomy argument, a distinct but closely related claim in book-cosmic-nutrition-taoist - that spirulina, alfalfa, miso and tofu are reliable natural sources of vitamin B12 for vegans - is a more safety-relevant inaccuracy and is recorded as a CONFLICT with this project's own existing, better-sourced vitamin-b12.json content in drafts/llamaparse_findings/cosmic-nutrition-taoist.md, rather than drafted as a second myths card here, per BRIEF.md rule 6.",
+          "text": "Separately from the anatomy argument, a distinct but closely related claim in book-cosmic-nutrition-taoist - that spirulina, alfalfa, miso and tofu are reliable natural sources of vitamin B12 for vegans - is a more safety-relevant inaccuracy: this project's own vitamin B12 nutrient card, based on better evidence, does not support those foods as a reliable B12 source for vegans.",
           "label": "illustration",
           "sourceIds": [
             "book-cosmic-nutrition-taoist"
@@ -20233,7 +20237,7 @@
           ]
         },
         {
-          "text": "The book's own preface concedes, in its own words, that 'current Western scientific methods are not yet able to offer plausible explanations for the concept of energetics in Chinese nutrition' - a direct acknowledgement, from the source itself, that the yin/yang thermal-nature framework has no established mechanism in mainstream nutrition or physiology. This is useful context for why the claim is flagged, but it is the author's own framing, not an independent rebuttal, and does not by itself satisfy BRIEF.md rule 10's requirement for a Strong source.",
+          "text": "The book's own preface concedes, in its own words, that 'current Western scientific methods are not yet able to offer plausible explanations for the concept of energetics in Chinese nutrition' - a direct acknowledgement, from the source itself, that the yin/yang thermal-nature framework has no established mechanism in mainstream nutrition or physiology. This is useful context for why the claim is flagged, but it is the author's own framing, not an independent rebuttal, and does not amount to a Strong-source rebuttal on its own.",
           "label": "illustration",
           "sourceIds": [
             "book-chinese-nutrition-therapy-tcm"
@@ -22017,7 +22021,7 @@
           ]
         },
         {
-          "text": "This project's own Gut health topic file already had a pending candidate note (sourced to a Gale reference encyclopedia) naming licorice root as a traditional remedy people reach for to help 'rebalance stomach acid output' for heartburn, alongside other home remedies such as banana, aloe vera, chamomile and ginger. That book source gives no specific study citation of its own for licorice, so this card treats it only as a starting lead confirming licorice's traditional reputation for this use, not as evidence in itself - the actual evidence check for this use is in whatEvidenceShows below, drawn from this card's own independently fetched trials.",
+          "text": "The Gut health topic page also names licorice root, among other home remedies such as banana, aloe vera, chamomile and ginger, as a traditional remedy people reach for to help 'rebalance stomach acid output' for heartburn (citing a general reference encyclopedia, which gives no specific study for licorice itself). That confirms licorice's traditional reputation for this use, but is not evidence in itself - the actual evidence for this use is covered in 'What the evidence shows' below, drawn from clinical trials.",
           "label": "illustration",
           "sourceIds": [
             "book-encyclopedia-of-diets"
@@ -22053,7 +22057,7 @@
           ]
         },
         {
-          "text": "For digestive use specifically - heartburn, dyspepsia and peptic ulcers, the traditional use this project's own Gut health topic file already had a pending candidate note about - the evidence is real but considerably thinner than licorice's long traditional reputation suggests, and this card found a genuine overclaiming pattern to flag, the same check this project has run on every herb's reviews to date. The clearest single trial is a 2011 randomised, double-blind, placebo-controlled study of GutGard (a flavonoid-rich, low-glycyrrhizin standardised root extract, not literal DGL) in 50 adults with functional dyspepsia: 75 mg twice daily for 30 days produced significantly lower total symptom scores and Nepean Dyspepsia Index scores than placebo at both day 15 and day 30, and was well tolerated. However, independently checking the paper's own author list (not just its stated conflict-of-interest line) found that seven of the eleven authors, including the corresponding author, are staff of Natural Remedies, the Bangalore company that developed GutGard and that itself also designed the trial's own randomisation sequence - a direct manufacturer relationship built into the trial's authorship, not merely an undisclosed funding line hidden in acknowledgments. The paper's conclusion also states GutGard is 'a safe and effective remedy for patients with functional dyspepsia,' a firmer claim than a single 25-per-arm, 30-day, sponsor-run trial with a baseline age/blood-pressure imbalance between groups can really support, and the trial found no benefit over placebo for one specific symptom (early satiety).",
+          "text": "For digestive use specifically - heartburn, dyspepsia and peptic ulcers, also touched on by the Gut health topic page - the evidence is real but considerably thinner than licorice's long traditional reputation suggests, and overclaims the strength of a single sponsor-run trial. The clearest single trial is a 2011 randomised, double-blind, placebo-controlled study of GutGard (a flavonoid-rich, low-glycyrrhizin standardised root extract, not literal DGL) in 50 adults with functional dyspepsia: 75 mg twice daily for 30 days produced significantly lower total symptom scores and Nepean Dyspepsia Index scores than placebo at both day 15 and day 30, and was well tolerated. However, independently checking the paper's own author list (not just its stated conflict-of-interest line) found that seven of the eleven authors, including the corresponding author, are staff of Natural Remedies, the Bangalore company that developed GutGard and that itself also designed the trial's own randomisation sequence - a direct manufacturer relationship built into the trial's authorship, not merely an undisclosed funding line hidden in acknowledgments. The paper's conclusion also states GutGard is 'a safe and effective remedy for patients with functional dyspepsia,' a firmer claim than a single 25-per-arm, 30-day, sponsor-run trial with a baseline age/blood-pressure imbalance between groups can really support, and the trial found no benefit over placebo for one specific symptom (early satiety).",
           "label": "open question",
           "sourceIds": [
             "allan-gutgard-dyspepsia-rct-2011"
@@ -23062,7 +23066,7 @@
           ]
         },
         {
-          "text": "Cholesterol-lowering is a commonly cited use for psyllium and soluble fibre generally, though this card has not independently verified the specific clinical-trial evidence behind it in the same depth as the gut-health findings above - see this project's own fibre nutrient card and heart-and-cholesterol topic for the better-established, food-based soluble-fibre/cholesterol evidence.",
+          "text": "Cholesterol-lowering is a commonly cited use for psyllium and soluble fibre generally; the evidence behind this specific claim is less thoroughly established than the gut-health findings above - see the fibre nutrient card and heart-and-cholesterol topic for the better-established, food-based soluble-fibre/cholesterol evidence.",
           "label": "open question",
           "sourceIds": [
             "rxlist-psyllium"
