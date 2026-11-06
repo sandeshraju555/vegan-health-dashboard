@@ -132,7 +132,14 @@ input:focus-visible,
 header.app-header {
   position: sticky;
   top: 0;
-  z-index: 50;
+  /* Must outrank nav.tabs (also z-index: 50) - at the desktop breakpoint
+     nav becomes a tall sticky sidebar that's a later DOM sibling of this
+     header, so on a z-index tie it would paint over the header's own
+     .search-results dropdown wherever they overlap vertically, clipping
+     the left ~170px of every result's text behind nav's opaque
+     background. Still below .sample-banner (60, a sticky sibling just
+     above this header when both are visible) and everything else. */
+  z-index: 55;
   background: var(--cream);
   border-bottom: 1px solid var(--border);
   padding: 10px 12px 8px;
