@@ -951,17 +951,36 @@
     return sorted;
   }
 
+  // One-time explainer for the Rank-by/Compare naming, shown under the
+  // toolbar until the viewer actually uses either control once, then never
+  // again - own localStorage key, not sharing WHATS_NEW_SEEN_KEY/
+  // SHARE_TIP_SEEN_KEY/foodSortMode or any other existing one.
+  var FOODS_TOOLBAR_TIP_SEEN_KEY = "vhd_foods_toolbar_tip_seen_v1";
+  function showFoodsToolbarTipIfNew() {
+    var tip = qs("#foods-toolbar-tip");
+    if (tip && !loadJSON(FOODS_TOOLBAR_TIP_SEEN_KEY, false)) tip.hidden = false;
+  }
+  function dismissFoodsToolbarTip() {
+    var tip = qs("#foods-toolbar-tip");
+    if (tip && !tip.hidden) {
+      tip.hidden = true;
+      saveJSON(FOODS_TOOLBAR_TIP_SEEN_KEY, true);
+    }
+  }
+
   function renderSortOptions() {
     var select = qs("#food-sort");
     var extra = (data.nutrients || []).map(function (n) {
-      return '<option value="nutrient:' + n.id + '">Sort: by ' + escapeHtml(n.name) + "</option>";
+      return '<option value="nutrient:' + n.id + '">Rank by: ' + escapeHtml(n.name) + "</option>";
     }).join("");
     select.insertAdjacentHTML("beforeend", extra);
     select.value = foodSortMode;
     select.addEventListener("change", function () {
       foodSortMode = select.value;
+      dismissFoodsToolbarTip();
       renderFoods();
     });
+    showFoodsToolbarTipIfNew();
   }
 
   // Natural combined description of whichever food filter chip(s) are
@@ -1090,6 +1109,7 @@
   }
 
   function openComparePicker() {
+    dismissFoodsToolbarTip();
     qs("#compare-picker-search").value = "";
     renderComparePickerList();
     qs("#compare-picker-overlay").hidden = false;
@@ -1102,6 +1122,7 @@
   }
 
   function toggleCompareMode() {
+    dismissFoodsToolbarTip();
     compareMode = !compareMode;
     qs("#compare-toggle").setAttribute("aria-pressed", String(compareMode));
     if (!compareMode) { compareSelection = []; }

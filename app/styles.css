@@ -657,6 +657,11 @@ button.evidence-badge {
   flex-wrap: wrap;
   margin-bottom: 6px;
 }
+.toolbar-tip {
+  margin: 0 0 8px;
+  font-size: 0.82rem;
+  color: var(--olive-soft);
+}
 #food-sort {
   padding: 8px 10px;
   border-radius: 10px;
