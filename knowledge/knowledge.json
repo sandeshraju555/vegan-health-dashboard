@@ -31,7 +31,7 @@
         "glossary",
         "didYouKnow"
       ],
-      "fingerprint": "f1d9189f684d88a8048d469e33844e93ebef4948bce98b0f0e9ab57a01676f43",
+      "fingerprint": "3c4d9663acbd3579bcba87f28d7c24278e18c77bf42fdefa8a110024449bb74e",
       "recordCounts": {
         "sources": 248,
         "nutrients": 17,
@@ -5762,8 +5762,7 @@
         "usda-fdc"
       ],
       "notes": "Basic entry. Figures are real USDA FoodData Central (SR Legacy) values for raw agar (fdc_id 169280, per 100 g), not estimated. Agar-agar is used in India mainly as a vegan gelatin substitute for desserts (China grass), bought dried in small amounts rather than eaten as a vegetable; included here for food-group completeness, not as a nutrient-dense staple - a typical serving used in cooking is a small fraction of 100 g. Vitamin A and vitamin K are present in USDA's record but deliberately left off: the vitamin K value is phylloquinone (vitamin K1), not the vitamin K2 (menaquinone) this project tracks separately, and vitamin A, RAE is 0 for this food. USDA's record carries a tiny EPA value (0.008 g) but no ALA (the plant omega-3 this project tracks) and no iodine value (checked directly - both fields are empty for ALA/iodine), so omega-3 and iodine are left off rather than estimated.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - though sold in India as 'China grass', that is a product/brand-style name, not a vernacular translation, so no candidate is proposed here without the owner's confirmation."
+      "localNames": {}
     },
     {
       "id": "agathi-leaves",
@@ -5809,8 +5808,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "almond-milk-fortified",
@@ -5860,8 +5858,7 @@
         "nih-b12",
         "nih-d"
       ],
-      "localNames": {},
-      "localNameStatus": "No local name - not an Indian food"
+      "localNames": {}
     },
     {
       "id": "almond",
@@ -5888,8 +5885,7 @@
       "oneLineAction": "A small handful of almonds (soaked overnight and peeled, if you prefer) makes an easy everyday snack.",
       "localNames": {
         "hi": "badam"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026. Language tagging: best-effort by Claude, confirmed accurate except jowar's Telugu tag ('jonna') which is flagged uncertain - Kannada's own word may be 'jola' instead."
+      }
     },
     {
       "id": "amaranth-grain",
@@ -5961,8 +5957,7 @@
       "oneLineAction": "A rajgira porridge or puffed-amaranth snack a few times a week adds iron and calcium alongside other grains.",
       "localNames": {
         "hi": "rajgira"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026 (batch approval of 18)."
+      }
     },
     {
       "id": "amaranth-leaves-spiny",
@@ -5998,8 +5993,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "amaranth-leaves",
@@ -6072,8 +6066,7 @@
       "localNames": {
         "hi": "chaulai",
         "te": "thotakura"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026 (batch approval of 18)."
+      }
     },
     {
       "id": "apple",
@@ -6088,8 +6081,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "apricot-dried",
@@ -6104,8 +6096,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "apricot-processed",
@@ -6120,8 +6111,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "asafoetida",
@@ -6157,8 +6147,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "ash-gourd",
@@ -6173,8 +6162,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "avocado-fruit",
@@ -6225,8 +6213,7 @@
         "ifct-2017",
         "usda-fdc"
       ],
-      "localNames": {},
-      "localNameStatus": "No local name - not an Indian food"
+      "localNames": {}
     },
     {
       "id": "bael-fruit",
@@ -6247,8 +6234,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "bajra",
@@ -6314,8 +6300,7 @@
       "oneLineAction": "Rotate bajra roti into the week alongside wheat or rice for extra iron and fibre.",
       "localNames": {
         "hi": "bajra"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026. Language tagging: best-effort by Claude, confirmed accurate except jowar's Telugu tag ('jonna') which is flagged uncertain - Kannada's own word may be 'jola' instead."
+      }
     },
     {
       "id": "bamboo-shoot-tender",
@@ -6330,8 +6315,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "banana-flower",
@@ -6354,8 +6338,7 @@
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
       "localNames": {
         "ta": "vazhaipoo"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026 (batch approval of 18)."
+      }
     },
     {
       "id": "banana-ripe",
@@ -6370,8 +6353,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "barley",
@@ -6431,8 +6413,7 @@
       "oneLineAction": "Use barley in place of part of the rice portion a few times a week for extra fibre.",
       "localNames": {
         "hi": "jau"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026."
+      }
     },
     {
       "id": "basella-leaves",
@@ -6458,8 +6439,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "bathua-leaves",
@@ -6485,8 +6465,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "bean-scarlet-tender",
@@ -6512,8 +6491,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "beetroot-leaves",
@@ -6549,8 +6527,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "beetroot",
@@ -6571,8 +6548,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "besan-suji-dhokla",
@@ -6618,8 +6594,7 @@
         "anuvaad-indb"
       ],
       "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "betel-leaves-big-kolkata",
@@ -6645,8 +6620,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "betel-leaves-small",
@@ -6667,8 +6641,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "bitter-gourd-karela",
@@ -6683,8 +6656,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "Rejected by owner, 21 Oct 2026 - this is an everyday vegetable; BRIEF.md rule 3 says never add local names to everyday vegetables."
+      "localNames": {}
     },
     {
       "id": "black-berry",
@@ -6705,8 +6677,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "black-chana-curry",
@@ -6752,8 +6723,7 @@
         "anuvaad-indb"
       ],
       "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "black-gram-whole-urad",
@@ -6841,8 +6811,7 @@
       "localNames": {
         "kn": "uddina kalu",
         "hi": "urad"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026 (batch approval of 18)."
+      }
     },
     {
       "id": "bottle-gourd-lauki",
@@ -6857,8 +6826,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "Rejected by owner, 21 Oct 2026 - this is an everyday vegetable; BRIEF.md rule 3 says never add local names to everyday vegetables."
+      "localNames": {}
     },
     {
       "id": "brinjal-eggplant",
@@ -6873,8 +6841,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "Rejected by owner, 21 Oct 2026 - this is an everyday vegetable; BRIEF.md rule 3 says never add local names to everyday vegetables."
+      "localNames": {}
     },
     {
       "id": "broad-beans",
@@ -6900,8 +6867,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "brussels-sprouts",
@@ -6927,8 +6893,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "burmese-tofu",
@@ -6942,8 +6907,7 @@
       "pairingTips": [],
       "sourceIds": [],
       "notes": "No formal nutrition source was found for this dish (see keyNutrientsStatus), so this entry is qualitative only and graded Limited (general background on a named traditional dish, cross-checked across a few independent public descriptions - Wikipedia's 'Burmese tofu' article and a dedicated vegan recipe explainer - for consistency, rather than drawn from this project's usual approved reference sources). No source ids are attached to the individual points below, since none of them come from an approved source type. What it is: a soy-free, naturally vegan 'tofu' made by cooking legume flour with water (and usually a little salt and turmeric for colour) into a thick, glossy paste that sets like a firm custard once poured into a tray and cooled - no soy, no coagulant (like the calcium sulfate or nigari used for soy tofu) and no pressing needed. There are two related but distinct versions, often both loosely called 'Burmese tofu': the Shan-State original (won ta hpo), made from yellow split-pea flour, and the chickpea-flour version (to hpu, besan-based) that is now the common version across mainland Myanmar and the one most vegan recipe sites outside Myanmar actually mean by 'Burmese tofu' or 'Shan tofu' - whether chickpea tofu itself originated in Shan State or in southern China (it closely resembles a Yunnanese chickpea-flour dish) is openly unresolved, not something to state as settled. Texture is softer, creamier and less firm than soy tofu - more like a cross between custard and silken tofu - but it still holds together well enough to be sliced and pan-fried or deep-fried into firmer pieces, grated into a warm salad (tohu thoke), or simmered into a curry where it softens further and thickens the sauce. Why it is a useful entry for this project: it is a real, naturally-vegan, genuinely soy-free source of plant protein from a pulse (chickpea or split-pea) flour base, worth naming specifically for any reader who avoids soy (allergy, sensitivity, or simply wanting variety) but still wants a tofu-like ingredient - a gap regular soy tofu and tempeh cards don't cover. One serving caution worth naming plainly: some traditional Burmese preparations of the curry version are made with fish sauce - this card does not describe or recommend that preparation; stick to a vegan curry, dip or dressing (soy sauce, rice vinegar, chilli, garlic, peanuts, coriander, as used in the classic salad version) when making this at home.",
-      "localNames": {},
-      "localNameStatus": "No local name - not an Indian food"
+      "localNames": {}
     },
     {
       "id": "button-mushroom-fresh",
@@ -6958,8 +6922,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "cabbage-collard-greens",
@@ -6985,8 +6948,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "cabbage",
@@ -7001,8 +6963,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "capsicum-bell-pepper",
@@ -7023,8 +6984,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "cardamom-black",
@@ -7060,8 +7020,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "cardamom-green",
@@ -7102,8 +7061,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "carrot",
@@ -7124,8 +7082,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "cashew-nut",
@@ -7159,8 +7116,7 @@
       "localNames": {
         "kn": "godambi",
         "hi": "kaju"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026. Language tagging: best-effort by Claude, confirmed accurate except jowar's Telugu tag ('jonna') which is flagged uncertain - Kannada's own word may be 'jola' instead."
+      }
     },
     {
       "id": "cauliflower-leaves",
@@ -7175,8 +7131,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "cauliflower",
@@ -7191,8 +7146,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "celery-stalk",
@@ -7207,8 +7161,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "chana-curry-indb",
@@ -7254,8 +7207,7 @@
         "anuvaad-indb"
       ],
       "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "chana-dal-split-bengal-gram",
@@ -7336,8 +7288,7 @@
       "oneLineAction": "Chana dal, cooked plain or in a sweet dish like puran poli filling, covers a good share of a day's selenium and fibre.",
       "localNames": {
         "hi": "chana dal"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026 (batch approval of 18)."
+      }
     },
     {
       "id": "cherries-red",
@@ -7352,8 +7303,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "chicken-mushroom-fresh",
@@ -7368,8 +7318,7 @@
         "ifct-2017"
       ],
       "notes": "A wild edible fungus (Laetiporus species, commonly called 'chicken of the woods') named for its texture, not an animal product - entirely plant/fungi-based and vegan. Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "chickpeas-chana-whole-bengal-gram",
@@ -7451,8 +7400,7 @@
       "localNames": {
         "kn": "kadale",
         "hi": "chana"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026. Language tagging: best-effort by Claude, confirmed accurate except jowar's Telugu tag ('jonna') which is flagged uncertain - Kannada's own word may be 'jola' instead."
+      }
     },
     {
       "id": "cho-cho-marrow",
@@ -7473,8 +7421,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "cloves",
@@ -7510,8 +7457,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "cluster-beans",
@@ -7532,8 +7478,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "coconut-curd-plant-yoghurt",
@@ -7583,8 +7528,7 @@
         "nih-b12",
         "dict-food-science-nutrition"
       ],
-      "localNames": {},
-      "localNameStatus": "No local name - not an Indian food"
+      "localNames": {}
     },
     {
       "id": "coconut-dried-copra",
@@ -7610,8 +7554,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "coconut-fresh",
@@ -7632,8 +7575,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "coconut-water",
@@ -7648,8 +7590,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "colocasia-leaves-taro-leaves",
@@ -7687,8 +7628,7 @@
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
       "localNames": {
         "kn": "kesave soppu"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026 (batch approval of 18). Dropped 'chembu thalu' from the original candidate - it did not confidently map to Kannada/Hindi/Tamil/Telugu (likely Malayalam); kept only the confident Kannada term 'kesave soppu'."
+      }
     },
     {
       "id": "colocasia-stem",
@@ -7703,8 +7643,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "colocasia-taro-root",
@@ -7722,8 +7661,7 @@
       "localNames": {
         "kn": "kesuvina gadde",
         "hi": "arbi"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026 (batch approval of 18)."
+      }
     },
     {
       "id": "coriander-leaves",
@@ -7749,8 +7687,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "coriander-seeds",
@@ -7791,8 +7728,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "corn-baby",
@@ -7813,8 +7749,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "cowpea-lobia",
@@ -7902,8 +7837,7 @@
       "localNames": {
         "kn": "alasande",
         "hi": "lobia"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026."
+      }
     },
     {
       "id": "cucumber",
@@ -7918,8 +7852,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "cumin-seeds",
@@ -7985,8 +7918,7 @@
       "localNames": {
         "kn": "jeerige",
         "hi": "jeera"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026."
+      }
     },
     {
       "id": "currants-black",
@@ -8007,8 +7939,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "curry-leaves",
@@ -8035,8 +7966,7 @@
       "localNames": {
         "kn": "karibevu",
         "ta": "karuveppilai"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026. Language tagging: best-effort by Claude, confirmed accurate except jowar's Telugu tag ('jonna') which is flagged uncertain - Kannada's own word may be 'jola' instead."
+      }
     },
     {
       "id": "custard-apple",
@@ -8057,8 +7987,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "dates-dried",
@@ -8085,8 +8014,7 @@
       "oneLineAction": "Two to three dates make a wholesome way to sweeten a smoothie, porridge or energy ball instead of refined sugar.",
       "localNames": {
         "hi": "khajur"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026. Language tagging: best-effort by Claude, confirmed accurate except jowar's Telugu tag ('jonna') which is flagged uncertain - Kannada's own word may be 'jola' instead."
+      }
     },
     {
       "id": "dates-processed",
@@ -8107,8 +8035,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "dhokla-indb",
@@ -8154,8 +8081,7 @@
         "anuvaad-indb"
       ],
       "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "drumstick-moringa-leaves",
@@ -8241,8 +8167,7 @@
       "oneLineAction": "Add moringa leaves to dal, sambar or a simple stir-fry a couple of times a week.",
       "localNames": {
         "kn": "nugge soppu"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026. Language tagging: best-effort by Claude, confirmed accurate except jowar's Telugu tag ('jonna') which is flagged uncertain - Kannada's own word may be 'jola' instead."
+      }
     },
     {
       "id": "drumstick-moringa-pods",
@@ -8270,8 +8195,7 @@
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
       "localNames": {
         "kn": "nugge kai"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026 (batch approval of 18)."
+      }
     },
     {
       "id": "edamame",
@@ -8317,8 +8241,7 @@
         "book-great-vegan-protein",
         "usda-fdc"
       ],
-      "localNames": {},
-      "localNameStatus": "No local name - not an Indian food"
+      "localNames": {}
     },
     {
       "id": "fenugreek-leaves-methi",
@@ -8384,8 +8307,7 @@
       "oneLineAction": "Methi thepla, methi dal or a simple methi sabzi a few times a week adds iron, calcium and folate.",
       "localNames": {
         "hi": "methi"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026 (batch approval of 18)."
+      }
     },
     {
       "id": "fenugreek-seeds-methi-dana",
@@ -8431,8 +8353,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "field-beans-lablab-avarekai",
@@ -8475,8 +8396,7 @@
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
       "localNames": {
         "kn": "avarekai"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026 (batch approval of 18)."
+      }
     },
     {
       "id": "fig",
@@ -8497,8 +8417,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "flaxseed-linseed",
@@ -8553,8 +8472,7 @@
       "oneLineAction": "Stir a tablespoon of freshly ground flaxseed into porridge, a smoothie or dal for extra omega-3 and fibre.",
       "localNames": {
         "hi": "alsi"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026. Language tagging: best-effort by Claude, confirmed accurate except jowar's Telugu tag ('jonna') which is flagged uncertain - Kannada's own word may be 'jola' instead."
+      }
     },
     {
       "id": "fortified-breakfast-cereal",
@@ -8593,8 +8511,7 @@
         "fssai-food-fortification",
         "pcrm-plant-based-diets"
       ],
-      "localNames": {},
-      "localNameStatus": "No local name - not an Indian food"
+      "localNames": {}
     },
     {
       "id": "french-beans",
@@ -8615,8 +8532,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "fresh-pigeon-pea-tender",
@@ -8644,8 +8560,7 @@
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
       "localNames": {
         "kn": "togari kai"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026 (batch approval of 18)."
+      }
     },
     {
       "id": "garden-cress-seeds",
@@ -8696,8 +8611,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "garden-cress",
@@ -8733,8 +8647,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "garlic",
@@ -8760,8 +8673,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "ginger-fresh",
@@ -8782,8 +8694,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "gongura-leaves",
@@ -8821,8 +8732,7 @@
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
       "localNames": {
         "te": "gongura"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026 (batch approval of 18). 'gongura' is itself the Telugu-origin term, tagged te, though it's also the common cross-India name for this leaf."
+      }
     },
     {
       "id": "goosberry",
@@ -8859,8 +8769,7 @@
       "localNames": {
         "kn": "nellikai",
         "hi": "amla"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026. Language tagging: best-effort by Claude, confirmed accurate except jowar's Telugu tag ('jonna') which is flagged uncertain - Kannada's own word may be 'jola' instead."
+      }
     },
     {
       "id": "grapes",
@@ -8875,8 +8784,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "green-chillies",
@@ -8897,8 +8805,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "Rejected by owner, 21 Oct 2026 - this is an everyday vegetable; BRIEF.md rule 3 says never add local names to everyday vegetables."
+      "localNames": {}
     },
     {
       "id": "green-gram-whole-moong",
@@ -8980,8 +8887,7 @@
       "localNames": {
         "kn": "hesaru",
         "hi": "moong"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026 (batch approval of 18)."
+      }
     },
     {
       "id": "ground-nut",
@@ -9035,8 +8941,7 @@
       "oneLineAction": "A handful of roasted peanuts, or peanut chutney, is a cheap, everyday plant-protein habit.",
       "localNames": {
         "kn": "kadlekai"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026. Language tagging: best-effort by Claude, confirmed accurate except jowar's Telugu tag ('jonna') which is flagged uncertain - Kannada's own word may be 'jola' instead."
+      }
     },
     {
       "id": "guava-pink-flesh",
@@ -9057,8 +8962,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "guava-white-flesh",
@@ -9079,8 +8983,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "horse-gram-whole",
@@ -9131,8 +9034,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "idli-dosa-batter",
@@ -9147,8 +9049,7 @@
         "icmr-dietary-guidelines-2024"
       ],
       "notes": "A naturally fermented batter of rice and urad dal (black gram). Fermentation is reported to improve the availability of some B vitamins and reduce antinutrients compared with the unfermented batter.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "idli-indb",
@@ -9194,8 +9095,7 @@
         "anuvaad-indb"
       ],
       "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "instant-idli",
@@ -9241,8 +9141,7 @@
         "anuvaad-indb"
       ],
       "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "irish-moss",
@@ -9293,8 +9192,7 @@
         "usda-fdc"
       ],
       "notes": "Basic entry. Figures are real USDA FoodData Central (SR Legacy) values for raw Irish moss (fdc_id 168456, per 100 g), not estimated. Irish moss is not used in Indian kitchens at all; included here only for food-group completeness, not as any kind of recommendation. Vitamin A and vitamin K are present in USDA's record but deliberately left off: the vitamin K value is phylloquinone (vitamin K1), not the vitamin K2 (menaquinone) this project tracks separately, so including it under vitamin-k2 would misrepresent the vitamer. USDA's record carries a small EPA value (0.046 g) but no ALA (the plant omega-3 this project tracks) and no iodine value (checked directly - both fields are empty for ALA/iodine), so omega-3 and iodine are left off rather than estimated.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - Irish moss is not an Indian food and has no local name candidate to propose."
+      "localNames": {}
     },
     {
       "id": "jackfruit-raw",
@@ -9336,8 +9234,7 @@
       "localNames": {
         "kn": "halasina kai",
         "hi": "kathal"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026 (batch approval of 18)."
+      }
     },
     {
       "id": "jackfruit-ripe",
@@ -9354,8 +9251,7 @@
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
       "localNames": {
         "kn": "halasu"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026 (batch approval of 18)."
+      }
     },
     {
       "id": "jackfruit-seeds",
@@ -9376,8 +9272,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "jaggery-cane",
@@ -9404,8 +9299,7 @@
       "localNames": {
         "kn": "bella",
         "ta": "vellam"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026. Language tagging: best-effort by Claude, confirmed accurate except jowar's Telugu tag ('jonna') which is flagged uncertain - Kannada's own word may be 'jola' instead."
+      }
     },
     {
       "id": "jambu-fruit-ripe",
@@ -9420,8 +9314,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "jowar-dosa",
@@ -9467,8 +9360,7 @@
         "anuvaad-indb"
       ],
       "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "jowar",
@@ -9527,8 +9419,7 @@
       "localNames": {
         "hi": "jowar",
         "te": "jonna"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026. Language tagging: best-effort by Claude, confirmed accurate except jowar's Telugu tag ('jonna') which is flagged uncertain - Kannada's own word may be 'jola' instead."
+      }
     },
     {
       "id": "karonda-fruit",
@@ -9549,8 +9440,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "kelp",
@@ -9601,8 +9491,7 @@
         "usda-fdc"
       ],
       "notes": "Basic entry. Figures are real USDA FoodData Central (SR Legacy) values for raw kelp (fdc_id 168457, per 100 g), not estimated. Kelp is uncommon and mostly imported in Indian kitchens; it is included here for food-group completeness (sea vegetables were otherwise missing from this project's food coverage), not as a staple recommendation for an Indian vegan diet. Iodine is widely reported as very high and variable in kelp, but USDA's SR Legacy dataset carries no iodine value for this food (checked directly against the raw per-nutrient data - the field is simply empty), so iodine is deliberately left off this entry rather than estimated; iodised salt remains the sourced iodine recommendation used elsewhere in this project (see thyroid.json). Omega-3 (ALA) also has no value in this USDA record, so it is left out for the same reason, not assumed to be zero.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - kelp is not an Indian food and has no local name candidate to propose."
+      "localNames": {}
     },
     {
       "id": "khichdi",
@@ -9649,7 +9538,6 @@
       ],
       "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch.",
       "veganPreparation": {
         "traditionalPreparation": {
           "label": "Traditional preparation (measured)",
@@ -9676,8 +9564,7 @@
         "book-fermented-foods-health"
       ],
       "notes": "A fermented cabbage dish. Caution: a traditional recipe often includes a non-vegan seasoning - choose a jar labelled vegan, or a recipe confirmed plant-only, rather than assuming any kimchi is vegan.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "knol-khol-leaves",
@@ -9703,8 +9590,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "knol-khol",
@@ -9719,8 +9605,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "lemon-juice",
@@ -9735,8 +9620,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "lentil-masoor",
@@ -9802,8 +9686,7 @@
       "oneLineAction": "Masoor dal cooks quickly without soaking, making it an easy everyday iron and protein source.",
       "localNames": {
         "hi": "masoor dal"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026. Language tagging: best-effort by Claude, confirmed accurate except jowar's Telugu tag ('jonna') which is flagged uncertain - Kannada's own word may be 'jola' instead."
+      }
     },
     {
       "id": "lentil-soup-indb",
@@ -9849,8 +9732,7 @@
         "anuvaad-indb"
       ],
       "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "lettuce",
@@ -9865,8 +9747,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "lime-sweet-pulp",
@@ -9881,8 +9762,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "litchi",
@@ -9897,8 +9777,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "lotus-root",
@@ -9919,8 +9798,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "mace",
@@ -9951,8 +9829,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "maize-corn",
@@ -9973,8 +9850,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "mango-ginger",
@@ -9995,8 +9871,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "mango-ripe",
@@ -10017,8 +9892,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "mangosteen",
@@ -10033,8 +9907,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "manila-tamarind",
@@ -10055,8 +9928,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "masala-dosa",
@@ -10103,7 +9975,6 @@
       ],
       "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch.",
       "veganPreparation": {
         "traditionalPreparation": {
           "label": "Traditional preparation (measured)",
@@ -10186,8 +10057,7 @@
       "oneLineAction": "Keep using fresh mint in chutneys and raitas; it adds flavour and a small amount of iron, not a major nutrient dose.",
       "localNames": {
         "hi": "pudina"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026."
+      }
     },
     {
       "id": "mixed-pulse-veg-salad",
@@ -10233,8 +10103,7 @@
         "anuvaad-indb"
       ],
       "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "moong-dal-split-green-gram",
@@ -10306,8 +10175,7 @@
       "oneLineAction": "A light moong dal khichdi or soup is a gentle, everyday protein option.",
       "localNames": {
         "hi": "moong dal"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026. Language tagging: best-effort by Claude, confirmed accurate except jowar's Telugu tag ('jonna') which is flagged uncertain - Kannada's own word may be 'jola' instead."
+      }
     },
     {
       "id": "moth-bean",
@@ -10363,8 +10231,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "muskmelon",
@@ -10379,8 +10246,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "mustard-greens-sarson",
@@ -10437,8 +10303,7 @@
         "ifct-2017"
       ],
       "oneLineAction": "A katori of cooked mustard greens a few times a week adds calcium and folate alongside other greens.",
-      "localNames": {},
-      "localNameStatus": "Rejected by owner, 21 Oct 2026 - the candidate 'sarson ka saag' is a cooked-dish name, not a name for the raw vegetable; no reliable replacement proposed. Not revisited this batch."
+      "localNames": {}
     },
     {
       "id": "mustard-seeds",
@@ -10494,8 +10359,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "niger-seeds",
@@ -10546,8 +10410,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "nori",
@@ -10598,8 +10461,7 @@
         "usda-fdc"
       ],
       "notes": "Basic entry. Figures are real USDA FoodData Central (SR Legacy) values, per 100 g (fdc_id 168458). USDA's dataset has no entry named 'nori' specifically - the closest real match is 'Seaweed, laver, raw', laver being the type of red seaweed that dried nori sheets are made from. These figures are for the raw, undried seaweed, not the dried, pressed sheets sold as nori, which are far more concentrated per 100 g because almost all the water is removed; we did not scale or estimate a dried-sheet figure, since USDA has no dried-nori row to check that scaling against, and this project does not fill nutrient gaps from memory. Nori is uncommon and mostly imported in Indian kitchens; it is included here for food-group completeness, not as a staple recommendation. Iodine is often cited as high in nori, but USDA's record here carries no iodine value at all (checked directly - the field is empty), so iodine is deliberately left off rather than estimated. Omega-3 (ALA) also has no value in this record, so it is left out for the same reason.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - nori is not an Indian food and has no local name candidate to propose."
+      "localNames": {}
     },
     {
       "id": "nutmeg",
@@ -10625,8 +10487,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "nutritional-yeast",
@@ -10665,8 +10526,7 @@
       "sourceIds": [
         "book-great-vegan-protein"
       ],
-      "localNames": {},
-      "localNameStatus": "No local name proposed - none found in the cached sources for this item."
+      "localNames": {}
     },
     {
       "id": "oat-milk-fortified",
@@ -10716,8 +10576,7 @@
         "nih-b12",
         "nih-d"
       ],
-      "localNames": {},
-      "localNameStatus": "No local name - not an Indian food"
+      "localNames": {}
     },
     {
       "id": "okra-ladies-finger",
@@ -10743,8 +10602,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "Rejected by owner, 21 Oct 2026 - this is an everyday vegetable; BRIEF.md rule 3 says never add local names to everyday vegetables."
+      "localNames": {}
     },
     {
       "id": "omum",
@@ -10790,8 +10648,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "onion-stalk",
@@ -10812,8 +10669,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "onion",
@@ -10828,8 +10684,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "orange-pulp",
@@ -10844,8 +10699,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "oyster-mushroom-dried",
@@ -10876,8 +10730,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "pak-choi-leaves",
@@ -10903,8 +10756,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "palm-fruit-tender",
@@ -10919,8 +10771,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "papaya-ripe",
@@ -10946,8 +10797,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "parsley",
@@ -10988,8 +10838,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "parwar",
@@ -11004,8 +10853,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "peach",
@@ -11020,8 +10868,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "pear",
@@ -11042,8 +10889,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "peas-dry",
@@ -11089,8 +10935,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "peas-fresh",
@@ -11111,8 +10956,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "pepper-black",
@@ -11184,8 +11028,7 @@
       "localNames": {
         "kn": "menasu",
         "hi": "kali mirch"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026."
+      }
     },
     {
       "id": "pesarattu",
@@ -11231,8 +11074,7 @@
         "anuvaad-indb"
       ],
       "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "phalsa",
@@ -11258,8 +11100,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "pine-seeds",
@@ -11295,8 +11136,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "pineapple",
@@ -11311,8 +11151,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "pippali",
@@ -11368,8 +11207,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "pistachio-nuts",
@@ -11415,8 +11253,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "plain-dosa",
@@ -11462,8 +11299,7 @@
         "anuvaad-indb"
       ],
       "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "plant-based-ice-cream",
@@ -11502,8 +11338,7 @@
         "fssai-vegan-logo",
         "usda-fdc"
       ],
-      "localNames": {},
-      "localNameStatus": "No local name - not an Indian food"
+      "localNames": {}
     },
     {
       "id": "plant-based-meat",
@@ -11545,8 +11380,7 @@
         "icmr-dietary-guidelines-2024",
         "fssai-vegan-logo"
       ],
-      "localNames": {},
-      "localNameStatus": "No local name - not an Indian food"
+      "localNames": {}
     },
     {
       "id": "plum",
@@ -11561,8 +11395,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "poha-rice-flakes",
@@ -11585,8 +11418,7 @@
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
       "localNames": {
         "hi": "poha"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026 (batch approval of 18)."
+      }
     },
     {
       "id": "pomegranate-maroon-seeds",
@@ -11601,8 +11433,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "ponnaganni",
@@ -11633,8 +11464,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "poppy-seeds",
@@ -11680,8 +11510,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "potato",
@@ -11696,8 +11525,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "puffed-rice-murmura",
@@ -11720,8 +11548,7 @@
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
       "localNames": {
         "hi": "murmura"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026 (batch approval of 18)."
+      }
     },
     {
       "id": "pummelo",
@@ -11736,8 +11563,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "pumpkin-leaves-tender",
@@ -11768,8 +11594,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "pumpkin",
@@ -11784,8 +11609,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "puranpoli",
@@ -11832,7 +11656,6 @@
       ],
       "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch.",
       "veganPreparation": {
         "traditionalPreparation": {
           "label": "Traditional preparation (measured)",
@@ -11928,8 +11751,7 @@
         "nih-iron"
       ],
       "oneLineAction": "Swap quinoa in for part of the rice or roti portion a few times a week for extra iron, fibre and folate.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed - quinoa has no established Indian-language name in common use; not reviewed further this batch."
+      "localNames": {}
     },
     {
       "id": "radish-leaves",
@@ -11960,8 +11782,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "radish",
@@ -11976,8 +11797,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "Rejected by owner, 21 Oct 2026 - this is an everyday vegetable; BRIEF.md rule 3 says never add local names to everyday vegetables."
+      "localNames": {}
     },
     {
       "id": "ragi",
@@ -12051,8 +11871,7 @@
       "localNames": {
         "kn": "ragi",
         "hi": "nachni"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026. Language tagging: best-effort by Claude, confirmed accurate except jowar's Telugu tag ('jonna') which is flagged uncertain - Kannada's own word may be 'jola' instead."
+      }
     },
     {
       "id": "raisins",
@@ -12078,8 +11897,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "rajma-curry-indb",
@@ -12125,8 +11943,7 @@
         "anuvaad-indb"
       ],
       "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "rajma-kidney-beans",
@@ -12213,8 +12030,7 @@
       "oneLineAction": "Rajma-chawal once or twice a week is a simple way to cover protein, fibre and folate together.",
       "localNames": {
         "hi": "rajma"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026. Language tagging: best-effort by Claude, confirmed accurate except jowar's Telugu tag ('jonna') which is flagged uncertain - Kannada's own word may be 'jola' instead."
+      }
     },
     {
       "id": "rambutan",
@@ -12235,8 +12051,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "raw-banana-plantain",
@@ -12251,8 +12066,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "raw-mango-green",
@@ -12267,8 +12081,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "raw-papaya",
@@ -12283,8 +12096,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "red-chillies-dried",
@@ -12325,8 +12137,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "rice",
@@ -12341,8 +12152,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "ricebean",
@@ -12388,8 +12198,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "ridge-gourd",
@@ -12404,8 +12213,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "Rejected by owner, 21 Oct 2026 - this is an everyday vegetable; BRIEF.md rule 3 says never add local names to everyday vegetables."
+      "localNames": {}
     },
     {
       "id": "rumex-leaves",
@@ -12420,8 +12228,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "safflower-seeds",
@@ -12467,8 +12274,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "samai",
@@ -12504,8 +12310,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "sambar",
@@ -12551,8 +12356,7 @@
         "anuvaad-indb"
       ],
       "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "sapota",
@@ -12573,8 +12377,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "sauerkraut",
@@ -12589,8 +12392,7 @@
         "book-fermented-foods-health"
       ],
       "notes": "Plain fermented cabbage and salt; a lacto-fermented food. Always vegan as traditionally made (cabbage and salt only) - check the label on a flavoured or shop-bought jar.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "seitan",
@@ -12638,8 +12440,7 @@
         "book-great-vegan-protein",
         "usda-fdc"
       ],
-      "localNames": {},
-      "localNameStatus": "No local name - not an Indian food"
+      "localNames": {}
     },
     {
       "id": "semolina-idli",
@@ -12685,8 +12486,7 @@
         "anuvaad-indb"
       ],
       "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "sesame-seeds-til",
@@ -12729,8 +12529,7 @@
       "localNames": {
         "kn": "yellu",
         "hi": "til"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026. Language tagging: best-effort by Claude, confirmed accurate except jowar's Telugu tag ('jonna') which is flagged uncertain - Kannada's own word may be 'jola' instead."
+      }
     },
     {
       "id": "shiitake-mushroom-fresh",
@@ -12745,8 +12544,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "snake-gourd",
@@ -12761,8 +12559,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "Rejected by owner, 21 Oct 2026 - this is an everyday vegetable; BRIEF.md rule 3 says never add local names to everyday vegetables."
+      "localNames": {}
     },
     {
       "id": "soursop",
@@ -12783,8 +12580,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "soy-milk",
@@ -12824,8 +12620,7 @@
       "sourceIds": [
         "vndpg-protein"
       ],
-      "localNames": {},
-      "localNameStatus": "No local name proposed - none found in the cached sources for this item."
+      "localNames": {}
     },
     {
       "id": "soya-chunks-tvp",
@@ -12849,8 +12644,7 @@
       "sourceIds": [
         "dict-food-science-nutrition"
       ],
-      "localNames": {},
-      "localNameStatus": "No local name - 'nutrela' was a brand name, not a vernacular name, and was removed by the owner on 21 Oct 2026; no legitimate replacement found."
+      "localNames": {}
     },
     {
       "id": "soya-roti",
@@ -12896,8 +12690,7 @@
         "anuvaad-indb"
       ],
       "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "soyabean-curry",
@@ -12943,8 +12736,7 @@
         "anuvaad-indb"
       ],
       "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "soybean-dried",
@@ -13000,8 +12792,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "spinach",
@@ -13068,8 +12859,7 @@
       "oneLineAction": "Palak dal, palak roti or a simple palak sabzi a few times a week adds iron, folate and fibre.",
       "localNames": {
         "hi": "palak"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026. Language tagging: best-effort by Claude, confirmed accurate except jowar's Telugu tag ('jonna') which is flagged uncertain - Kannada's own word may be 'jola' instead."
+      }
     },
     {
       "id": "spirulina",
@@ -13120,8 +12910,7 @@
         "usda-fdc"
       ],
       "notes": "Basic entry. Figures are real USDA FoodData Central (SR Legacy) values for raw spirulina (fdc_id 170091, per 100 g), not estimated. Spirulina is uncommon in Indian kitchens (sold mainly as a supplement powder, not a kitchen ingredient) and is included here for food-group completeness, not as a staple recommendation. Vitamin A and vitamin K are present in USDA's record but deliberately left off this entry: the vitamin K value is phylloquinone (vitamin K1), not the vitamin K2 (menaquinone) this project tracks as a separate nutrient, so including it under vitamin-k2 would misrepresent the vitamer. USDA's record has no iodine value and no omega-3 ALA value for spirulina (checked directly - both fields are empty), so neither is included or estimated; iodised salt remains the sourced iodine recommendation used elsewhere in this project (see thyroid.json).",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - spirulina is not an Indian food and has no local name candidate to propose."
+      "localNames": {}
     },
     {
       "id": "sprouts-upma",
@@ -13168,7 +12957,6 @@
       ],
       "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch.",
       "veganPreparation": {
         "traditionalPreparation": {
           "label": "Traditional preparation (measured)",
@@ -13195,8 +12983,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "strawberry",
@@ -13211,8 +12998,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "sugarcane-juice",
@@ -13227,8 +13013,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "sunflower-seeds",
@@ -13274,8 +13059,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "sweet-potato",
@@ -13290,8 +13074,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "tamarind-leaves-tender",
@@ -13322,8 +13105,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "tamarind-pulp",
@@ -13371,8 +13153,7 @@
       "localNames": {
         "kn": "huli",
         "hi": "imli"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026."
+      }
     },
     {
       "id": "tapioca",
@@ -13393,8 +13174,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "tempeh",
@@ -13432,8 +13212,7 @@
       "sourceIds": [
         "book-great-vegan-protein"
       ],
-      "localNames": {},
-      "localNameStatus": "No local name proposed - none found in the cached sources for this item."
+      "localNames": {}
     },
     {
       "id": "tinda-tender",
@@ -13448,8 +13227,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "tindora-ivy-gourd",
@@ -13467,8 +13245,7 @@
       "localNames": {
         "kn": "tonde kai",
         "hi": "tindora"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026 (batch approval of 18)."
+      }
     },
     {
       "id": "toddy",
@@ -13483,8 +13260,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "tofu",
@@ -13530,8 +13306,7 @@
       "sourceIds": [
         "book-great-vegan-protein"
       ],
-      "localNames": {},
-      "localNameStatus": "No local name proposed - none found in the cached sources for this item."
+      "localNames": {}
     },
     {
       "id": "tomato",
@@ -13546,8 +13321,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "toor-dal-split-pigeon-pea",
@@ -13612,8 +13386,7 @@
       "localNames": {
         "kn": "togari bele",
         "hi": "toor dal"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026. Language tagging: best-effort by Claude, confirmed accurate except jowar's Telugu tag ('jonna') which is flagged uncertain - Kannada's own word may be 'jola' instead."
+      }
     },
     {
       "id": "toor-whole-pigeon-pea",
@@ -13659,8 +13432,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "turmeric-powder",
@@ -13720,8 +13492,7 @@
       "localNames": {
         "kn": "arishina",
         "hi": "haldi"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026."
+      }
     },
     {
       "id": "urad-dal-split-black-gram",
@@ -13800,8 +13571,7 @@
       "localNames": {
         "kn": "uddina kalu / uddina bele",
         "hi": "urad dal"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026. Kannada name (uddina kalu / uddina bele) added by owner directly on 21 Oct 2026."
+      }
     },
     {
       "id": "varagu",
@@ -13832,8 +13602,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "vegan-cheese",
@@ -13884,8 +13653,7 @@
         "usda-fdc",
         "vndpg-protein"
       ],
-      "localNames": {},
-      "localNameStatus": "No local name - not an Indian food"
+      "localNames": {}
     },
     {
       "id": "vegetable-biryani",
@@ -13932,7 +13700,6 @@
       ],
       "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch.",
       "veganPreparation": {
         "traditionalPreparation": {
           "label": "Traditional preparation (measured)",
@@ -13995,8 +13762,7 @@
         "usda-fdc"
       ],
       "notes": "Basic entry. Figures are real USDA FoodData Central (SR Legacy) values for raw wakame (fdc_id 170496, per 100 g), not estimated. Wakame is uncommon and imported in Indian kitchens (used in miso soup and some salads) and is included here for food-group completeness, not as a staple recommendation. Vitamin A and vitamin K are present in USDA's record but deliberately left off: the vitamin K value is phylloquinone (vitamin K1), not the vitamin K2 (menaquinone) this project tracks separately, so including it under vitamin-k2 would misrepresent the vitamer. USDA's record carries a small EPA value (0.186 g) but no ALA (the plant omega-3 this project tracks) and no iodine value (checked directly - both fields are empty for ALA/iodine), so omega-3 and iodine are left off rather than estimated; iodised salt remains the sourced iodine recommendation used elsewhere in this project (see thyroid.json).",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - wakame is not an Indian food and has no local name candidate to propose."
+      "localNames": {}
     },
     {
       "id": "walnut",
@@ -14056,8 +13822,7 @@
       "oneLineAction": "A small daily handful of walnuts is an easy way to cover most of a day's plant omega-3 target.",
       "localNames": {
         "hi": "akhrot"
-      },
-      "localNameStatus": "Approved by owner, 21 Oct 2026."
+      }
     },
     {
       "id": "water-chestnut",
@@ -14072,8 +13837,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "watermelon",
@@ -14088,8 +13852,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "wheat",
@@ -14125,8 +13888,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "wood-apple",
@@ -14152,8 +13914,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "yam",
@@ -14174,8 +13935,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "zizyphus",
@@ -14190,8 +13950,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     },
     {
       "id": "zucchini",
@@ -14206,8 +13965,7 @@
         "ifct-2017"
       ],
       "notes": "Basic entry. Nutrient figures restated from IFCT 2017 (ICMR-NIN) per 100 g, averaged across IFCT varieties mapped to this food name. Portion-level figures and pairing tips to be added when this food is upgraded to a rich card.",
-      "localNames": {},
-      "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
+      "localNames": {}
     }
   ],
   "healthTopics": [
@@ -18412,7 +18170,6 @@
   "myths": [
     {
       "id": "acid-alkaline-diet-theory",
-      "status": "GATE 2 APPROVED (2 Nov 2026) - verified by independent review: Cleveland Clinic's 'nothing you eat will change your blood pH' and the kidneys/lungs mechanism confirmed by direct re-fetch; Fenton & Huang's 2016 BMJ Open systematic review's own screening numbers (8,278 citations, 1 qualifying study, no association found) confirmed directly via PubMed/the live paper, matching the card's 'untested, not disproven' framing exactly. KEPT HELD - the Myths module has not formally started, so this stays a Gate-2-approved candidate for whenever it begins.",
       "claim": "Foods can be classified as 'acidifying' or 'alkalizing' based on the effect they are claimed to have on the body's overall pH, and a diet with too many acidifying foods (named in this source as meat, fish, eggs, cheese, grains, legumes including soy and beans, and refined sugar) causes a state of body-wide 'acidosis' that is presented as a root cause of a wide range of unrelated conditions - chronic fatigue, depression, tooth decay, eczema, tendinitis and 'rheumatic disorders' among them - correctable by eating more 'alkalizing' foods (named as most vegetables, potatoes, almonds, bananas, avocados) and by taking alkaline mineral supplements.",
       "verdict": "Not supported as a general mechanism of disease. The body's own regulation (chiefly the kidneys, with the lungs) keeps blood pH within a very narrow range regardless of diet, so the theory's basic premise - that ordinary food meaningfully shifts body-wide pH - does not hold. Diet can shift urine pH, but that is not evidence of a health effect. Where this claim has actually been put to a scientific test (its cancer-prevention/treatment version), a systematic review found almost no research exists either way, so the honest statement is that this specific health claim is untested and unproven, not that it has been actively disproven study by study. Either way, there is no credible basis for using this framework to avoid foods this project recommends, including soy, legumes and whole grains.",
       "explanation": [
@@ -18452,10 +18209,6 @@
           ]
         }
       ],
-      "gaps": [
-        "The two new sources above cover the core mechanism (diet does not change blood pH) and one specific downstream health claim (cancer) well, but this project has not directly read a Strong source addressing the theory's other named conditions individually (tooth decay, eczema, tendinitis, depression, chronic fatigue, bone/'rheumatic disorders'). The verdict above is written to avoid overclaiming on those specific conditions - it rejects the shared underlying mechanism (dietary acidosis) rather than asserting each named condition has itself been individually tested and disproven.",
-        "The alkaline mineral supplement regimen the book recommends (dosed by urinary-pH self-testing with litmus paper) was not separately evaluated for safety or effectiveness in this research pass; this card addresses the dietary theory, not supplement safety."
-      ],
       "sourceIds": [
         "book-naturopathic-way",
         "clevelandclinic-alkaline-diet-2022",
@@ -18464,7 +18217,6 @@
     },
     {
       "id": "acid-crystals-apple-cider-vinegar",
-      "status": "GATE 2 APPROVED (2 Nov 2026) - the research agent read NIAMS/NIH's gout page, MSKCC's apple cider vinegar page and the Arthritis Foundation's food-myths page directly in full (confirming gout as a real, narrow, named crystal-deposition disease, with no evidence of a general crystal-dissolving effect from ACV, and correctly declining to use an unverified secondhand Arthritis Foundation quote it could not confirm on the live page); the main session's own independent re-verification pass this round focused on the other two Batch-A cards' sources (Cleveland Clinic, Fenton & Huang 2016) rather than this card's three sources specifically - owner approved on that basis. KEPT HELD - the Myths module has not formally started, so this stays a Gate-2-approved candidate for whenever it begins.",
       "claim": "Over time, the body's tissues and joints accumulate hard 'acid crystals' - a waste product the book attributes mainly to protein metabolism and ageing - and this buildup is presented as the specific, identifiable cause of arthritis, joint stiffness, muscle cramps and premature ageing. Apple cider vinegar (ACV), the book claims, dissolves these crystals back into solution so the kidneys can flush them out, thereby relieving or reversing these conditions - typically taken as an ACV-and-honey drink three times daily.",
       "verdict": "Not supported as a general mechanism for arthritis, joint stiffness, cramps or ageing. 'Acid crystals' depositing throughout the body as a cause of ordinary joint problems is not a recognised mechanism in mainstream medicine. The one genuine crystal-deposition joint disease mainstream medicine does recognise - gout, caused by urate crystals - is a specific, diagnosed condition with its own distinct pattern and cause (the body producing too much urate or clearing too little), not a universal explanation for stiff or ageing joints in general, and nothing in mainstream sources suggests apple cider vinegar dissolves urate or any other joint crystal. Separately, the broader evidence for apple cider vinegar's claimed health benefits (including the anti-inflammatory effect this claim relies on) is judged inconclusive, not proven, by the hospital source reviewed here.",
       "explanation": [
@@ -18504,10 +18256,6 @@
           ]
         }
       ],
-      "gaps": [
-        "The three new sources above establish that (a) gout is the one real, narrow crystal-deposition joint disease and is not evidence for a general 'acid crystal' mechanism, and (b) the broader evidence for ACV's claimed effects (including anti-inflammatory benefit) is inconclusive-to-unsupported. None of the three sources discuss muscle cramps or premature ageing specifically in relation to 'acid crystals' or ACV; this card's verdict addresses the shared underlying mechanism claim (acid-crystal buildup, dissolved by ACV) rather than asserting each named symptom has itself been individually tested.",
-        "The book's companion claim that potassium deficiency is itself a root cause of a long list of unrelated diseases (arthritis, kidney stones, atrial fibrillation, coronary artery disease, hypothyroidism, Alzheimer's disease, multiple sclerosis, lupus, diabetes, stroke and more - attributed in the book to a named source, Linda Page N.D.) was considered as an alternative or additional myths-deck candidate for this same book. It was not drafted as a separate card to avoid duplicating this one (potassium deficiency and 'acid crystals' are presented in the book as the same underlying mechanism - crystal buildup is explained by/linked to potassium deficiency throughout), but is recorded here in case the owner wants it drafted as its own, more sweeping card instead of or alongside this one. That companion claim has NOT been separately Strong-sourced by this research pass."
-      ],
       "sourceIds": [
         "book-apple-cider-vinegar-bragg",
         "niams-gout-causes-2023",
@@ -18517,7 +18265,6 @@
     },
     {
       "id": "animal-protein-best-for-muscle-building",
-      "status": "GATE 2 APPROVED (23 Oct 2026) - verified by independent review against cache/the-shredded-chef.txt: the main quote, including the book's own softening follow-up sentence, confirmed exact, with the surrounding paragraphs' numbered endnotes versus this specific claim's lack of one also confirmed. The gaps-field cross-reference to protein.json's pcrm-athletes citation was checked and confirmed to match. KEPT HELD - the Myths module has not formally started, so this stays a Gate-2-approved candidate for whenever it begins. Round 9 myths-mining (Enhancement Backlog item #4), built from mining a bodybuilding/muscle-building nutrition book for anti-plant-protein objections. A DIFFERENT angle from the already-documented 'protein combining' myth in drafts/nutrients/protein.json's candidateAdditions (same-meal amino-acid-combining timing) - this card is about a general animal-vs-plant protein 'quality'/amino-acid-balance claim, not combining. Not from a Strong source for the debunking side yet - see gap noted below.",
       "claim": "A bodybuilding nutrition book states, as a general rule for anyone trying to build muscle, that protein needs are 'best met by animal sources' because animal-based proteins (meat, fish, eggs, dairy) contain 'high but balanced amounts of essential amino acids', treating only two named plant proteins (rice and pea protein) as exceptions that are 'high quality as well' - framing animal protein as the superior default for muscle-building rather than treating a well-planned plant-protein diet as equivalent by default.",
       "verdict": "Not supported as a general rule by mainstream sports-nutrition evidence - flagged here as a claim to address, but this project has not yet located a Strong source to cite for the rebuttal (see gap below, though a promising existing lead is noted).",
       "explanation": [
@@ -18543,17 +18290,12 @@
           ]
         }
       ],
-      "gaps": [
-        "This project has not yet located and read a Strong source directly testing or rejecting the specific claim that protein needs for muscle-building are generally 'best met' by animal rather than plant protein sources - needed before this myth entry can carry a confident 'verdict' line per BRIEF.md rule 10. Do not publish the verdict as stated above until that source is found and cited directly, not assumed from general knowledge.",
-        "A promising existing lead already in this project: drafts/nutrients/protein.json's veganContext already cites source id pcrm-athletes for the statement 'Clinical trials matching protein intake and training found plant protein (soy-matched) builds muscle as well as animal or whey protein.' This has not been re-checked here against the specific 'best met by animal sources' / amino-acid-balance framing in this card - it should be reviewed directly (not assumed to apply) before being used as this card's rebuttal source, since it may need to be re-read for the exact comparison this claim makes (overall protein quality/balance, not just muscle-building outcomes)."
-      ],
       "sourceIds": [
         "book-the-shredded-chef"
       ]
     },
     {
       "id": "ayurveda-incompatible-food-combining",
-      "status": "GATE 2 APPROVED (23 Oct 2026) - verified by independent review against cache/everyday-ayurveda-cookbook.txt: two issues found and fixed, not just noted - (1) the pitta-quote in explanation[1] had conflated two separate passages, misattributing 'skin rashes' (from an earlier prose paragraph) to the book's own bulleted 'TOO MANY PITTA QUALITIES MIGHT CAUSE' list, now corrected to the list's actual items; (2) explanation[2]'s claim that research-language hits appeared 'nowhere outside the author-biography pages' was overstated - a few other hits exist (a recipe-development mention, an anecdotal case-studies heading, a resources section naming Ayurveda organisations), none of which are actual clinical citations, now worded accurately. Every other quote in this file verified exact against source. KEPT HELD - the Myths module has not formally started, so this stays a Gate-2-approved candidate for whenever it begins. Same evidentiary gap as the existing TCM, blood-type-diet and metabolic-typing myth candidates: no Strong mainstream source has yet been found to directly test or reject Ayurvedic food-combining theory.",
       "claim": "Ayurvedic 'food combining' rules hold that certain food pairings are inherently 'incompatible' in the gut - most famously fruit eaten together with other foods (especially milk, as in a banana-and-milk smoothie) - and that eating these combinations causes fermentation, gas, bloating, and the buildup of a sticky, toxic by-product called ama, which traditional Ayurveda names as the root cause of disease in the body, regardless of the combination's actual nutrient content or how well any individual digests it in practice.",
       "verdict": "Not supported by mainstream nutrition science as stated - flagged here as a claim to address, but this project has not yet located a Strong source that directly tests or rejects Ayurvedic food-combining theory as such (see gap below). General advice to keep meals simple is not itself harmful, but the specific mechanism claimed (ama) and the specific forbidden pairings (e.g. fruit eaten with milk) go beyond what mainstream digestive physiology describes.",
       "explanation": [
@@ -18586,17 +18328,12 @@
           ]
         }
       ],
-      "gaps": [
-        "This project has not yet located and read a Strong source (a systematic review or government/health body statement) directly testing or rejecting Ayurvedic food-combining theory, or the specific fruit-with-milk/banana claim, as applied to healthy adult digestion - needed before this myth entry can carry a confident 'verdict' line per BRIEF.md rule 10. Do not publish the verdict as stated above until that source is found and cited directly, not assumed from general knowledge.",
-        "A related, more specific claim noticed in the same book but NOT drafted as its own card, to avoid two thin overlapping entries: the book names tomatoes, potatoes, green peppers and eggplant (the nightshade vegetables) as containing 'small amounts of neurotoxins, which may not cause immediate distress but do build in the tissues over time and can result in such symptoms as inflammation of the joints, irritable bowel syndrome, and headaches.' This is a separate, specific, nameable claim (food class -> neurotoxin buildup -> named symptoms) that could become its own myths-deck candidate later if the owner wants it split out - flagged here rather than drafted, per the instruction not to force a second thin card from one source."
-      ],
       "sourceIds": [
         "book-everyday-ayurveda-cookbook"
       ]
     },
     {
       "id": "blood-type-diet-vegetarian",
-      "status": "GATE 2 APPROVED (2 Nov 2026) - a Strong-source rebuttal was located and independently read, closing the gap this card was held on: Wang et al. 2014 (PLoS ONE) directly tested the Blood-Type diet theory in 1,455 genotyped adults and found diet-adherence benefits were NOT related to a person's actual ABO blood group; Cusack et al. 2013 (Am J Clin Nutr, a systematic review) found no studies anywhere showing a genuine health benefit from matching diet to blood type; and Barnard et al. 2021 (J Acad Nutr Diet, an RCT secondary analysis) found blood type made no difference to how well people did on a plant-based diet, including blood type O, the type this claim says most needs meat. All three were fetched and read directly, not assumed. KEPT HELD - the Myths module has not formally started, so this stays a Gate-2-approved candidate for whenever it begins. A human should still independently re-verify before final publication, per this project's standard Gate 2 process.",
       "claim": "Your blood type determines whether a vegetarian or vegan diet is right for you - some blood types (the claim goes) are 'natural' meat-eaters and do poorly without it, while others thrive on plant foods.",
       "verdict": "Not supported - three independent Strong sources (a 1,455-person cohort study, a systematic review, and a randomised-trial secondary analysis) all directly tested this specific theory and found no effect of ABO blood type on how well a person does on a given diet. One of the three (Wang et al. 2014) did find that some 'Blood-Type' diets were associated with healthier biomarkers in everyone who followed them - but explicitly NOT because of blood-type matching; the benefit tracked the diet's own general quality (more fruit/vegetables, less meat), not the dieter's blood type. The precise, honest finding is: these diets may have real merit for anyone, but not for the reason the theory claims.",
       "explanation": [
@@ -18643,9 +18380,6 @@
           ]
         }
       ],
-      "gaps": [
-        "This card's Strong-source gap is now closed with three independently-read sources. Remaining for a human reviewer before final publication: a calm-tone, reader-facing rewrite (see calmLanguageNote) and confirmation that the 'diets may still have ordinary merit, just not because of blood type' nuance survives simplification for a phone-first card without becoming a backhanded endorsement of the Blood-Type diet book itself."
-      ],
       "sourceIds": [
         "book-eat-right-for-your-type",
         "wang-abo-blood-type-diet-plos-2014",
@@ -18655,7 +18389,6 @@
     },
     {
       "id": "cruciferous-vegetables-thyroid",
-      "status": "GATE 2 APPROVED (2 Nov 2026) - the research agent read Galanty et al. 2024 (International Journal of Molecular Sciences), a PRISMA systematic review of 123 studies on brassica vegetables and thyroid function, directly in full via its PMC full text - confirms the nuanced picture already in this card (adequate iodine as the real safeguard, cooking reducing the effect, raw/very large amounts as the actual area of caution) with much more precision and a post-2015 source, and adds an honest caveat for people with existing thyroid conditions that this card's previous wording lacked. The main session's own independent re-verification pass this round focused on the other two Batch-A cards' sources rather than re-fetching this review directly - owner approved on that basis. KEPT HELD - the Myths module has not formally started, so this stays a Gate-2-approved candidate for whenever it begins.",
       "claim": "Eating cabbage, kale, broccoli or other cruciferous vegetables regularly hurts your thyroid, especially if you already have a thyroid problem.",
       "verdict": "Not supported for normal cooked amounts, with adequate iodine intake - a 2024 systematic review of 123 studies found including cruciferous vegetables in the daily diet 'poses no adverse effects on thyroid function' when iodine intake is adequate. The real areas of caution are narrower than the claim suggests: large amounts of raw or juiced cruciferous vegetables (far beyond a normal portion), and iodine intake that is already too low - not an everyday cooked serving. For people who already have a thyroid condition or take thyroid medication, the review found that common advice to avoid these vegetables often rests on outdated animal research rather than solid human evidence either way - so this remains an open question for that group specifically, worth raising with a doctor rather than treating as settled in either direction.",
       "explanation": [
@@ -18711,10 +18444,6 @@
           ]
         }
       ],
-      "gaps": [
-        "This card's new Strong source (Galanty et al. 2024) is a systematic review of the existing literature, not new primary research - its own stated limitation is that human data are limited, many included studies are small, old, or use animal models or concentrated extracts rather than normal food-form intakes, and some survey studies are confounded by iodine intake, salt type and medication use with no control group. The review does not, and this card does not, claim normal cooked cruciferous vegetable intake is proven safe for people with existing thyroid disease or on thyroid medication - only that the evidence commonly used to warn them away is itself weak. That group should still raise the question with their own doctor.",
-        "This card has not independently re-read the two older secondhand citations carried over from the original book (Chu & Seltzer 1986 on the bok choy case, and McMillan et al. 1986 on the Brussels sprouts animal study) - they remain secondhand illustrations, flagged pre-2015 per BRIEF.md rule 5, and are not relied on for the card's verdict, which rests on the independently-read 2024 systematic review instead."
-      ],
       "linkedNutrientIds": [
         "iodine"
       ],
@@ -18725,7 +18454,6 @@
     },
     {
       "id": "high-carb-plant-based-diet-blamed-for-organ-harm",
-      "status": "GATE 2 APPROVED (23 Oct 2026) - verified by independent review against cache/keto-clarity.txt: one issue found and fixed, not just noted - explanation[0]'s USDA-guidelines quote had spliced two passages in the wrong order (the book's 'spike... coincides with 1980' sentence actually comes BEFORE its 'government ignores studies' sentence, not after), now corrected to match the source's real sequence, with the intervening sentence it skips over acknowledged. The gallbladder, kidney-stone/1978-citation, and McDougall quotes all verified exact. KEPT HELD - the Myths module has not formally started, so this stays a Gate-2-approved candidate for whenever it begins. Round 9 myths-mining (Enhancement Backlog item #4), built from mining a popular low-carb/ketogenic-diet book for anti-plant-based/anti-high-carb objections. Not from a Strong source for the debunking side yet - see gaps below.",
       "claim": "A popular low-carb/ketogenic-diet book argues that the conventional low-fat, high-carbohydrate, plant-based eating pattern it associates with official dietary guidelines (and, by extension, vegetarian/vegan diets) is not merely less optimal than a low-carb diet but an active cause of specific physical harm: it names a 'very low-fat, vegetarian, or vegan diet' as something that leaves a person 'especially vulnerable to problems with your gall bladder', and states as settled fact, citing one 1978 study, that 'kidney stone formation is more common on a high-carb diet, not a low-carb one' - the reverse of the usual caution about low-carb/high-protein diets and kidney stones. The book also dismisses a named vegan physician's dietary position outright, calling it 'dietary dogma' and 'the make-yourself-sick diet', without engaging its substance.",
       "verdict": "Not supported by mainstream nutrition science as stated - flagged here as a claim to address, but this project has not yet located a Strong source to cite for the rebuttal (see gap below).",
       "explanation": [
@@ -18758,18 +18486,12 @@
           ]
         }
       ],
-      "gaps": [
-        "This project has not yet located and read a Strong source (a systematic review or government/health body statement) directly assessing whether a low-fat vegetarian/vegan diet is a specific risk factor for gallbladder problems, or whether high-carbohydrate (as opposed to low-carbohydrate/high-protein) diets are a specific risk factor for kidney stones - needed before this myth entry can carry a confident 'verdict' line per BRIEF.md rule 10. Do not publish the verdict as stated above until that source is found and cited directly, not assumed from general knowledge.",
-        "The 1978 British Journal of Urology citation named in the kidney-stones quote has not been independently located or verified by this project - flagged as an uncheckable citation, not confirmed as either accurate or fabricated.",
-        "The book's own correlation argument (1980 Dietary Guidelines implementation coinciding with rising rates of obesity, diabetes and heart disease) does not itself rule out other explanations (e.g. rising overall calorie intake, processed food availability, reduced physical activity) - this reasoning gap is worth naming plainly in the eventual rebuttal rather than simply asserting the opposite conclusion."
-      ],
       "sourceIds": [
         "book-keto-clarity"
       ]
     },
     {
       "id": "high-fiber-diet-harm",
-      "status": "GATE 2 APPROVED (2 Nov 2026) - research independently re-verified by the main session (the Wheeler et al. 2019 rickets review's 'vitamin D deficiency is the leading cause' finding was re-fetched directly and matched exactly, with no mention of fibre anywhere), then given the owner's own direct sign-off given the direct conflict with this project's own fibre.json card, per explicit owner instruction. The owner's decision: approve as drafted, cross-link fibre.json's existing '>50g/day' caution to this myth card, and soften that caution's 'established fact' label to match its actual Moderate-grade, pre-2015 source (book-encyclopedia-of-diets) - both done as part of this same approval, see fibre.json's own edit. KEPT HELD - the Myths module has not formally started, so this stays a Gate-2-approved candidate for whenever it begins.",
       "claim": "The mainstream recommendation to eat plenty of dietary fibre, especially cereal bran, is presented as a harmful 'trap' rather than a genuine health benefit: high-fibre eating (particularly bran/added fibre) is claimed to inhibit absorption of iron, calcium, zinc, phosphorus, magnesium and vitamins A, D, E and K, to be a contributing cause of osteoporosis, Alzheimer's disease (via an aluminium-absorption mechanism) and rickets, and to make irritable bowel syndrome worse rather than better - with the Burkitt fibre-cancer hypothesis (fibre protects against colon cancer) described as a weak, unsubstantiated theory that media and commercial interests exaggerated into dogma.",
       "verdict": "The myth's dramatic claims are not supported by current mainstream evidence: no Strong source links ordinary, recommended fibre intake to osteoporosis, Alzheimer's disease or rickets, and the specific 'fibre blocks mineral absorption' mechanism the book blames is, in current nutrition science, mostly driven by phytate (a separate compound that travels alongside fibre in whole grains, legumes and seeds), not by fibre itself. That said, this is not pure fabrication: there IS a real, narrower, dose-dependent kernel of truth here, which this project's own fibre.json card already documents under 'cautions' - at very high total fibre intake (above roughly 50 g/day) or with large amounts of isolated/added bran, reduced absorption of vitamins, minerals, protein and calories is a genuine, if usually minor, concern, mostly via the phytate that travels with that fibre rather than the fibre itself. This does not apply to the moderate, whole-food-based fibre intake (roughly 21-38 g/day) this project recommends throughout.",
       "explanation": [
@@ -18845,12 +18567,6 @@
           ]
         }
       ],
-      "gaps": [
-        "No systematic review was found directly and specifically testing 'does ordinary high fibre intake cause osteoporosis' as its own research question - the osteoporosis finding above is built from several mixed observational studies via general web research, not one dedicated Strong review read in full. Flagged for a closer, more targeted search if this card proceeds toward publication.",
-        "This project read the 1997 book's own claimed 'mechanism' for the Alzheimer's/aluminium link (fibre affecting aluminium absorption) but did not trace it back to any primary study the book itself might cite - the book's genre (alternative-health/longevity, pre-2015) makes its internal citations unreliable, and no matching claim was found anywhere else in the literature to independently verify or refute the specific mechanism, only the much broader (and separately unsettled) question of whether aluminium causes Alzheimer's at all.",
-        "Separate, secondary finding worth flagging to the owner even though it is outside this card's direct scope: fibre.json's own existing '>50g/day' caution is labelled 'established fact' but is sourced only to book-encyclopedia-of-diets, which sources.json itself grades Moderate (not Strong) and flags pre-2015. That existing label may be slightly stronger than its source supports - not something this myth-card task is authorised to fix, but worth the owner's attention alongside this card's own Gate 2 review.",
-        "No current Strong source was found giving a single, settled view on whether very high fibre intake has any meaningful effect on IBS (the myth's claim that fibre 'makes IBS worse'); fibre.json does not currently address IBS at all. Flagged rather than addressed, since it was outside this task's specific brief."
-      ],
       "sourceIds": [
         "book-timeless-secrets-health-rejuvenation",
         "book-encyclopedia-of-diets",
@@ -18867,7 +18583,6 @@
     },
     {
       "id": "human-anatomy-proves-herbivore-diet",
-      "status": "GATE 2 APPROVED (2 Nov 2026) - a Strong-source rebuttal was located and independently read, closing the gap this card was held on: Duque-Correa et al. 2021 (Proceedings of the Royal Society B, a comparative study across many mammal species) shows the 'herbivores have longer intestines than carnivores' rule is a loose statistical tendency, not a fixed biological law, undermining the whole reasoning pattern this claim relies on; and Clemente-Suarez et al. 2025 (Metabolites, a peer-reviewed review) directly classifies humans as omnivores with 'partial carnivorous specialization' and gives the real numeric comparisons, which CORRECT (not confirm) this card's own draft figure - see explanation and the corrected-claim note below. UNUSUAL CASE for this project's myths deck (unchanged from the original draft note): this is not an anti-vegetarian claim like the blood-type-diet or metabolic-typing cards - it is a PRO-vegetarian claim that overstates its case, and this card's job is to flag that honestly rather than rescue it, per BRIEF.md's own priority ('Accuracy and strict veganism, in that order, over speed or polish') and the busy-sceptic reader persona. KEPT HELD - the Myths module has not formally started, so this stays a Gate-2-approved candidate for whenever it begins. A human should still independently re-verify before final publication.",
       "claim": "Human teeth, saliva pH, stomach shape, intestine length (claimed to be '12 times the length of the body' versus '3 times' for carnivores), and sweat-gland distribution are presented as settled anatomical proof that humans are natural herbivores (not omnivores), making meat-eating 'an acquired habit and wholly unnatural' rather than a dietary choice supported by human biology.",
       "verdict": "Not supported, and the specific numbers are wrong, not just the overall conclusion. Mainstream comparative anatomy and physiology classify humans as omnivores - not strict herbivores and not strict carnivores - with a mix of herbivore-like and carnivore-like features. Independently checking the specific gut-length figures this claim (and its two source books) repeat: a 2025 peer-reviewed review gives humans a small-intestine-to-body-length ratio of about 5:1, which is closer to carnivores (dogs, about 6:1) than to herbivores (ruminants, about 12:1) - the OPPOSITE of what this claim asserts. Human stomach acidity (pH about 1.5) is also carnivore-like, not herbivore-like. The one point that does cut toward omnivory/starch adaptation is salivary amylase, which humans have in abundance and obligate carnivores largely lack. None of this says anything about whether a vegan diet is healthy, which rests on nutrition science, not comparative anatomy - it only says this particular argument for veganism is inaccurate and should not be used.",
       "explanation": [
@@ -18907,10 +18622,6 @@
           ]
         }
       ],
-      "gaps": [
-        "This card's Strong-source gap is now closed with two independently-read, peer-reviewed sources that directly address comparative digestive anatomy and the human case specifically. Remaining for a human reviewer before final publication: a calm-tone, reader-facing rewrite (see calmLanguageNote), and a decision on whether the reader-facing card should include the corrected numeric figures (5:1 vs the claimed 12:1) or keep things simpler by just stating the conclusion without re-litigating specific numbers - including exact ratios risks reading as pedantic to a reader who only wants to know 'is this a good argument to use or not.'",
-        "Note for the owner (unchanged from the original draft): this card differs in kind from the project's other myth candidates, all of which debunk a claim used AGAINST vegetarian/vegan eating. This one debunks an overstated argument used FOR it. Worth confirming the owner is comfortable with the myths deck including this type of card before Gate 2, since the calm-language and framing needs are different (reassuring a sceptical reader that veganism doesn't need this particular argument to be well-supported, rather than reassuring an anxious vegan reader that a scary claim against them is weak)."
-      ],
       "sourceIds": [
         "book-cosmic-nutrition-taoist",
         "book-timeless-secrets-health-rejuvenation",
@@ -18920,7 +18631,6 @@
     },
     {
       "id": "paleo-diet-excludes-grains-legumes-dairy",
-      "status": "GATE 2 APPROVED (23 Oct 2026) - verified by independent review against cache/living-paleo-cheat-sheet.txt and cache/living-paleo-training-guide.txt: all 4 quotes confirmed exact, word-for-word, no overstatement - the sources really do group grains/dairy/legumes with junk food with zero caveat and zero citation. The MindMap's near-blank status was independently re-confirmed too. KEPT HELD - the Myths module has not formally started, so this stays a Gate-2-approved candidate for whenever it begins. Round 9 myths-mining (Enhancement Backlog item #4) - this project's first Paleo-framed source. Built from mining two companion booklets from the same unnamed 'Living Paleo' eBook bundle (Cheat Sheet and Training Guide); the bundle's third piece, the MindMap, was checked and found to have no usable text (near-blank page). Not from a Strong source for the debunking side yet - see gap noted below.",
       "claim": "The Paleo diet holds that grains (including bread), legumes of any kind (beans, lentils, peas) and dairy should be excluded entirely, not just moderated, because the human body was 'designed' for a hunter-gatherer diet of meat, fish, vegetables, fruit, nuts and seeds. A specific health claim is attached to the exclusion: grains and dairy, eaten in the quantities modern commercial food supplies make available, are said to directly cause lactose intolerance, gluten intolerance and 'other allergies', and their starch content is said to make weight loss difficult.",
       "verdict": "Not supported by mainstream nutrition science as stated - flagged here as a claim to address, but this project has not yet located a Strong source to cite for the rebuttal (see gap below).",
       "explanation": [
@@ -18946,10 +18656,6 @@
           ]
         }
       ],
-      "gaps": [
-        "This project has not yet located and read a Strong source (a systematic review or government/health body statement) directly testing or rejecting the claim that whole grains and legumes, as commonly eaten, cause lactose intolerance, gluten intolerance, 'other allergies', or meaningfully impede weight loss through their starch content alone - needed before this myth entry can carry a confident 'verdict' line per BRIEF.md rule 10. (Note for whoever closes this gap: lactose intolerance is a dairy-specific digestive condition unrelated to grain or legume consumption, and conflating it with a general 'grains and dairy cause allergies' claim is itself worth flagging in the eventual rebuttal text, not just citing a counter-source.) Do not publish the verdict as stated above until that source is found and cited directly, not assumed from general knowledge.",
-        "The source documents for this card give no author name and no reliable publication year anywhere in the extracted text - the Training Guide's own PDF metadata reports 'year: 1970', which is implausible for a Paleo-diet eBook referencing modern commercial food supply chains and is almost certainly a metadata artefact, not a real publication date. Treated as unknown/pre-2015 for recheck per BRIEF.md rule 5, rather than trusting the metadata."
-      ],
       "sourceIds": [
         "book-living-paleo-cheat-sheet",
         "book-living-paleo-training-guide"
@@ -18957,7 +18663,6 @@
     },
     {
       "id": "soy-phytoestrogen-breast-cancer",
-      "status": "GATE 2 APPROVED (2 Nov 2026) - current Strong-source check complete and independently verified by the main session (American Cancer Society's 2025 'soy foods are healthy and safe' wording, the Wei et al. 2019 meta-analysis's '3% reduced risk per 10mg/day isoflavone' figure, and the Oliveira et al. 2021 'no association' finding on soy infant formula and puberty were each re-fetched directly and matched exactly), then given the owner's own direct sign-off given the topic's sensitivity, per BRIEF.md's own instruction for this card. Myths module has not formally started; KEPT HELD for whenever it begins. This directly fulfills Enhancement Backlog item #3 (soy/oestrogen myth-mining). The verdict has flipped from the original cautionary framing to a reassuring one (soy foods do not raise breast cancer risk and may lower it), with the whole-food-vs-supplement caveat and a doctor's-advice line for hormone-sensitive cancer treatment kept intact. The birth-sex-ratio and precocious-puberty extension was checked specifically and not found to have any credible support - see gaps.",
       "claim": "Vegan diets, particularly through heavy use of soy-based products, may increase the risk of breast cancer because soy's plant oestrogens (phytoestrogens/isoflavones) act like the body's own oestrogen. The same source extends this to a claim that vegan mothers have a 'disproportionate number of female babies' and that these daughters show earlier (precocious) puberty than daughters of non-vegetarian mothers.",
       "verdict": "Busted, with one caveat the card should still carry. Current evidence from major cancer bodies and large population studies does not show that eating soy foods raises breast cancer risk - if anything, several studies associate typical soy intake with a small reduction in risk, and some evidence suggests soy may support better outcomes for breast cancer survivors. The caveat: this reassurance is about whole soy foods (tofu, tempeh, edamame, soy milk) at ordinary dietary amounts, not about concentrated soy isoflavone supplements, which major bodies still treat with more caution (not because they're shown to be harmful, but because there's less evidence behind them and they're not the way this benefit has been studied). The separate claim that vegan mothers have 'a disproportionate number of female babies' with daughters reaching puberty earlier was checked directly in this pass and found to have no credible scientific support - it appears to be an unsupported, fringe extension, not an established finding, and is not something this card should repeat even as a 'myth to bust' without that caveat being front and centre.",
       "explanation": [
@@ -19019,13 +18724,6 @@
           ]
         }
       ],
-      "gaps": [
-        "Concentrated soy isoflavone supplements are not covered by the same reassurance as whole soy foods - major cancer bodies still recommend getting isoflavones from whole foods (tofu, tempeh, edamame, soy milk) rather than supplements, and this card should keep that distinction rather than reassuring readers about soy in general without it.",
-        "No source read in this pass addresses whether the soy/breast-cancer reassurance changes for women currently on hormone-sensitive cancer treatment (e.g. tamoxifen or an aromatase inhibitor) - this is exactly the kind of situation where BRIEF.md's 'talk to your doctor' safety rule should appear on the published card, not a blanket all-clear.",
-        "The birth-sex-ratio and precocious-puberty claims remain unsupported by any source this project could find, including a direct, specific search for them - this card should present that clearly as 'checked and not supported' rather than silently dropping the claim or treating it as merely unconfirmed.",
-        "All evidence read here on soy-and-puberty specifically concerns soy-based infant formula, not a pregnant or breastfeeding mother's own vegan diet - a narrower question than the one the original claim poses, so this card should not overstate how directly that evidence answers the maternal-diet version of the claim.",
-        "The encyclopedia source's own bibliography was not traced further in this pass to find whether it drew on the 2008 calorie/sex-ratio study or something else entirely; this is a minor loose end, not a blocker, since the claim itself was independently checked and found unsupported regardless of its origin."
-      ],
       "sourceIds": [
         "book-encyclopedia-of-diets",
         "acs-soy-cancer-risk-2025",
@@ -19037,7 +18735,6 @@
     },
     {
       "id": "tcm-vegetarian-diet-too-yin",
-      "status": "GATE 2 APPROVED (22 Oct 2026) - verified by independent review: all four explanation quotes confirmed exact against cache/chinese-nutrition-therapy-tcm.txt (pp.69, 71, 73, 97, plus the 'For vegetarians:' clinical note), and the 'only such note found' claim confirmed by a whole-file search. KEPT HELD - the Myths module has not formally started, so this stays a Gate-2-approved candidate for whenever it begins. Same evidentiary gap as the existing blood-type-diet and metabolic-typing myth candidates: no Strong mainstream source has yet been found to directly test or reject this theory.",
       "claim": "Traditional Chinese Medicine (TCM) dietetics holds that plant/vegetable foods are inherently more 'yin' (energetically cooling) than meat, so a vegetarian or vegan diet is, on its own, energetically unbalanced - and will tend to cause cold-type symptoms such as fatigue, poor digestion and cold intolerance - unless deliberately corrected with warming cooking techniques, warming spices, or meat.",
       "verdict": "Not supported by mainstream nutrition science as stated - flagged here as a claim to address, but this project has not yet located a Strong source to cite for the rebuttal (see gap below).",
       "explanation": [
@@ -19069,9 +18766,6 @@
             "book-chinese-nutrition-therapy-tcm"
           ]
         }
-      ],
-      "gaps": [
-        "This project has not yet located and read a Strong source (a systematic review or government/health body statement) directly testing or rejecting TCM food-energetics/yin-yang theory as applied to vegetarian or vegan diets - needed before this myth entry can carry a confident 'verdict' line per BRIEF.md rule 10. Do not publish the verdict as stated above until that source is found and cited directly, not assumed from general knowledge."
       ],
       "sourceIds": [
         "book-chinese-nutrition-therapy-tcm"
