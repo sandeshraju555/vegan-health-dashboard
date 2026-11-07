@@ -31,7 +31,7 @@
         "glossary",
         "didYouKnow"
       ],
-      "fingerprint": "e50efca9420b5e550f489913b5da7cf5dd535fb85afe3aa29b53e54dbdf7fea0",
+      "fingerprint": "f1d9189f684d88a8048d469e33844e93ebef4948bce98b0f0e9ab57a01676f43",
       "recordCounts": {
         "sources": 248,
         "nutrients": 17,
@@ -11830,7 +11830,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee, rather than confirmed from a full ingredient-by-ingredient breakdown.",
+      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch.",
       "veganPreparation": {
@@ -13166,7 +13166,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee, rather than confirmed from a full ingredient-by-ingredient breakdown.",
+      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch.",
       "veganPreparation": {
