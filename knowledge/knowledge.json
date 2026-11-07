@@ -31,7 +31,7 @@
         "glossary",
         "didYouKnow"
       ],
-      "fingerprint": "a971222be1334f4f1599569a96cb90e83e325f1b49d5fe8bad1fcadc5ec7dc56",
+      "fingerprint": "e50efca9420b5e550f489913b5da7cf5dd535fb85afe3aa29b53e54dbdf7fea0",
       "recordCounts": {
         "sources": 248,
         "nutrients": 17,
@@ -6617,7 +6617,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code BFP573, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
+      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -6751,7 +6751,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC161, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
+      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -7253,7 +7253,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC162, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
+      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -8153,7 +8153,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC474, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
+      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -9193,7 +9193,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC144, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
+      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -9240,7 +9240,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code BFP147, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
+      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -9466,7 +9466,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code OSR151, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
+      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -9647,7 +9647,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code BFP554, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
+      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch.",
       "veganPreparation": {
@@ -9848,7 +9848,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC080, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
+      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -10101,7 +10101,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC146, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
+      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch.",
       "veganPreparation": {
@@ -10232,7 +10232,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC258, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
+      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -11230,7 +11230,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code OSR103, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
+      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -11461,7 +11461,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code BFP148, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
+      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -11830,7 +11830,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC467, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description, rather than a full ingredient-level breakdown from INDB.",
+      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee, rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch.",
       "veganPreparation": {
@@ -12124,7 +12124,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC165, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
+      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -12550,7 +12550,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC167, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
+      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -12684,7 +12684,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code BFP579, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
+      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -12895,7 +12895,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code BFP575, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
+      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -12942,7 +12942,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC164, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
+      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch."
     },
@@ -13166,7 +13166,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code BFP578, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description, rather than a full ingredient-level breakdown from INDB.",
+      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee, rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch.",
       "veganPreparation": {
@@ -13930,7 +13930,7 @@
       "sourceIds": [
         "anuvaad-indb"
       ],
-      "notes": "Composite/recipe dish, not a raw ingredient (IFCT 2017 does not cover prepared composite dishes). Real per-100g as-prepared nutrient values from Anuvaad's Indian Nutrient Databank (INDB), food_code ASC123, restated from the dataset, not copied as a table and not invented. Its vegan status was determined by checking the dish's name and description for meat, fish, egg, dairy or ghee (traditionally-dairy dishes such as kheer, kadhi or halwa are excluded), rather than a full ingredient-level breakdown from INDB.",
+      "notes": "This is a prepared composite dish, not a single raw ingredient, so the nutrient figures above are for the dish as cooked, not per ingredient. Its vegan status was checked from the dish's name and description, looking for meat, fish, egg, dairy or ghee — traditionally-dairy dishes such as kheer, kadhi or halwa are excluded here — rather than confirmed from a full ingredient-by-ingredient breakdown.",
       "localNames": {},
       "localNameStatus": "No local name proposed yet - not reviewed for a candidate in this batch.",
       "veganPreparation": {
