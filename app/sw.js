@@ -4,7 +4,7 @@
 // quietly — nothing here assumes it ran.
 "use strict";
 
-var CACHE_NAME = "vhd-cache-v22";
+var CACHE_NAME = "vhd-cache-v23";
 var SHELL_URLS = [
   "./",
   "./index.html",
