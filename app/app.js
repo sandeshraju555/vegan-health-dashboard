@@ -1011,6 +1011,7 @@
     var label = activeFoodFilterLabel();
     if (compareMode || !label || filteredCount < 2) {
       nudge.hidden = true;
+      nudge.textContent = "";
       return;
     }
     nudge.hidden = false;
@@ -1124,7 +1125,6 @@
   function toggleCompareMode() {
     dismissFoodsToolbarTip();
     compareMode = !compareMode;
-    qs("#compare-toggle").setAttribute("aria-pressed", String(compareMode));
     if (!compareMode) { compareSelection = []; }
     updateCompareBar();
     renderFoods();
@@ -2263,14 +2263,17 @@
       handleHash();
     });
 
-    qs("#compare-toggle").addEventListener("click", toggleCompareMode);
     // The nudge is only ever shown while compareMode is off (see
-    // renderCompareNudge), so this always turns Compare mode on.
+    // renderCompareNudge), so this always turns Compare mode on - the only
+    // way in, now that the standalone Compare button is gone.
     qs("#compare-nudge").addEventListener("click", toggleCompareMode);
     qs("#compare-view-btn").addEventListener("click", function () { location.hash = "#/compare"; });
     qs("#whats-new-bell").addEventListener("click", function () { location.hash = "#/whatsnew"; });
+    // Clear is also the only way back out of Compare mode now, so it both
+    // empties the selection and turns compareMode off (was selection-only).
     qs("#compare-clear-btn").addEventListener("click", function () {
       compareSelection = [];
+      compareMode = false;
       updateCompareBar();
       renderFoods();
     });

@@ -649,12 +649,12 @@ button.evidence-badge {
 
 .helps-with-row { margin-bottom: 10px; }
 
-/* Foods toolbar: sort + compare */
+/* Foods toolbar: Rank-by, grouped in its own slim row right under the
+   filter chips (no more standalone Compare button here - see compare-nudge
+   and compare-bar below for the entry points into Compare). */
 .foods-toolbar {
   display: flex;
-  gap: 8px;
-  align-items: center;
-  flex-wrap: wrap;
+  justify-content: flex-end;
   margin-bottom: 6px;
 }
 .toolbar-tip {
@@ -670,25 +670,9 @@ button.evidence-badge {
   color: var(--olive);
   font-size: 0.85rem;
 }
-/* Solid-filled and bigger than a plain .icon-btn so Compare reads as a real
-   feature next to the plainer Sort dropdown, not another small pill. Reuses
-   the site's leaf accent + the same solid-fill-on-press pattern already
-   used by .chip[aria-pressed="true"]/.theme-btn[aria-pressed="true"], just
-   filled by default instead of only when pressed. */
-#compare-toggle {
-  background: var(--leaf);
-  color: #fff;
-  border-radius: 999px;
-  padding: 12px 20px;
-  font-size: 0.95rem;
-  font-weight: 700;
-}
-#compare-toggle[aria-pressed="true"] { background: var(--leaf-dark); }
-
 /* "Compare these N X" nudge, shown above the grid when an active filter
-   narrows results to 2+ foods. A plain inline text button (not a filled
-   button) so it reads as a suggestion, not competing with #compare-toggle
-   for visual weight. */
+   narrows results to 2+ foods. A plain inline text button so it reads as
+   a suggestion, not a competing feature button. */
 .compare-nudge {
   display: block;
   width: 100%;
@@ -702,6 +686,12 @@ button.evidence-badge {
   font-size: 0.92rem;
   cursor: pointer;
 }
+/* Without this, the plain .compare-nudge `display: block` above beats the
+   browser's default [hidden] styling, so setting .hidden = true in JS had
+   no visual effect - the nudge stayed on screen showing whatever text it
+   last had, including stale category/count text from before the page
+   re-rendered it hidden (e.g. while Compare mode is on). */
+.compare-nudge[hidden] { display: none; }
 .compare-nudge:hover, .compare-nudge:focus-visible { text-decoration: underline; }
 
 .compare-pick {

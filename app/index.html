@@ -77,16 +77,15 @@
 
   <section id="view-foods" class="view" data-view="foods" hidden>
     <h2>Foods</h2>
+    <div class="filters-bar" id="food-filters" role="group" aria-label="Filter foods"></div>
     <div class="foods-toolbar">
       <label for="food-sort" class="visually-hidden">Rank by foods</label>
       <select id="food-sort">
         <option value="az">Rank by: A–Z</option>
         <option value="indian-first">Rank by: Indian first</option>
       </select>
-      <button type="button" id="compare-toggle" class="icon-btn" aria-pressed="false">⚖ Compare</button>
     </div>
     <p class="toolbar-tip" id="foods-toolbar-tip" hidden>Rank by reorders this whole list by one nutrient. Compare lets you pick a few specific foods to see side-by-side.</p>
-    <div class="filters-bar" id="food-filters" role="group" aria-label="Filter foods"></div>
     <button type="button" id="compare-nudge" class="compare-nudge" hidden></button>
     <div class="card-grid" id="foods-grid"></div>
     <p class="disclaimer">General information, not medical advice.</p>
