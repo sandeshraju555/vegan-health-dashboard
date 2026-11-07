@@ -25,9 +25,21 @@
   var activeFoodFilters = { group: null, origin: null };
   var activeWhereToBuyFilters = { location: null, category: null };
   var foodSortMode = "az";
+  // null = "All" (every life stage card shown); otherwise a data.lifeStages[].id.
+  // Shared by both #lifestages-grid (Health tab) and #more-lifestages-grid
+  // (More > Life stages) - one piece of state, not two independent ones.
+  var selectedLifeStageId = null;
   var compareMode = false;
   var compareSelection = [];
   var MAX_COMPARE = 4;
+  // Which tab a #/<type>/<id> link's card belongs on - shared by handleHash()
+  // (to open the right tab under the card) and closeDetailAndHash()'s
+  // no-history fallback (to land somewhere sensible when there's nothing to
+  // go back to). A type not listed here (e.g. herb) falls back to "home".
+  var TAB_FOR_TYPE = { nutrient: "nutrients", food: "foods", topic: "health", lifestage: "health", myth: "more" };
+  // How many hashchange events have fired since this page loaded - see
+  // closeDetailAndHash()'s use of it below.
+  var inAppHashChangeCount = 0;
   var didYouKnowIndex = Math.floor(Math.random() * 1000); // offset into data.didYouKnow, wrapped with %
   var bookmarks = loadBookmarks();
 
@@ -147,7 +159,8 @@
       foodFilters: activeFoodFilters,
       whereToBuyFilters: activeWhereToBuyFilters,
       foodSortMode: foodSortMode,
-      selectedTopics: selectedTopics
+      selectedTopics: selectedTopics,
+      lifeStageTab: selectedLifeStageId
     });
   }
   function loadPrefs() { return loadJSON(PREFS_KEY, null); }
@@ -244,16 +257,26 @@
       pushOverlay(finish);
     });
   }
+  // A shared card link (#/<type>/<id>) opens the detail panel before this
+  // ever runs (handleHash() → openDetail(), then init() calls
+  // maybeShowWelcome() after), so a first-time recipient arriving that way
+  // would otherwise never see this dialog unless they separately found
+  // Help/About. Deferred, not dropped: closeDetail() below fires it once
+  // the card panel the viewer actually came for is out of the way, rather
+  // than stacking a second overlay on top of it immediately.
+  var welcomePendingAfterDetail = false;
   function maybeShowWelcome() {
     if (loadJSON(WELCOME_SEEN_KEY, false)) return;
     // Don't stack the welcome dialog on top of another overlay that opened
     // from the same page load (e.g. a first visit that's also an import
     // link, which shows its own confirm dialog) — two modals fighting for
-    // attention means the one underneath can't be reached at all. Simplest
-    // fix: skip welcome this time; it's always reopenable from Help/About.
+    // attention means the one underneath can't be reached at all. This one
+    // case stays a plain skip (not deferred): it's always reopenable from
+    // Help/About, and the confirm dialog already resolves on its own timeline.
     var confirmOpen = qs("#confirm-overlay") && !qs("#confirm-overlay").hidden;
+    if (confirmOpen) return;
     var detailOpen = qs("#detail-panel") && !qs("#detail-panel").hidden;
-    if (confirmOpen || detailOpen) return;
+    if (detailOpen) { welcomePendingAfterDetail = true; return; }
     showWelcomeDialog();
   }
 
@@ -905,10 +928,21 @@
       });
     } else if (foodSortMode.indexOf("nutrient:") === 0) {
       var nutrientId = foodSortMode.slice("nutrient:".length);
+      var nutrientAmountFor = function (f) {
+        var kn = foodKeyNutrients(f).find(function (x) { return x.nutrientId === nutrientId; });
+        if (!kn) return null;
+        var raw = kn.amountPerPortion !== undefined ? kn.amountPerPortion : kn.amountPer100g;
+        if (raw === undefined) return null;
+        var match = String(raw).match(/-?\d*\.?\d+/);
+        return match ? parseFloat(match[0]) : null;
+      };
       sorted.sort(function (a, b) {
-        var aHas = (a.keyNutrients || []).some(function (kn) { return kn.nutrientId === nutrientId; });
-        var bHas = (b.keyNutrients || []).some(function (kn) { return kn.nutrientId === nutrientId; });
+        var aAmount = nutrientAmountFor(a);
+        var bAmount = nutrientAmountFor(b);
+        var aHas = aAmount !== null;
+        var bHas = bAmount !== null;
         if (aHas !== bHas) return aHas ? -1 : 1;
+        if (aHas && bHas && aAmount !== bAmount) return bAmount - aAmount;
         return a.name.localeCompare(b.name);
       });
     } else {
@@ -964,13 +998,19 @@
     nudge.textContent = "Compare these " + filteredCount + " " + label + " →";
   }
 
-  function renderFoods() {
-    var items = (data.foods || []).filter(function (f) {
+  // Shared by renderFoods() and the "Pick foods to compare" picker, so the
+  // picker's default (no-search) list always matches the same active
+  // origin/group chips as the main grid instead of drifting out of sync.
+  function filteredFoods() {
+    return (data.foods || []).filter(function (f) {
       if (activeFoodFilters.origin && f.indianOrGlobal !== activeFoodFilters.origin) return false;
       if (activeFoodFilters.group && f.foodGroup !== activeFoodFilters.group) return false;
       return true;
     });
-    items = sortFoods(items);
+  }
+
+  function renderFoods() {
+    var items = sortFoods(filteredFoods());
     var grid = qs("#foods-grid");
     grid.classList.toggle("compare-mode", compareMode);
     grid.innerHTML = items.map(foodCardHtml).join("") || '<p class="no-results">No foods match these filters yet.</p>';
@@ -1002,6 +1042,63 @@
     bar.hidden = !compareMode;
     qs("#compare-count").textContent = compareSelection.length + " selected (2 to " + MAX_COMPARE + ")";
     qs("#compare-view-btn").disabled = compareSelection.length < 2;
+  }
+
+  // A compact search + checklist alternative to scrolling the whole grid to
+  // find and tick foods (Baymard Institute: "severe difficulties selecting
+  // items to compare on a product list"). Reuses compareSelection/
+  // onCompareCheck()/MAX_COMPARE/announce() as-is, same as a food card's own
+  // checkbox - no separate selection mechanism. With an empty search box it
+  // defaults to the page's active origin/group filter scope (filteredFoods()),
+  // same as the main grid; typing a query searches every food regardless of
+  // that scope, so the active filter chip never hard-locks what's reachable.
+  function renderComparePickerList() {
+    var query = qs("#compare-picker-search").value.trim().toLowerCase();
+    var pool = query ? (data.foods || []) : filteredFoods();
+    var items = (query
+      ? pool.filter(function (f) { return f.name.toLowerCase().indexOf(query) >= 0; })
+      : pool.slice()
+    ).sort(function (a, b) { return a.name.localeCompare(b.name); });
+
+    var note = qs("#compare-picker-scope-note");
+    var scopeLabel = activeFoodFilterLabel();
+    if (!query && scopeLabel) {
+      note.hidden = false;
+      note.textContent = "Showing " + scopeLabel + " — search to pick from every food.";
+    } else {
+      note.hidden = true;
+    }
+
+    var list = qs("#compare-picker-list");
+    list.innerHTML = items.length ? items.map(function (f) {
+      var checked = compareSelection.indexOf(f.id) >= 0;
+      return (
+        '<li><label class="compare-pick"><input type="checkbox" class="compare-check" data-food-id="' + f.id + '"' +
+        (checked ? " checked" : "") + "> " + escapeHtml(f.name) +
+        " <small>" + escapeHtml(f.foodGroup) + "</small></label></li>"
+      );
+    }).join("") : '<li class="no-results">No foods match.</li>';
+    qsa(".compare-check", list).forEach(function (cb) {
+      cb.addEventListener("change", function () {
+        onCompareCheck(cb);
+        // Re-render the main grid too, so its own checkboxes and the sticky
+        // compare bar's count stay correct once the picker closes - cheap
+        // enough since this only runs on a checkbox toggle, not per keystroke.
+        renderFoods();
+      });
+    });
+  }
+
+  function openComparePicker() {
+    qs("#compare-picker-search").value = "";
+    renderComparePickerList();
+    qs("#compare-picker-overlay").hidden = false;
+    qs("#compare-picker-search").focus();
+    pushOverlay(closeComparePicker);
+  }
+
+  function closeComparePicker() {
+    qs("#compare-picker-overlay").hidden = true;
   }
 
   function toggleCompareMode() {
@@ -1337,12 +1434,84 @@
     );
   }
 
+  // "Jump to a life stage" tab chips above both life-stage grids. Pure JS
+  // show/hide of the already-rendered cards (same as the Foods origin/group
+  // filter chips) - deliberately NOT a location.hash route, so the router's
+  // own #/lifestage/<id> deep-link/modal mechanism (used from search results
+  // and related-topic chips) stays completely untouched and still opens
+  // correctly regardless of which tab is selected. One shared
+  // selectedLifeStageId, not two independent ones - picking a stage in
+  // either location re-renders both chip rows and both grids' visibility.
+  function lifeStageTabRowHtml() {
+    var chips = '<button type="button" class="chip lifestage-tab-chip" data-lifestage="all" aria-pressed="' +
+      (selectedLifeStageId === null) + '">All</button>';
+    (data.lifeStages || []).forEach(function (l) {
+      chips += '<button type="button" class="chip lifestage-tab-chip" data-lifestage="' + escapeHtml(l.id) +
+        '" aria-pressed="' + (selectedLifeStageId === l.id) + '">' + escapeHtml(l.name) + "</button>";
+    });
+    return chips;
+  }
+
+  function applyLifeStageVisibility() {
+    ["#lifestages-grid", "#more-lifestages-grid"].forEach(function (sel) {
+      var grid = qs(sel);
+      if (!grid) return;
+      qsa('[data-open-card^="lifestage:"]', grid).forEach(function (card) {
+        var id = card.getAttribute("data-open-card").split(":")[1];
+        card.hidden = !(selectedLifeStageId === null || selectedLifeStageId === id);
+      });
+    });
+  }
+
+  // Scrolls the just-picked stage's card into view from its top, in
+  // whichever of the two grids the chip was actually clicked in (the other
+  // grid may be on a currently-hidden tab, so there's nothing useful to
+  // scroll there). Only on picking a specific stage - "All" reveals several
+  // cards at once, so there's no single "newly shown" card to jump to.
+  function scrollLifeStageIntoView(id, grid) {
+    if (!id || !grid) return;
+    var card = grid.querySelector('[data-open-card="lifestage:' + id + '"]');
+    if (card) card.scrollIntoView({ block: "start", behavior: "smooth" });
+  }
+
+  function selectLifeStage(id, triggerGrid) {
+    selectedLifeStageId = id;
+    renderLifeStageTabs();
+    applyLifeStageVisibility();
+    savePrefs();
+    scrollLifeStageIntoView(id, triggerGrid);
+  }
+
+  function bindLifeStageTabRow(rowSel, gridSel) {
+    var row = qs(rowSel);
+    if (!row) return;
+    var grid = qs(gridSel);
+    qsa(".lifestage-tab-chip", row).forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        var v = chip.getAttribute("data-lifestage");
+        selectLifeStage(v === "all" ? null : v, grid);
+      });
+    });
+  }
+
+  function renderLifeStageTabs() {
+    var html = lifeStageTabRowHtml();
+    var row1 = qs("#lifestage-tabs");
+    if (row1) row1.innerHTML = html;
+    var row2 = qs("#more-lifestage-tabs");
+    if (row2) row2.innerHTML = html;
+    bindLifeStageTabRow("#lifestage-tabs", "#lifestages-grid");
+    bindLifeStageTabRow("#more-lifestage-tabs", "#more-lifestages-grid");
+  }
+
   function renderLifeStages() {
     var html = (data.lifeStages || []).map(lifeStageCardHtml).join("");
     qs("#lifestages-grid").innerHTML = html;
     // Same 4 cards, reachable a second way via the More > Life stages sub-page.
     var moreGrid = qs("#more-lifestages-grid");
     if (moreGrid) moreGrid.innerHTML = html;
+    renderLifeStageTabs();
+    applyLifeStageVisibility();
   }
 
   // ---------- Herbs ----------
@@ -1720,6 +1889,10 @@
   }
   function closeDetail() {
     qs("#detail-panel").hidden = true;
+    if (welcomePendingAfterDetail) {
+      welcomePendingAfterDetail = false;
+      maybeShowWelcome();
+    }
   }
   // For an explicit, in-page close (X button, tapping the backdrop, Escape) —
   // as opposed to the phone's Back button, which handleHash already reacts
@@ -1727,7 +1900,28 @@
   // address bar and history stay consistent with what is on screen.
   function closeDetailAndHash() {
     var hash = location.hash.replace(/^#/, "");
-    if (hash.indexOf("/") === 0) { history.back(); return; }
+    if (hash.indexOf("/") === 0) {
+      // history.back() normally lands on whatever hash was open before this
+      // card (a search result list, a related-topic chip, etc.). But when
+      // this card's hash was the tab's very first navigation - a first-time
+      // visitor opening a shared card link directly, with nothing earlier in
+      // this session to go back to - history.back() silently does nothing,
+      // leaving the panel stuck open. inAppHashChangeCount > 0 is this app's
+      // own, reliable signal for "a same-document hash transition has
+      // actually happened here" (history.length isn't trustworthy - it
+      // counts entries outside this document too); below that, close
+      // directly and land on the card's own tab instead (same mapping
+      // handleHash() uses to open it).
+      if (inAppHashChangeCount > 0) { history.back(); return; }
+      var parts = hash.split("/").filter(Boolean);
+      var type = parts[0];
+      var tab = TAB_FOR_TYPE[type] || "home";
+      try { history.replaceState(null, "", location.pathname + "#" + tab); } catch (err) { location.hash = "#" + tab; }
+      closeDetail();
+      showTab(tab);
+      if (type === "myth") showMoreSection("myths");
+      return;
+    }
     closeDetail();
   }
 
@@ -1778,6 +1972,10 @@
     qsa(".share-menu").forEach(function (m) { m.remove(); });
     qsa('.share-btn[aria-expanded="true"]').forEach(function (b) { b.setAttribute("aria-expanded", "false"); });
   }
+  // Shown inline in the share menu, once ever, so whoever is sharing knows
+  // what the recipient actually gets (a link to the live page for this one
+  // card, not an image/snapshot) before they send it.
+  var SHARE_TIP_SEEN_KEY = "vhd_share_tip_seen_v1";
   function toggleShareMenu(btn) {
     var next = btn.nextElementSibling;
     if (next && next.classList && next.classList.contains("share-menu")) {
@@ -1788,14 +1986,20 @@
     var type = btn.getAttribute("data-type"), id = btn.getAttribute("data-id");
     var url = cardUrl(type, id);
     var title = titleFor(type, id) || "this card";
-    var waHref = whatsappLink("Check this out on the Vegan Health Dashboard — " + title + ": " + url);
+    var waHref = whatsappLink(
+      "Check this out on the Vegan Health Dashboard — " + title + ": " + url +
+      "\n(General information, not medical advice.)"
+    );
+    var showTip = !loadJSON(SHARE_TIP_SEEN_KEY, false);
     var menu = document.createElement("div");
     menu.className = "share-menu";
     menu.innerHTML = (
+      (showTip ? '<p class="share-tip">This shares a link, not an image — your recipient will see the live page, opened straight to this card.</p>' : "") +
       (navigator.share ? '<button type="button" class="icon-btn share-native-btn">📤 Share…</button>' : "") +
       (waHref ? '<a class="icon-btn whatsapp-btn" href="' + escapeHtml(waHref) + '" target="_blank" rel="noopener">💬 Share on WhatsApp</a>' : "") +
       '<button type="button" class="icon-btn share-copy-btn">🔗 Copy link</button>'
     );
+    if (showTip) saveJSON(SHARE_TIP_SEEN_KEY, true);
     btn.insertAdjacentElement("afterend", menu);
     btn.setAttribute("aria-expanded", "true");
     var nativeBtn = menu.querySelector(".share-native-btn");
@@ -1937,9 +2141,8 @@
       }
       if (parts.length === 2) {
         var type = parts[0], id = parts[1];
-        var tabForType = { nutrient: "nutrients", food: "foods", topic: "health", lifestage: "health", myth: "more" };
-        showTab(tabForType[type] || "home");
-        // A shared myth link routes to the More tab (see tabForType above) -
+        showTab(TAB_FOR_TYPE[type] || "home");
+        // A shared myth link routes to the More tab (see TAB_FOR_TYPE above) -
         // make sure it lands inside the Myths sub-page, not the bare menu.
         if (type === "myth") showMoreSection("myths");
         if (type === "topic" && selectedTopics.indexOf(id) < 0) {
@@ -2030,7 +2233,14 @@
       if (shareBtn) { toggleShareMenu(shareBtn); return; }
       if (!e.target.closest(".share-menu")) { closeOpenShareMenus(); }
     });
-    window.addEventListener("hashchange", handleHash);
+    window.addEventListener("hashchange", function () {
+      // hashchange only fires for a transition AFTER this page already
+      // loaded - never for a hash the URL already had at load time (a
+      // shared link) - so this is the real signal closeDetailAndHash()
+      // needs for "is there a same-document state to go back to."
+      inAppHashChangeCount++;
+      handleHash();
+    });
 
     qs("#compare-toggle").addEventListener("click", toggleCompareMode);
     // The nudge is only ever shown while compareMode is off (see
@@ -2043,6 +2253,9 @@
       updateCompareBar();
       renderFoods();
     });
+    qs("#compare-pick-btn").addEventListener("click", openComparePicker);
+    qs("#compare-picker-close").addEventListener("click", function () { popOverlay(); closeComparePicker(); });
+    qs("#compare-picker-search").addEventListener("input", renderComparePickerList);
     qs("#replay-welcome-btn").addEventListener("click", showWelcomeDialog);
     qs("#replay-welcome-btn-2").addEventListener("click", showWelcomeDialog);
     qsa(".theme-btn").forEach(function (btn) {
@@ -2111,6 +2324,9 @@
         if (prefs.foodSortMode) foodSortMode = prefs.foodSortMode;
         if (Array.isArray(prefs.selectedTopics)) {
           selectedTopics = prefs.selectedTopics.filter(function (id) { return byId.healthTopics[id]; });
+        }
+        if (prefs.lifeStageTab && byId.lifeStages[prefs.lifeStageTab]) {
+          selectedLifeStageId = prefs.lifeStageTab;
         }
       }
       renderAll();

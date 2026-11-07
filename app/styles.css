@@ -811,6 +811,43 @@ button.evidence-badge {
   font-style: italic;
 }
 
+/* "Pick foods to compare" picker: a compact search + checklist alternative
+   to scrolling the whole Foods grid to find and tick items. */
+.compare-picker-box { max-width: 460px; }
+#compare-picker-search {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 0.95rem;
+  background: var(--cream);
+  color: inherit;
+}
+.compare-picker-scope-note {
+  font-size: 0.82rem;
+  color: var(--olive-soft);
+  margin: 8px 0 0;
+}
+.compare-picker-list {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  max-height: 48vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  border-top: 1px solid var(--border);
+}
+.compare-picker-list li { border-bottom: 1px solid var(--border); }
+.compare-picker-list .compare-pick {
+  display: flex;
+  margin-bottom: 0;
+  padding: 9px 2px;
+  font-size: 0.9rem;
+}
+.compare-picker-list .compare-pick small { color: var(--olive-soft); }
+.compare-picker-list .no-results { padding: 10px 2px; font-size: 0.9rem; color: var(--olive-soft); }
+
 .share-menu {
   display: flex;
   flex-direction: column;
@@ -822,6 +859,11 @@ button.evidence-badge {
   width: 100%;
 }
 .share-menu .icon-btn, .share-menu a.icon-btn { justify-content: flex-start; width: 100%; }
+.share-tip {
+  margin: 0 0 2px;
+  font-size: 0.8rem;
+  color: var(--olive-soft);
+}
 
 .copy-fact-btn {
   background: none;
