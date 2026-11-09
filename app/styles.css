@@ -812,6 +812,8 @@ button.evidence-badge {
 /* "Pick foods to compare" picker: a compact search + checklist alternative
    to scrolling the whole Foods grid to find and tick items. */
 .compare-picker-box { max-width: 460px; }
+
+.qr-image { display: block; width: 100%; height: auto; border-radius: var(--radius); margin-top: 10px; }
 #compare-picker-search {
   width: 100%;
   margin-top: 10px;

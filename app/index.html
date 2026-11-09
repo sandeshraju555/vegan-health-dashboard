@@ -183,11 +183,41 @@
     <div id="more-sub-about" class="more-subpage" hidden>
       <button type="button" class="more-back-btn" data-more-back>‹ Back to More</button>
       <h2>About and disclaimer</h2>
+      <p id="about-sample-note"></p>
+
       <div class="card">
-        <p><strong>General information, not medical advice.</strong> This dashboard is a personal project for a small circle of friends. It summarises published sources in plain English; it is not a substitute for advice from a qualified clinician. Always see a doctor for diagnosis, medicines, pregnancy, children's health or any urgent symptom.</p>
-        <p>No tracker, accounts or analytics. Bookmarks are saved only in your own browser and are never sent anywhere.</p>
-        <p id="about-sample-note"></p>
+        <h3>About this site</h3>
+        <p>This dashboard pulls together what reputable research says about plant-based nutrition into one searchable place - drawn from published studies, Indian food-composition data, and guidance from recognised health bodies, with every claim traced back to its source.</p>
+        <p>"Vegan" and "plant-based" are used interchangeably here - both mean food with no meat, fish, eggs, dairy, honey or other animal-derived ingredients. I have used the word "vegan" mostly in this dashboard.</p>
+        <p>Vegan food isn't automatically healthy. A packet of vegan biscuits or a plate of deep-fried snacks is still vegan - and still worth checking the label on. This dashboard tries to point toward the nutrient-dense choices within a vegan diet, not just the vegan-compliant ones.</p>
+        <p>It's written for two kinds of reader: someone vegan for the animals, and someone vegan (or vegan-curious) for their own health - the nutrition facts are the same either way.</p>
+        <p>Nothing here replaces professional advice, and nothing here should be your only reference point for a health decision. Use your own judgement too, and check with a vegan-friendly nutritionist or doctor if you're ever unsure.</p>
+        <p>This dashboard took shape with Claude (Anthropic's AI) lending a hand through both the data-consolidation and coding stages.</p>
         <div class="card-actions"><button type="button" class="icon-btn" id="replay-welcome-btn">🌿 Show the welcome message again</button></div>
+      </div>
+
+      <div class="card">
+        <h3>Why I built this</h3>
+        <p>I turned vegan in 2002, after reading Maneka Gandhi's columns in The New Indian Express, and meeting a vegan in Bangalore who opened up this whole world for me.</p>
+        <p>The more I read about veganism in those early years, the more convinced I got - it's one of the better decisions I've made in life.</p>
+        <p>It wasn't easy at first, especially at social occasions. Veganism was a far more foreign idea back then than it is today. I remember a stretch where 7 out of 10 darshinis (south Indian fast-food restaurants) in Bangalore wouldn't even serve a plain black coffee without milk finding its way in somewhere - that was the kind of struggle it was, for example.</p>
+        <p>Being involved in animal rights and welfare eventually led me to start an equine welfare NGO in 2010, eight years after I turned vegan. The NGO runs on vegan principles too. My fellow trustee there, Mr. Arun Rangasamy, has been instrumental - both in my own life and in shaping the NGO into what it is today.</p>
+        <p>By profession, I've been a freelance French-English translator, a tourist guide, and am now a Registered Mutual Fund Distributor. I love reading and travelling, though I rarely get the time or occasion for either since many years now. What reading I do these days leans toward understanding equine and animal behaviour better - all in the hope of giving our rescued animals a life of dignity and freedom.</p>
+        <p>This dashboard is my attempt to make that kind of struggle a little easier for others - a single place to quickly check what a vegan diet already covers well, what needs a bit of planning, and where a supplement genuinely helps, so fewer people have to learn it the hard way, one awkward darshini order at a time.</p>
+      </div>
+
+      <div class="card">
+        <h3>How you can help us</h3>
+        <p>If you've found this dashboard useful, and would like to pitch in for the animals we care for, you're welcome to donate to SAMABHAVA, the equine welfare NGO this project is tied to. We're 80G accredited, so your donation is eligible for a tax deduction - just drop us a message on <a id="whatsapp-donate" href="#" target="_blank" rel="noopener">WhatsApp</a> after donating, and we'll get in touch to send you the receipt.</p>
+        <p>Donate: <button type="button" class="icon-btn" id="qr-open-btn">See QR code</button></p>
+      </div>
+
+      <div class="card">
+        <h3>Disclaimer</h3>
+        <p>General information, not medical advice. This dashboard is a personal project, initially for a small circle of friends. It summarises published sources in plain English; it is not a substitute for advice from a qualified clinician. Always see a doctor for diagnosis, medicines, pregnancy, children's health or any urgent symptom.</p>
+        <p>At some point, every vegan benefits from understanding the nutrients their diet provides. The findings here can get technical, but it's worth setting aside a little time to understand how to eat well and nutrient-dense as a vegan.</p>
+        <p>No tracker, accounts or analytics. Bookmarks are saved only in your own browser and are never sent anywhere.</p>
+        <p>If you know other like-minded vegans, do consider sharing this site with them.</p>
       </div>
     </div>
 
@@ -241,6 +271,16 @@
     <p class="sample-banner-note" id="welcome-sample-note" hidden>This copy is running on sample content - not yet reviewed.</p>
     <div class="dialog-actions">
       <button type="button" id="welcome-gotit" class="icon-btn">Got it</button>
+    </div>
+  </div>
+</div>
+
+<div class="dialog-overlay" id="qr-overlay" hidden>
+  <div class="dialog-box qr-box" role="dialog" aria-modal="true" aria-labelledby="qr-title">
+    <h2 id="qr-title">SAMABHAVA donation QR code</h2>
+    <img class="qr-image" src="assets/samabhava-qr.jpg" alt="SAMABHAVA donation QR code">
+    <div class="dialog-actions">
+      <button type="button" id="qr-close" class="icon-btn">Close</button>
     </div>
   </div>
 </div>

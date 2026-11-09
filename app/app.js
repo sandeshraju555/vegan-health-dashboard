@@ -1149,6 +1149,16 @@
     qs("#compare-picker-overlay").hidden = true;
   }
 
+  function openQrModal() {
+    qs("#qr-overlay").hidden = false;
+    qs("#qr-close").focus();
+    pushOverlay(closeQrModal);
+  }
+
+  function closeQrModal() {
+    qs("#qr-overlay").hidden = true;
+  }
+
   function toggleCompareMode() {
     dismissFoodsToolbarTip();
     compareMode = !compareMode;
@@ -1654,6 +1664,17 @@
     } else {
       link.href = "#";
       link.addEventListener("click", function (e) {
+        e.preventDefault();
+        showToast("The WhatsApp number has not been set yet. Add it to CONFIG.whatsappNumber in app.js.");
+      });
+    }
+    var donateLink = qs("#whatsapp-donate");
+    var donateHref = whatsappLink("Hi! I've just made a donation to SAMABHAVA.");
+    if (donateHref) {
+      donateLink.href = donateHref;
+    } else {
+      donateLink.href = "#";
+      donateLink.addEventListener("click", function (e) {
         e.preventDefault();
         showToast("The WhatsApp number has not been set yet. Add it to CONFIG.whatsappNumber in app.js.");
       });
@@ -2311,6 +2332,8 @@
     });
     qs("#compare-pick-btn").addEventListener("click", openComparePicker);
     qs("#compare-picker-close").addEventListener("click", function () { popOverlay(); closeComparePicker(); });
+    qs("#qr-open-btn").addEventListener("click", openQrModal);
+    qs("#qr-close").addEventListener("click", function () { popOverlay(); closeQrModal(); });
     qs("#compare-picker-search").addEventListener("input", renderComparePickerList);
     qs("#replay-welcome-btn").addEventListener("click", showWelcomeDialog);
     qs("#replay-welcome-btn-2").addEventListener("click", showWelcomeDialog);
