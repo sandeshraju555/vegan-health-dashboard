@@ -100,9 +100,11 @@
   }
   function toggleBookmark(type, id, title) {
     var idx = bookmarks.findIndex(function (b) { return b.type === type && b.id === id; });
-    if (idx >= 0) { bookmarks.splice(idx, 1); } else { bookmarks.push({ type: type, id: id, title: title }); }
+    var added;
+    if (idx >= 0) { bookmarks.splice(idx, 1); added = false; } else { bookmarks.push({ type: type, id: id, title: title }); added = true; }
     saveBookmarks();
     renderRecentlyViewed();
+    showToast(added ? "Added to My saved." : "Removed from My saved.");
   }
 
   var RECENT_KEY = "vhd_recent_v1";
