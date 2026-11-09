@@ -686,7 +686,7 @@
       "<h3>Start here</h3>" +
       "<p>New to a vegan diet? Begin with the three tiers below: what is easy from food, " +
       "what needs a little planning, and what is best covered with a supplement. " +
-      'Search above for anything specific - try "B12" or "nachni".</p>' +
+      'Search above for anything specific - try "B12" or "moringa". A few key nutrients are covered right here on Home, with more under the Nutrients tab - tap any nutrient card to see the full picture.</p>' +
       "</div>"
     );
     var recentHtml = "";
