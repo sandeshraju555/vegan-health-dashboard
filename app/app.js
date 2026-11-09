@@ -298,7 +298,7 @@
   function buildSearchIndex() {
     var docs = [];
     (data.nutrients || []).forEach(function (n) {
-      docs.push({ type: "Nutrients", id: n.id, title: n.name, subtitle: "Nutrient", text: firstStatementText(n.whatItDoes), aliases: (n.aliases || []).concat(n.symptomSearchTerms || []) });
+      docs.push({ type: "Nutrients", id: n.id, title: n.name, subtitle: "Nutrient", text: firstStatementText(n.whatItDoes), aliases: n.aliases || [], symptomTerms: n.symptomSearchTerms || [] });
     });
     (data.foods || []).forEach(function (f) {
       var localName = defaultLocalName(f);
@@ -324,9 +324,10 @@
     // else still works.
     if (typeof Fuse === "undefined") { fuse = null; return; }
     fuse = new Fuse(docs, {
-      keys: ["title", "aliases", "subtitle", "text"],
+      keys: ["title", "aliases", "subtitle", "text", "symptomTerms"],
       threshold: 0.38,
-      ignoreLocation: true
+      ignoreLocation: true,
+      includeMatches: true
     });
   }
 
@@ -2064,15 +2065,20 @@
     }
     var grouped = {};
     results.forEach(function (r) {
+      var displaySubtitle = r.item.subtitle;
+      if (r.item.type === "Nutrients" && r.matches && r.matches.some(function (m) { return m.key === "symptomTerms"; })) {
+        displaySubtitle = r.item.subtitle + " — matched your search '" + query + "'";
+      }
       grouped[r.item.type] = grouped[r.item.type] || [];
-      grouped[r.item.type].push(r.item);
+      grouped[r.item.type].push({ item: r.item, displaySubtitle: displaySubtitle });
     });
     var html = "";
     Object.keys(grouped).forEach(function (group) {
       html += '<div class="search-group-label">' + escapeHtml(group) + "</div>";
-      html += grouped[group].map(function (item) {
+      html += grouped[group].map(function (entry) {
+        var item = entry.item;
         return '<button class="search-result-item" data-result-type="' + mapGroupToType(group, item) + '" data-result-id="' + item.id + '">' +
-          escapeHtml(item.title) + "<small>" + escapeHtml(item.subtitle || "") + "</small></button>";
+          escapeHtml(item.title) + "<small>" + escapeHtml(entry.displaySubtitle || "") + "</small></button>";
       }).join("");
     });
     box.innerHTML = html;
