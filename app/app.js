@@ -691,6 +691,9 @@
     if (recent.length) {
       recentHtml = '<div class="card"><h3>Recently viewed</h3><div class="card-grid">' +
         recent.map(function (r) { return '<button class="icon-btn" style="width:100%;text-align:left;" data-open="' + r.type + ":" + r.id + '">' + escapeHtml(r.title) + "</button>"; }).join("") +
+        "</div>" +
+        '<div class="card-actions">' +
+        '<button type="button" class="icon-btn" id="clear-recent-btn">🗑 Clear recently viewed</button>' +
         "</div></div>";
     }
     var savedHtml = savedCount
@@ -722,6 +725,9 @@
         qs("#export-saved-file-btn").addEventListener("click", exportSavedAsFile);
         qs("#move-saved-link-btn").addEventListener("click", copyMoveListLink);
         qs("#clear-saved-btn").addEventListener("click", clearSavedList);
+      }
+      if (recent.length) {
+        qs("#clear-recent-btn").addEventListener("click", clearRecentlyViewed);
       }
     }
     paint();
@@ -817,6 +823,24 @@
         bookmarks = [];
         saveBookmarks();
         showToast("Saved list cleared.");
+        renderHome();
+        renderNutrients();
+        renderFoods();
+        renderLifeStages();
+        renderHerbs();
+        renderMyths();
+        renderWhereToBuy();
+        renderHealthView();
+      });
+  }
+
+  function clearRecentlyViewed() {
+    var count = loadRecent().length;
+    showConfirm("Clear recently viewed? This removes all " + count + " card" + (count === 1 ? "" : "s") + " from this list on this browser.", { yesLabel: "Clear", noLabel: "Keep" })
+      .then(function (ok) {
+        if (!ok) return;
+        saveJSON(RECENT_KEY, []);
+        showToast("Recently viewed cleared.");
         renderHome();
         renderNutrients();
         renderFoods();
