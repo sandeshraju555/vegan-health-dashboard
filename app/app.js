@@ -298,7 +298,7 @@
   function buildSearchIndex() {
     var docs = [];
     (data.nutrients || []).forEach(function (n) {
-      docs.push({ type: "Nutrients", id: n.id, title: n.name, subtitle: "Nutrient", text: firstStatementText(n.whatItDoes), aliases: n.aliases || [] });
+      docs.push({ type: "Nutrients", id: n.id, title: n.name, subtitle: "Nutrient", text: firstStatementText(n.whatItDoes), aliases: (n.aliases || []).concat(n.symptomSearchTerms || []) });
     });
     (data.foods || []).forEach(function (f) {
       var localName = defaultLocalName(f);

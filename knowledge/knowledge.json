@@ -31,7 +31,7 @@
         "glossary",
         "didYouKnow"
       ],
-      "fingerprint": "b9128563084141a2da20ca7b361bf512936a5f9114c296b9f3668aedeb20a12d",
+      "fingerprint": "52477ae713ed7063907054e412a5ceeaf1fa5e8d06f539cddeb3ebcc4d9aedc4",
       "recordCounts": {
         "sources": 248,
         "nutrients": 17,
@@ -2863,6 +2863,12 @@
       "id": "calcium",
       "name": "Calcium",
       "aliases": [],
+      "symptomSearchTerms": [
+        "bones",
+        "teeth",
+        "bone health",
+        "muscle cramps"
+      ],
       "tier": "planning",
       "badgeColour": "turmeric",
       "whatItDoes": [
@@ -3006,6 +3012,12 @@
       "id": "choline",
       "name": "Choline",
       "aliases": [],
+      "symptomSearchTerms": [
+        "brain fog",
+        "memory",
+        "mood",
+        "concentration"
+      ],
       "tier": "planning",
       "badgeColour": "turmeric",
       "whatItDoes": [
@@ -3151,6 +3163,13 @@
         "dietary fibre",
         "fiber",
         "roughage"
+      ],
+      "symptomSearchTerms": [
+        "digestion",
+        "constipation",
+        "bloating",
+        "cholesterol",
+        "blood sugar"
       ],
       "tier": "food",
       "badgeColour": "green",
@@ -3334,6 +3353,10 @@
         "vitamin B9",
         "folacin"
       ],
+      "symptomSearchTerms": [
+        "pregnancy",
+        "cell growth"
+      ],
       "tier": "food",
       "badgeColour": "green",
       "whatItDoes": [
@@ -3515,6 +3538,11 @@
       "aliases": [
         "iodide"
       ],
+      "symptomSearchTerms": [
+        "thyroid",
+        "metabolism",
+        "pregnancy"
+      ],
       "tier": "planning",
       "badgeColour": "turmeric",
       "whatItDoes": [
@@ -3676,6 +3704,14 @@
       "id": "iron",
       "name": "Iron",
       "aliases": [],
+      "symptomSearchTerms": [
+        "tired",
+        "fatigue",
+        "low energy",
+        "pale",
+        "breathless",
+        "anaemia"
+      ],
       "tier": "planning",
       "badgeColour": "turmeric",
       "whatItDoes": [
@@ -3814,6 +3850,11 @@
       "id": "magnesium",
       "name": "Magnesium",
       "aliases": [],
+      "symptomSearchTerms": [
+        "muscle cramps",
+        "blood sugar",
+        "blood pressure"
+      ],
       "tier": "food",
       "badgeColour": "green",
       "whatItDoes": [
@@ -4022,6 +4063,10 @@
         "DHA",
         "alpha-linolenic acid"
       ],
+      "symptomSearchTerms": [
+        "eye health",
+        "brain"
+      ],
       "tier": "supplement",
       "badgeColour": "saffron",
       "whatItDoes": [
@@ -4157,6 +4202,11 @@
       "id": "potassium",
       "name": "Potassium",
       "aliases": [],
+      "symptomSearchTerms": [
+        "muscle cramps",
+        "heart",
+        "blood pressure"
+      ],
       "tier": "food",
       "badgeColour": "green",
       "whatItDoes": [
@@ -4359,6 +4409,10 @@
       "id": "protein",
       "name": "Protein",
       "aliases": [],
+      "symptomSearchTerms": [
+        "muscle loss",
+        "weakness"
+      ],
       "tier": "food",
       "badgeColour": "green",
       "whatItDoes": [
@@ -4536,6 +4590,10 @@
       "id": "selenium",
       "name": "Selenium",
       "aliases": [],
+      "symptomSearchTerms": [
+        "thyroid",
+        "immunity"
+      ],
       "tier": "food",
       "badgeColour": "green",
       "whatItDoes": [
@@ -4703,6 +4761,11 @@
         "carotenoids",
         "retinol"
       ],
+      "symptomSearchTerms": [
+        "eyesight",
+        "night vision",
+        "immunity"
+      ],
       "tier": "food",
       "badgeColour": "green",
       "whatItDoes": [
@@ -4851,6 +4914,14 @@
         "cobalamin",
         "vitamin B-12"
       ],
+      "symptomSearchTerms": [
+        "tired",
+        "fatigue",
+        "low energy",
+        "nerve tingling",
+        "pins and needles",
+        "memory"
+      ],
       "tier": "supplement",
       "badgeColour": "saffron",
       "whatItDoes": [
@@ -4981,6 +5052,13 @@
       "name": "Vitamin C",
       "aliases": [
         "ascorbic acid"
+      ],
+      "symptomSearchTerms": [
+        "colds",
+        "immunity",
+        "wound healing",
+        "bruising",
+        "bleeding gums"
       ],
       "tier": "food",
       "badgeColour": "green",
@@ -5234,6 +5312,11 @@
         "ergocalciferol",
         "calciferol"
       ],
+      "symptomSearchTerms": [
+        "bones",
+        "muscle weakness",
+        "immunity"
+      ],
       "tier": "supplement",
       "badgeColour": "saffron",
       "whatItDoes": [
@@ -5406,6 +5489,11 @@
         "vitamin K1",
         "phylloquinone"
       ],
+      "symptomSearchTerms": [
+        "bone health",
+        "bruising",
+        "bleeding"
+      ],
       "tier": "planning",
       "badgeColour": "turmeric",
       "whatItDoes": [
@@ -5553,6 +5641,12 @@
       "id": "zinc",
       "name": "Zinc",
       "aliases": [],
+      "symptomSearchTerms": [
+        "colds",
+        "immunity",
+        "wound healing",
+        "taste"
+      ],
       "tier": "planning",
       "badgeColour": "turmeric",
       "whatItDoes": [
