@@ -228,6 +228,8 @@ main {
 
 .view[hidden] { display: none; }
 
+.filters-bar[hidden], .card-grid[hidden] { display: none; }
+
 .card {
   background: var(--cream-card);
   border-radius: var(--radius);
