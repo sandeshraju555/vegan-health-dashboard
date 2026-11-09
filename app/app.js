@@ -2375,7 +2375,14 @@
   // Offline support: registration is wrapped so a browser that blocks or
   // lacks service workers (an insecure context, a locked-down setting) just
   // skips it quietly — nothing else here depends on it having run.
-  if ("serviceWorker" in navigator) {
+  // Skipped entirely on a local dev host: the SW's cache-first strategy is
+  // what makes an edit-and-reload dev loop keep showing stale app.js/
+  // styles.css no matter how the HTTP/browser cache is cleared (recurring
+  // dev-preview caching quirk, hit repeatedly - see CHECKPOINT.md). This is
+  // an exclusion list, not a production allowlist, so real hosting (or a
+  // future change to it) is unaffected either way.
+  var LOCAL_DEV_HOSTNAMES = ["localhost", "127.0.0.1", "::1"];
+  if ("serviceWorker" in navigator && LOCAL_DEV_HOSTNAMES.indexOf(location.hostname) === -1) {
     try {
       // updateViaCache: "none" makes the browser always fetch sw.js itself
       // fresh over the network when checking for an update, ignoring any
