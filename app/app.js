@@ -313,7 +313,7 @@
       docs.push({ type: "Health", id: l.id, title: l.name, subtitle: "Life stage", text: firstStatementText(l.whyItMattersForVegans), aliases: [] });
     });
     (data.myths || []).forEach(function (m) {
-      docs.push({ type: "Myths", id: m.id, title: m.claim, subtitle: "Myth — " + m.verdict, text: firstStatementText(m.explanation), aliases: [] });
+      docs.push({ type: "Myths", id: m.id, title: m.claim, subtitle: "Myth - " + m.verdict, text: firstStatementText(m.explanation), aliases: [] });
     });
     (data.herbs || []).forEach(function (h) {
       docs.push({ type: "Herbs", id: h.id, title: h.name, subtitle: "Herb", text: firstStatementText(h.traditionalUse), aliases: h.aliases || [] });
@@ -519,7 +519,7 @@
   }
   function mixedEvidenceCueHtml(openGroups) {
     var all = [].concat.apply([], openGroups);
-    return all.length ? '<p class="mixed-evidence-cue">Evidence mixed on some points — see &ldquo;Where the evidence is still mixed&rdquo; below.</p>' : "";
+    return all.length ? '<p class="mixed-evidence-cue">Evidence mixed on some points - see &ldquo;Where the evidence is still mixed&rdquo; below.</p>' : "";
   }
 
   // ---------- Glossary tap ----------
@@ -686,7 +686,7 @@
       "<h3>Start here</h3>" +
       "<p>New to a vegan diet? Begin with the three tiers below: what is easy from food, " +
       "what needs a little planning, and what is best covered with a supplement. " +
-      'Search above for anything specific — try "B12" or "nachni".</p>' +
+      'Search above for anything specific - try "B12" or "nachni".</p>' +
       "</div>"
     );
     var recentHtml = "";
@@ -737,9 +737,9 @@
 
   // ---------- export / move / clear my saved list ----------
   function savedListAsText() {
-    var lines = ["My saved — Vegan Health Dashboard (" + bookmarks.length + " cards)", ""];
+    var lines = ["My saved - Vegan Health Dashboard (" + bookmarks.length + " cards)", ""];
     bookmarks.forEach(function (b) {
-      lines.push("- " + b.title + " — " + cardUrl(b.type, b.id));
+      lines.push("- " + b.title + " - " + cardUrl(b.type, b.id));
     });
     lines.push("", "General information, not medical advice.");
     return lines.join("\n");
@@ -748,7 +748,7 @@
     copyTextToClipboard(savedListAsText()).then(function () {
       showToast("Copied " + bookmarks.length + " saved card(s) as text.");
     }).catch(function () {
-      showToast("Could not copy automatically — try downloading as a file instead.");
+      showToast("Could not copy automatically - try downloading as a file instead.");
     });
   }
   function exportSavedAsFile() {
@@ -780,7 +780,7 @@
   function copyMoveListLink() {
     var link = moveListLink();
     copyTextToClipboard(link).then(function () {
-      showToast("Move link copied — open it on your other phone to add these " + bookmarks.length + " card(s).");
+      showToast("Move link copied - open it on your other phone to add these " + bookmarks.length + " card(s).");
     }).catch(function () { showToast(link); });
   }
   function handleImportRoute(encoded) {
@@ -805,7 +805,7 @@
           }
         });
         if (added) { saveBookmarks(); }
-        showToast(added ? "Added " + added + " card(s) to My saved." : "Nothing new to add — already saved.");
+        showToast(added ? "Added " + added + " card(s) to My saved." : "Nothing new to add - already saved.");
         renderHome();
       }
       // Replace this entry's URL with #home instead of pushing a new one: a
@@ -1111,7 +1111,7 @@
     var scopeLabel = activeFoodFilterLabel();
     if (!query && scopeLabel) {
       note.hidden = false;
-      note.textContent = "Showing " + scopeLabel + " — search to pick from every food.";
+      note.textContent = "Showing " + scopeLabel + " - search to pick from every food.";
     } else {
       note.hidden = true;
     }
@@ -1422,7 +1422,7 @@
     if (conflicts.length) {
       html += '<h4>Conflicts flagged</h4><ul>' + conflicts.map(function (c) {
         var f = byId.foods[c.foodId];
-        return "<li>" + escapeHtml(f ? f.name : c.foodId) + " — " + escapeHtml(c.reason) + " (watch for " + escapeHtml(byId.healthTopics[c.watchTopic].name) + ")</li>";
+        return "<li>" + escapeHtml(f ? f.name : c.foodId) + " - " + escapeHtml(c.reason) + " (watch for " + escapeHtml(byId.healthTopics[c.watchTopic].name) + ")</li>";
       }).join("") + "</ul>";
     }
     html += '<p class="doctor-flag">Talk to your doctor before changing your diet for more than one condition at once, especially if you take medicines.</p>';
@@ -1890,7 +1890,7 @@
     }).join("");
     var nutrientList = foodKeyNutrients(f).map(function (kn) {
       var n = byId.nutrients[kn.nutrientId];
-      return '<li><button type="button" class="chip" data-open-card="nutrient:' + kn.nutrientId + '">' + (n ? escapeHtml(n.name) : kn.nutrientId) + "</button> — " + renderProse(keyNutrientAmountText(kn)) + "</li>";
+      return '<li><button type="button" class="chip" data-open-card="nutrient:' + kn.nutrientId + '">' + (n ? escapeHtml(n.name) : kn.nutrientId) + "</button> - " + renderProse(keyNutrientAmountText(kn)) + "</li>";
     }).join("");
     var localName = defaultLocalName(f);
     var portion = foodPortion(f);
@@ -2035,14 +2035,14 @@
     var url = cardUrl(type, id);
     var title = titleFor(type, id) || "this card";
     var waHref = whatsappLink(
-      "Check this out on the Vegan Health Dashboard — " + title + ": " + url +
+      "Check this out on the Vegan Health Dashboard - " + title + ": " + url +
       "\n(General information, not medical advice.)"
     );
     var showTip = !loadJSON(SHARE_TIP_SEEN_KEY, false);
     var menu = document.createElement("div");
     menu.className = "share-menu";
     menu.innerHTML = (
-      (showTip ? '<p class="share-tip">This shares a link, not an image — your recipient will see the live page, opened straight to this card.</p>' : "") +
+      (showTip ? '<p class="share-tip">This shares a link, not an image - your recipient will see the live page, opened straight to this card.</p>' : "") +
       (navigator.share ? '<button type="button" class="icon-btn share-native-btn">📤 Share…</button>' : "") +
       (waHref ? '<a class="icon-btn whatsapp-btn" href="' + escapeHtml(waHref) + '" target="_blank" rel="noopener">💬 Share on WhatsApp</a>' : "") +
       '<button type="button" class="icon-btn share-copy-btn">🔗 Copy link</button>'
@@ -2093,7 +2093,7 @@
     results.forEach(function (r) {
       var displaySubtitle = r.item.subtitle;
       if (r.item.type === "Nutrients" && r.matches && r.matches.some(function (m) { return m.key === "symptomTerms"; })) {
-        displaySubtitle = r.item.subtitle + " — matched your search '" + query + "'";
+        displaySubtitle = r.item.subtitle + " - matched your search '" + query + "'";
       }
       grouped[r.item.type] = grouped[r.item.type] || [];
       grouped[r.item.type].push({ item: r.item, displaySubtitle: displaySubtitle });
@@ -2266,7 +2266,7 @@
       if (copyBtn) {
         copyTextToClipboard(copyBtn.getAttribute("data-copy-text") || "").then(function () {
           showToast("Copied.");
-        }).catch(function () { showToast("Could not copy — select and copy the text instead."); });
+        }).catch(function () { showToast("Could not copy - select and copy the text instead."); });
         return;
       }
       var saveBtn = e.target.closest(".save-btn");
