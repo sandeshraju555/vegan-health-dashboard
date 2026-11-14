@@ -31,7 +31,7 @@
         "glossary",
         "didYouKnow"
       ],
-      "fingerprint": "52477ae713ed7063907054e412a5ceeaf1fa5e8d06f539cddeb3ebcc4d9aedc4",
+      "fingerprint": "b087736915f9a5edd76fd050d517a297aecfc87278fbffb56bec3db6e917546d",
       "recordCounts": {
         "sources": 248,
         "nutrients": 17,
@@ -15896,7 +15896,7 @@
           ]
         },
         {
-          "text": "This project now has a dedicated magnesium nutrient card (added 31 Oct 2026), resolving the earlier documentation gap - but magnesium is deliberately NOT added to this card's own nutrientIds list below: the only PCOS-specific evidence on file for it is a pooled meta-analysis (magnesium, chromium, zinc, selenium and chromium picolinate together, see the candidateAdditions below) that cannot isolate a magnesium-only effect, which is a weaker, more mixed evidence base than fibre's own PCOS-specific findings. A reader curious about magnesium generally can now be pointed to the magnesium card itself for a daily target and food sources, just without this card claiming a PCOS-specific benefit for it.",
+          "text": "Magnesium is deliberately left off this card's main nutrient list: the only PCOS-specific evidence on file for it comes from a pooled study that combined it with chromium, zinc, selenium and chromium picolinate together, so it can't isolate a magnesium-only effect - a weaker, more mixed evidence base than fibre's own PCOS-specific findings. A reader curious about magnesium generally can still see this project's own magnesium nutrient card for a daily target and food sources, just without this card claiming a PCOS-specific benefit for it.",
           "label": "illustration",
           "sourceIds": [
             "mineral-supplements-pcos-meta-analysis-2025"
