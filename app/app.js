@@ -1064,6 +1064,12 @@
     qsa(".compare-check", grid).forEach(function (cb) {
       cb.addEventListener("change", function () { onCompareCheck(cb); });
     });
+    // Re-render replaces every card element, so each one's click-to-open
+    // handling (attached per-element, not delegated - same convention as
+    // every other grid in this file) has to be re-bound here too, not just
+    // once at initial load - otherwise a card opens on first paint but goes
+    // dead after any origin/category filter or sort change re-renders it.
+    qsa("[data-open-card]", grid).forEach(bindCardOpen);
     renderCompareNudge(items.length);
     savePrefs();
   }
